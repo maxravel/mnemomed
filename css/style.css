@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.container{
+    margin:auto;
+    max-width:900px;
+    min-height:100vh;
+    background-color:rgb(139, 139, 139);
+}
+
+.modal{
+    padding:30px;
+}
+
+#problem{
+    padding-bottom: 25px;
+}
+
+ul li{
+    list-style: none;
+    font-size:15px;
+    margin:10px;
+    padding:3px;
+    cursor: pointer;
+    border: solid black 1px;
+}
+
