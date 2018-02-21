@@ -29,3 +29,8 @@ ul li{
     border: solid black 1px;
 }
 
+#next{
+    margin:30px;
+    cursor:pointer;
+}
+
