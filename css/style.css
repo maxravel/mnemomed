@@ -9,7 +9,7 @@
     margin:auto;
     max-width:900px;
     min-height:100vh;
-    background-color:rgb(139, 139, 139);
+    background-color:rgb(189, 188, 188);
 }
 
 .modal{
@@ -29,8 +29,14 @@ ul li{
     border: solid black 1px;
 }
 
-#next{
+#next, #loadInfo{
     margin:30px;
     cursor:pointer;
+    border: solid black 1px;
+    padding:3px;
 }
 
+p{
+    padding: 3px;
+    border: solid black 1px;
+}
