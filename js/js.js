@@ -162,11 +162,16 @@ next.addEventListener('click', function(){
     //b=task1.length-1
     };
 
-    answer1.style.backgroundColor = "rgb(189, 188, 188);";
-    answer2.style.backgroundColor = "rgb(189, 189, 189)";
-    answer3.style.backgroundColor = "rgb(189, 189, 189)";
-    answer4.style.backgroundColor = "rgb(189, 189, 189)";
-    answer5.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer1.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer2.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer3.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer4.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer5.style.backgroundColor = "rgb(189, 189, 189)";
+    answer1.style.backgroundColor = "white";
+    answer2.style.backgroundColor = "white";
+    answer3.style.backgroundColor = "white";
+    answer4.style.backgroundColor = "white";
+    answer5.style.backgroundColor = "white";
     info.innerText='';
     info.style.display='none';
     
