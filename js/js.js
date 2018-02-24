@@ -78,6 +78,12 @@ loadInfo.addEventListener('click', function(){
     info.innerText=task1[0][7];
 })
 
+answer1.style.backgroundColor = "white";
+answer2.style.backgroundColor = "white";
+answer3.style.backgroundColor = "white";
+answer4.style.backgroundColor = "white";
+answer5.style.backgroundColor = "white";
+
 
 let i=1;
 let b=1;
