@@ -15,6 +15,7 @@ let answer3 = document.querySelector('#answer3');
 let answer4 = document.querySelector('#answer4');
 let answer5 = document.querySelector('#answer5');
 const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
 const loadInfo = document.querySelector('#loadInfo');
 let info = document.querySelector('#info');
 
@@ -85,6 +86,11 @@ answer4.style.backgroundColor = "white";
 answer5.style.backgroundColor = "white";
 
 
+
+
+//*************************** NEXT SECTION *******************************
+
+
 let i=1;
 let b=1;
 
@@ -94,6 +100,7 @@ next.addEventListener('click', function(){
     //console.log(i);
     //console.log(b);
     b=i;
+    console.log (i);
     
     problem.innerText = task1[i][0];
     answer1.innerText = task1[i][1];
@@ -185,6 +192,113 @@ next.addEventListener('click', function(){
 });
 
 
+
+
+
+//*************************** PREV SECTION *******************************
+
+// let x = task1.length-1;
+// let y = task1.length-1;
+
+
+prev.addEventListener('click', function(){
+    //for(let i=1; i<task1.length; i++){
+    //task1 = t2; 
+    //console.log(i);
+    //console.log(b);
+    i=b;
+    console.log(i);
+    
+    problem.innerText = task1[i][0];
+    answer1.innerText = task1[i][1];
+    answer2.innerText = task1[i][2];
+    answer3.innerText = task1[i][3];
+    answer4.innerText = task1[i][4];
+    answer5.innerText = task1[i][5];
+    //console.log(task1[i][6]);
+
+    answer1.addEventListener('click', function(){
+        //console.log(i);
+        //console.log(b);
+        //b=i;
+        if(b===0){b=task1.length-1};
+        if(task1[b-1][6]===0){
+            answer1.style.backgroundColor = "green";
+        }
+        else{
+            answer1.style.backgroundColor = "red";
+        }
+    });
+
+    answer2.addEventListener('click', function(){
+        if(b===0){b=task1.length-1};
+        if(task1[b-1][6]===1){
+            answer2.style.backgroundColor = "green";
+        }
+        else{
+            answer2.style.backgroundColor = "red";
+        }
+    });
+
+    answer3.addEventListener('click', function(){
+        if(b===0){b=task1.length-1};
+        if(task1[b-1][6]===2){
+            answer3.style.backgroundColor = "green";
+        }
+        else{
+            answer3.style.backgroundColor = "red";
+        }
+    });
+
+    answer4.addEventListener('click', function(){
+        if(b===0){b=task1.length-1};
+        if(task1[b-1][6]===3){
+            answer4.style.backgroundColor = "green";
+        }
+        else{
+            answer4.style.backgroundColor = "red";
+        }
+    });
+
+    answer5.addEventListener('click', function(){
+        if(b===0){b=task1.length-1};
+        if(task1[b-1][6]===4){
+            answer5.style.backgroundColor = "green";
+        }
+        else{
+            answer5.style.backgroundColor = "red";
+        }
+    });
+
+    loadInfo.addEventListener('click', function(){
+        info.style.display='block';
+        info.innerText=task1[b-1][7];
+    })
+    
+    b--;
+    i--;
+
+    if(i===0){i=task1.length-1;
+    //b=task1.length-1
+    };
+
+    // answer1.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer2.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer3.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer4.style.backgroundColor = "rgb(189, 189, 189)";
+    // answer5.style.backgroundColor = "rgb(189, 189, 189)";
+    answer1.style.backgroundColor = "white";
+    answer2.style.backgroundColor = "white";
+    answer3.style.backgroundColor = "white";
+    answer4.style.backgroundColor = "white";
+    answer5.style.backgroundColor = "white";
+    info.innerText='';
+    info.style.display='none';
+    
+//}
+});
+
+console.log(task1.length-1);
 
 
 // const tasksar= [['one','two','three'],['for','five','six']];

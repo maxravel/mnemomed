@@ -42,7 +42,7 @@ ul li{
     border: solid grey 1px;
 }
 
-#next, #loadInfo{
+#next, #loadInfo, #prev{
     margin:30px;
     cursor:pointer;
     border: solid grey 1px;
