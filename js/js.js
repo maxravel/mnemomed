@@ -6,7 +6,6 @@ let task1 = [
 ['i jeszcze jedno, tym razem 4 poprawna', 1,2,3,4,5,3, "info do pytania 5"]
 ];
 
-
 let problem = document.querySelector('#problem');
 let answer1 = document.querySelector('#answer1');
 let answer2 = document.querySelector('#answer2');
@@ -101,51 +100,6 @@ next.addEventListener('click', function(){
     answer4.innerText = task1[i][4];
     answer5.innerText = task1[i][5];
     //console.log(task1[i][6]);
-
-    answer1.addEventListener('click', function(){
-        if(task1[i][6]===0){
-            answer1.style.backgroundColor = "green";
-        }
-        else{
-            answer1.style.backgroundColor = "red";
-        }
-    });
-
-    answer2.addEventListener('click', function(){
-        if(task1[i][6]===1){
-            answer2.style.backgroundColor = "green";
-        }
-        else{
-            answer2.style.backgroundColor = "red";
-        }
-    });
-
-    answer3.addEventListener('click', function(){
-        if(task1[i][6]===2){
-            answer3.style.backgroundColor = "green";
-        }
-        else{
-            answer3.style.backgroundColor = "red";
-        }
-    });
-
-    answer4.addEventListener('click', function(){
-        if(task1[i][6]===3){
-            answer4.style.backgroundColor = "green";
-        }
-        else{
-            answer4.style.backgroundColor = "red";
-        }
-    });
-
-    answer5.addEventListener('click', function(){
-        if(task1[i][6]===4){
-            answer5.style.backgroundColor = "green";
-        }
-        else{
-            answer5.style.backgroundColor = "red";
-        }
-    });
     
     answer1.style.backgroundColor = "white";
     answer2.style.backgroundColor = "white";
@@ -156,7 +110,6 @@ next.addEventListener('click', function(){
     info.style.display='none';
     
 });
-
 
 
 //*************************** PREV SECTION *******************************
@@ -168,7 +121,7 @@ prev.addEventListener('click', function(){
         i=task1.length-1;
     };
 
-    console.log(i);
+    //console.log(i);
     
     problem.innerText = task1[i][0];
     answer1.innerText = task1[i][1];
@@ -176,51 +129,6 @@ prev.addEventListener('click', function(){
     answer3.innerText = task1[i][3];
     answer4.innerText = task1[i][4];
     answer5.innerText = task1[i][5];
-
-    answer1.addEventListener('click', function(){
-        if(task1[i][6]===0){
-            answer1.style.backgroundColor = "green";
-        }
-        else{
-            answer1.style.backgroundColor = "red";
-        }
-    });
-
-    answer2.addEventListener('click', function(){
-        if(task1[i][6]===1){
-            answer2.style.backgroundColor = "green";
-        }
-        else{
-            answer2.style.backgroundColor = "red";
-        }
-    });
-
-    answer3.addEventListener('click', function(){
-        if(task1[i][6]===2){
-            answer3.style.backgroundColor = "green";
-        }
-        else{
-            answer3.style.backgroundColor = "red";
-        }
-    });
-
-    answer4.addEventListener('click', function(){
-        if(task1[i][6]===3){
-            answer4.style.backgroundColor = "green";
-        }
-        else{
-            answer4.style.backgroundColor = "red";
-        }
-    });
-
-    answer5.addEventListener('click', function(){
-        if(task1[i][6]===4){
-            answer5.style.backgroundColor = "green";
-        }
-        else{
-            answer5.style.backgroundColor = "red";
-        }
-    });
 
     answer1.style.backgroundColor = "white";
     answer2.style.backgroundColor = "white";
@@ -233,34 +141,57 @@ prev.addEventListener('click', function(){
 });
 
 
+//************************** ANSWER COLORS ****************************
+
+answer1.addEventListener('click', function(){
+    if(task1[i][6]===0){
+        answer1.style.backgroundColor = "green";
+    }
+    else{
+        answer1.style.backgroundColor = "red";
+    }
+});
+
+answer2.addEventListener('click', function(){
+    if(task1[i][6]===1){
+        answer2.style.backgroundColor = "green";
+    }
+    else{
+        answer2.style.backgroundColor = "red";
+    }
+});
+
+answer3.addEventListener('click', function(){
+    if(task1[i][6]===2){
+        answer3.style.backgroundColor = "green";
+    }
+    else{
+        answer3.style.backgroundColor = "red";
+    }
+});
+
+answer4.addEventListener('click', function(){
+    if(task1[i][6]===3){
+        answer4.style.backgroundColor = "green";
+    }
+    else{
+        answer4.style.backgroundColor = "red";
+    }
+});
+
+answer5.addEventListener('click', function(){
+    if(task1[i][6]===4){
+        answer5.style.backgroundColor = "green";
+    }
+    else{
+        answer5.style.backgroundColor = "red";
+    }
+});
+
+
+//******************* LOADING INFO *******************************8
 
 loadInfo.addEventListener('click', function(){
     info.style.display='block';
     info.innerText=task1[i][7];
-})
-
-
-
-
-
-
-
-
-
-//console.log(task1.length-1);
-
-
-// const tasksar= [['one','two','three'],['for','five','six']];
-// //console.log(tasksar[0][1]);
-// for(let i=0;i<tasksar.length;i++){
-//     console.log(tasksar[i][i])
-// }
-
-// const number = document.querySelector('#number');
-// const nextNumber = document.querySelector('#nextnumber');
-// let a=0;
-// nextNumber.addEventListener('click', function(){
-    
-//     number.innerText = a;
-//     a++;
-// })
+});

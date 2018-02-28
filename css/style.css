@@ -3,15 +3,18 @@
     padding: 0px;
     font-size:20px;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Slabo 27px', serif; */
+    font-family: 'Lora', serif;
+    color:rgba(7, 0, 32, 0.884)
 }
 
 .container{
     margin:auto;
-    max-width:900px;
+    max-width:960px;
     min-height:100vh;
     /* background-color:rgb(189, 188, 188); */
-    background-color: aquamarine;
+    background-color: rgb(164, 164, 255);
 }
 
 .modal{
@@ -47,10 +50,15 @@ ul li{
     cursor:pointer;
     border: solid grey 1px;
     padding:3px;
+    border-radius: 10px;
+}
+
+#next:hover, #loadInfo:hover, #prev:hover{
+    background-color:white;
 }
 
 p{
-    margin: 10px;
+    /* margin: 10px; */
     padding: 3px;
     border: solid grey 1px;
     background-color:white;
