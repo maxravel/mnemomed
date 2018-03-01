@@ -24,55 +24,6 @@ answer3.innerText = task1[0][3];
 answer4.innerText = task1[0][4];
 answer5.innerText = task1[0][5];
 
-answer1.addEventListener('click', function(){
-    if(task1[0][6]===0){
-        answer1.style.backgroundColor = "green";
-    }
-    else{
-        answer1.style.backgroundColor = "red";
-    }
-});
-
-answer2.addEventListener('click', function(){
-    if(task1[0][6]===1){
-        answer2.style.backgroundColor = "green";
-    }
-    else{
-        answer2.style.backgroundColor = "red";
-    }
-});
-
-answer3.addEventListener('click', function(){
-    if(task1[0][6]===2){
-        answer3.style.backgroundColor = "green";
-    }
-    else{
-        answer3.style.backgroundColor = "red";
-    }
-});
-
-answer4.addEventListener('click', function(){
-    if(task1[0][6]===3){
-        answer4.style.backgroundColor = "green";
-    }
-    else{
-        answer4.style.backgroundColor = "red";
-    }
-});
-
-answer5.addEventListener('click', function(){
-    if(task1[0][6]===4){
-        answer5.style.backgroundColor = "green";
-    }
-    else{
-        answer5.style.backgroundColor = "red";
-    }
-});
-
-loadInfo.addEventListener('click', function(){
-    info.innerText=task1[0][7];
-})
-
 answer1.style.backgroundColor = "white";
 answer2.style.backgroundColor = "white";
 answer3.style.backgroundColor = "white";
@@ -80,14 +31,14 @@ answer4.style.backgroundColor = "white";
 answer5.style.backgroundColor = "white";
 
 
-
 //*************************** NEXT SECTION *******************************
 
 let i=0;
 
 next.addEventListener('click', function(){
+    
     i++;
-    //console.log (i);
+    console.log (i);
 
     if(i===task1.length){
         i=0;
@@ -99,7 +50,6 @@ next.addEventListener('click', function(){
     answer3.innerText = task1[i][3];
     answer4.innerText = task1[i][4];
     answer5.innerText = task1[i][5];
-    //console.log(task1[i][6]);
     
     answer1.style.backgroundColor = "white";
     answer2.style.backgroundColor = "white";
@@ -120,8 +70,6 @@ prev.addEventListener('click', function(){
     if(i===-1){
         i=task1.length-1;
     };
-
-    //console.log(i);
     
     problem.innerText = task1[i][0];
     answer1.innerText = task1[i][1];
