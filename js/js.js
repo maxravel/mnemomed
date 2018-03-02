@@ -38,7 +38,6 @@ let i=0;
 next.addEventListener('click', function(){
     
     i++;
-    console.log (i);
 
     if(i===task1.length){
         i=0;
@@ -67,6 +66,7 @@ next.addEventListener('click', function(){
 prev.addEventListener('click', function(){
    
     i--;
+
     if(i===-1){
         i=task1.length-1;
     };
@@ -140,6 +140,16 @@ answer5.addEventListener('click', function(){
 //******************* LOADING INFO *******************************8
 
 loadInfo.addEventListener('click', function(){
-    info.style.display='block';
+    //info.style.display='block';
+    // console.log(info.style.display);
+    
+    if(i===0){info.style.display='block';}
+    else if(info.style.display === 'none'){
+        info.style.display = 'block';
+    }
+    else{
+        info.style.display = 'none';
+    }
+
     info.innerText=task1[i][7];
 });

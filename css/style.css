@@ -13,7 +13,6 @@
     margin:auto;
     max-width:960px;
     min-height:100vh;
-    /* background-color:rgb(189, 188, 188); */
     background-color: rgb(164, 164, 255);
 }
 
@@ -58,8 +57,11 @@ ul li{
 }
 
 p{
-    /* margin: 10px; */
     padding: 3px;
     border: solid grey 1px;
     background-color:white;
+}
+
+.hide{
+    display:block;
 }
