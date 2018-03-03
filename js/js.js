@@ -92,61 +92,85 @@ prev.addEventListener('click', function(){
 //************************** ANSWER COLORS ****************************
 
 answer1.addEventListener('click', function(){
+
     if(task1[i][6]===0){
         answer1.style.backgroundColor = "green";
     }
+
     else{
         answer1.style.backgroundColor = "red";
     }
+
 });
 
 answer2.addEventListener('click', function(){
+
     if(task1[i][6]===1){
         answer2.style.backgroundColor = "green";
     }
+
     else{
         answer2.style.backgroundColor = "red";
     }
+
 });
 
 answer3.addEventListener('click', function(){
+
     if(task1[i][6]===2){
         answer3.style.backgroundColor = "green";
     }
+
     else{
         answer3.style.backgroundColor = "red";
     }
+
 });
 
 answer4.addEventListener('click', function(){
+
     if(task1[i][6]===3){
         answer4.style.backgroundColor = "green";
     }
+
     else{
         answer4.style.backgroundColor = "red";
     }
+
 });
 
 answer5.addEventListener('click', function(){
+
     if(task1[i][6]===4){
         answer5.style.backgroundColor = "green";
     }
+
     else{
         answer5.style.backgroundColor = "red";
     }
+    
 });
 
 
 //******************* LOADING INFO *******************************8
 
 loadInfo.addEventListener('click', function(){
-    //info.style.display='block';
-    // console.log(info.style.display);
-    
-    if(i===0){info.style.display='block';}
+
+    if(i===0){
+        if(info.innerText!==task1[0][7]){
+            info.style.display = 'block';
+        }
+        else if(info.style.display === 'none'){
+            info.style.display = 'block';
+        }
+        else{
+            info.style.display = 'none';
+        }}
+
     else if(info.style.display === 'none'){
         info.style.display = 'block';
     }
+
     else{
         info.style.display = 'none';
     }
