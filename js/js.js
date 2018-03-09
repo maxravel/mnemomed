@@ -43,6 +43,9 @@ next.addEventListener('click', function(){
 
     if(i===task1.length){
         i=0;
+        alert(`Zdobyłeś ${x} punktów!`);
+        x=0;
+        punkty.innerHTML = `Twoje punkty:  ${0}/${0}`;
     };
     
     problem.innerText = task1[i][0];
@@ -70,7 +73,7 @@ prev.addEventListener('click', function(){
     i--;
 
     if(i===-1){
-        i=task1.length-1;
+        i=0;
     };
     
     problem.innerText = task1[i][0];
