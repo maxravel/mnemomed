@@ -244,19 +244,27 @@
 document.querySelector('.modal').style.display="none";
 document.querySelector('#ratunkowa').addEventListener('click', function loadRatunkowa(){
     document.querySelector('.modal').style.display="block";
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', '../data/medtasks.json', true);
-    xhr.send();
-    xhr.onload = function(){
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('GET', '../data/medtasks.json', true);
+    // xhr.send();
+    // xhr.onload = function(){
 
-        if(this.status === 200){
+        // if(this.status === 200){
             // console.log(this.responseText);
             
-            let ratunkowa =[];
-            const alltasks = JSON.parse(this.responseText);
+            // let ratunkowa =[];
+            // const alltasks = JSON.parse(this.responseText);
+            // ratunkowa = alltasks.filter(z => z.id ==="rat");
+            
 
-            ratunkowa = alltasks.filter(z => z.id ==="rat");
-
+            fetch("../data/medtasks.json")
+                .then(function(res){
+                    return res.json();
+                })
+                .then(function(data){
+                    //console.log(data);
+                
+                    ratunkowa = data.filter(z => z.id ==="rat");    
             // for(var z=0; z<alltasks.length; z++){
             //     if(alltasks[z].id==="rat"){
             //         ratunkowa.push(alltasks[z]);
@@ -502,9 +510,9 @@ document.querySelector('#ratunkowa').addEventListener('click', function loadRatu
                     info.innerText=ratunkowa[i].info;
                 });
 
-        
-        }
-    };
+        })
+    //     }
+    // };
 } );
 // }
 
