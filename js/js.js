@@ -248,16 +248,20 @@ document.querySelector('#ratunkowa').addEventListener('click', function loadRatu
     xhr.open('GET', '../data/medtasks.json', true);
     xhr.send();
     xhr.onload = function(){
+
         if(this.status === 200){
             // console.log(this.responseText);
+            
             let ratunkowa =[];
             const alltasks = JSON.parse(this.responseText);
 
-            for(var z=0; z<alltasks.length; z++){
-                if(alltasks[z].id==="rat"){
-                    ratunkowa.push(alltasks[z]);
-                }
-            }    
+            ratunkowa = alltasks.filter(z => z.id ==="rat");
+
+            // for(var z=0; z<alltasks.length; z++){
+            //     if(alltasks[z].id==="rat"){
+            //         ratunkowa.push(alltasks[z]);
+            //     }
+            // }    
 
             // let output ='' 
             // ratunkowa.forEach(function(rat){
@@ -503,3 +507,19 @@ document.querySelector('#ratunkowa').addEventListener('click', function loadRatu
     };
 } );
 // }
+
+
+
+
+
+
+//****************************************************More tests:
+// let aaaa= '';
+// const jjjj = new XMLHttpRequest();
+// jjjj.open('GET','../data/medtasks.json');
+// jjjj.send();
+// jjjj.onload = function(){
+//     aaaa=JSON.parse(this.responseText);
+//     console.log(aaaa);
+// }
+// console.log(aaaa);
