@@ -241,17 +241,23 @@
 
 //***************************************AJAX TESTING
 // document.querySelector('#ajax').addEventListener('click', loadCustomers);
-window.onload = loadCustomers();
-function loadCustomers(e){
+document.querySelector('.modal').style.display="none";
+document.querySelector('#ratunkowa').addEventListener('click', function loadRatunkowa(){
+    document.querySelector('.modal').style.display="block";
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', '../data/rat.json', true);
+    xhr.open('GET', '../data/medtasks.json', true);
     xhr.send();
     xhr.onload = function(){
         if(this.status === 200){
             // console.log(this.responseText);
+            let ratunkowa =[];
+            const alltasks = JSON.parse(this.responseText);
 
-            const ratunkowa = JSON.parse(this.responseText);
-            console.log(ratunkowa);
+            for(var z=0; z<alltasks.length; z++){
+                if(alltasks[z].id==="rat"){
+                    ratunkowa.push(alltasks[z]);
+                }
+            }    
 
             // let output ='' 
             // ratunkowa.forEach(function(rat){
@@ -492,8 +498,8 @@ function loadCustomers(e){
                     info.innerText=ratunkowa[i].info;
                 });
 
-
+        
         }
-    }
-} 
+    };
+} );
 // }
