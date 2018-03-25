@@ -1,0 +1,97 @@
+[
+    {
+        "id":"rat",
+        "no":1,
+        "task":"Jest to pierwsze pytanie do LEKu, poprawna odpowiedź jest C",
+        "answer1":"Ategdfgdfg",
+        "answer2":"B",
+        "answer3":"C",
+        "answer4":"D",
+        "answer5":"E",
+        "correct": 2,
+        "info":"info do pytania pierwszego"
+    },
+    {
+        "id":"rat",
+        "no":2,
+        "task":"to drugie pytanie",
+        "answer1":"A",
+        "answer2":"B",
+        "answer3":"C",
+        "answer4":"D",
+        "answer5":"E",
+        "correct": 4,
+        "info":"info do pytania drugiego"
+    },
+    {
+        "id":"rat",
+        "no":3,
+        "task":"to trzecie",
+        "answer1":"s",
+        "answer2":"d",
+        "answer3":"f",
+        "answer4":"g",
+        "answer5":"h",
+        "correct": 0,
+        "info":"info do pytania 3"
+    },
+    {
+        "id":"rat",
+        "no":4,
+        "task":"wciąz kolejne pytania",
+        "answer1":"1",
+        "answer2":"2",
+        "answer3":"3",
+        "answer4":"4",
+        "answer5":"5",
+        "correct": 1,
+        "info":"kolejne info, tym razem 4"
+    },
+    {
+        "id":"rat",
+        "no":5,
+        "task":"i jeszcze jedno, tym razem 4 poprawna",
+        "answer1":"1",
+        "answer2":"2",
+        "answer3":"3",
+        "answer4":"4",
+        "answer5":"5",
+        "correct": 3,
+        "info":"info do pytania 5"
+    },
+    {
+        "id":"interna",
+        "no":1,
+        "task":"pierwsze pytanie z interny, poprawna b",
+        "answer1":"1",
+        "answer2":"2",
+        "answer3":"3",
+        "answer4":"4",
+        "answer5":"5",
+        "correct": 1,
+        "info":"info do 1 pytania z interny"
+    },
+    {
+        "id":"interna",
+        "no":2,
+        "task":"kolejne z interny, tym razem 4 poprawna",
+        "answer1":"1",
+        "answer2":"2",
+        "answer3":"3",
+        "answer4":"4",
+        "answer5":"5",
+        "correct": 3,
+        "info":"info do drugiego pytania z interny"
+    },{
+        "id":"interna",
+        "no":3,
+        "task":"i ostatnie pytanie z interny, tym razem A poprawna",
+        "answer1":"1",
+        "answer2":"2",
+        "answer3":"3",
+        "answer4":"4",
+        "answer5":"5",
+        "correct": 0,
+        "info":"info do pytania 3 z interny"
+    }
+]
