@@ -264,7 +264,7 @@ document.querySelector('.modal').style.display="block";
                 .then(function(data){
                     //console.log(data);
                 
-                    ratunkowa = data.filter(z => z.id ==="rat");
+                    const ratunkowa = data.filter(z => z.id ==="rat");
                     console.log(ratunkowa);
                     document.querySelector('.output').innerHTML = ratunkowa[0].answer1;    
             // for(var z=0; z<alltasks.length; z++){
