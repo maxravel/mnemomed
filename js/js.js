@@ -257,7 +257,7 @@ document.querySelector('#ratunkowa').addEventListener('click', function loadRatu
             // ratunkowa = alltasks.filter(z => z.id ==="rat");
             
 
-            fetch("../data/medtasks.json")
+            fetch("medtasks.json")
                 .then(function(res){
                     return res.json();
                 })
