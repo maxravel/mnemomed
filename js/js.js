@@ -264,7 +264,9 @@ document.querySelector('#ratunkowa').addEventListener('click', function loadRatu
                 .then(function(data){
                     //console.log(data);
                 
-                    ratunkowa = data.filter(z => z.id ==="rat");    
+                    ratunkowa = data.filter(z => z.id ==="rat");  
+                    console.log(ratunkowa);
+                    document.querySelector('.output').innerHTML =  ratunkowa[0].answer1;  
             // for(var z=0; z<alltasks.length; z++){
             //     if(alltasks[z].id==="rat"){
             //         ratunkowa.push(alltasks[z]);
@@ -286,229 +288,229 @@ document.querySelector('#ratunkowa').addEventListener('click', function loadRatu
 
 
 
-                let problem = document.querySelector('#problem');
-                let answer1 = document.querySelector('#answer1');
-                let answer2 = document.querySelector('#answer2');
-                let answer3 = document.querySelector('#answer3');
-                let answer4 = document.querySelector('#answer4');
-                let answer5 = document.querySelector('#answer5');
-                const next = document.querySelector('#next');
-                const prev = document.querySelector('#prev');
-                const loadInfo = document.querySelector('#loadInfo');
-                let info = document.querySelector('#info');
-                let punkty = document.querySelector('#punkty');
+                // let problem = document.querySelector('#problem');
+                // let answer1 = document.querySelector('#answer1');
+                // let answer2 = document.querySelector('#answer2');
+                // let answer3 = document.querySelector('#answer3');
+                // let answer4 = document.querySelector('#answer4');
+                // let answer5 = document.querySelector('#answer5');
+                // const next = document.querySelector('#next');
+                // const prev = document.querySelector('#prev');
+                // const loadInfo = document.querySelector('#loadInfo');
+                // let info = document.querySelector('#info');
+                // let punkty = document.querySelector('#punkty');
 
-                problem.innerText = ratunkowa[0].task;
-                answer1.innerText = ratunkowa[0].answer1;
-                answer2.innerText = ratunkowa[0].answer2;
-                answer3.innerText = ratunkowa[0].answer3;
-                answer4.innerText = ratunkowa[0].answer4;
-                answer5.innerText = ratunkowa[0].answer5;
+                // problem.innerText = ratunkowa[0].task;
+                // answer1.innerText = ratunkowa[0].answer1;
+                // answer2.innerText = ratunkowa[0].answer2;
+                // answer3.innerText = ratunkowa[0].answer3;
+                // answer4.innerText = ratunkowa[0].answer4;
+                // answer5.innerText = ratunkowa[0].answer5;
 
-                answer1.style.backgroundColor = "white";
-                answer2.style.backgroundColor = "white";
-                answer3.style.backgroundColor = "white";
-                answer4.style.backgroundColor = "white";
-                answer5.style.backgroundColor = "white";
+                // answer1.style.backgroundColor = "white";
+                // answer2.style.backgroundColor = "white";
+                // answer3.style.backgroundColor = "white";
+                // answer4.style.backgroundColor = "white";
+                // answer5.style.backgroundColor = "white";
 
-                let x=0;
+                // let x=0;
 
-                //*************************** NEXT SECTION *******************************
+                // //*************************** NEXT SECTION *******************************
 
-                let i=0;
+                // let i=0;
 
-                next.addEventListener('click', function(){
+                // next.addEventListener('click', function(){
                     
-                    i++;
+                //     i++;
 
-                    if(i===ratunkowa.length){
-                        i=0;
-                        alert(`Zdobyłeś ${x} punktów!`);
-                        x=0;
-                        punkty.innerHTML = `Twoje punkty:  ${0}/${0}`;
-                    };
+                //     if(i===ratunkowa.length){
+                //         i=0;
+                //         alert(`Zdobyłeś ${x} punktów!`);
+                //         x=0;
+                //         punkty.innerHTML = `Twoje punkty:  ${0}/${0}`;
+                //     };
                     
-                    problem.innerText = ratunkowa[i].task;
-                    answer1.innerText = ratunkowa[i].answer1;
-                    answer2.innerText = ratunkowa[i].answer2;
-                    answer3.innerText = ratunkowa[i].answer3;
-                    answer4.innerText = ratunkowa[i].answer4;
-                    answer5.innerText = ratunkowa[i].answer5;
+                //     problem.innerText = ratunkowa[i].task;
+                //     answer1.innerText = ratunkowa[i].answer1;
+                //     answer2.innerText = ratunkowa[i].answer2;
+                //     answer3.innerText = ratunkowa[i].answer3;
+                //     answer4.innerText = ratunkowa[i].answer4;
+                //     answer5.innerText = ratunkowa[i].answer5;
                     
-                    answer1.style.backgroundColor = "white";
-                    answer2.style.backgroundColor = "white";
-                    answer3.style.backgroundColor = "white";
-                    answer4.style.backgroundColor = "white";
-                    answer5.style.backgroundColor = "white";
-                    info.innerText='';
-                    info.style.display='none';
+                //     answer1.style.backgroundColor = "white";
+                //     answer2.style.backgroundColor = "white";
+                //     answer3.style.backgroundColor = "white";
+                //     answer4.style.backgroundColor = "white";
+                //     answer5.style.backgroundColor = "white";
+                //     info.innerText='';
+                //     info.style.display='none';
 
-                });
+                // });
 
 
-                //*************************** PREV SECTION *******************************
+                // //*************************** PREV SECTION *******************************
 
-                prev.addEventListener('click', function(){
+                // prev.addEventListener('click', function(){
                 
-                    i--;
+                //     i--;
 
-                    if(i===-1){
-                        i=0;
-                    };
+                //     if(i===-1){
+                //         i=0;
+                //     };
                     
-                    problem.innerText = ratunkowa[i].task;
-                    answer1.innerText = ratunkowa[i].answer1;
-                    answer2.innerText = ratunkowa[i].answer2;
-                    answer3.innerText = ratunkowa[i].answer3;
-                    answer4.innerText = ratunkowa[i].answer4;
-                    answer5.innerText = ratunkowa[i].answer5;
+                //     problem.innerText = ratunkowa[i].task;
+                //     answer1.innerText = ratunkowa[i].answer1;
+                //     answer2.innerText = ratunkowa[i].answer2;
+                //     answer3.innerText = ratunkowa[i].answer3;
+                //     answer4.innerText = ratunkowa[i].answer4;
+                //     answer5.innerText = ratunkowa[i].answer5;
 
-                    answer1.style.backgroundColor = "white";
-                    answer2.style.backgroundColor = "white";
-                    answer3.style.backgroundColor = "white";
-                    answer4.style.backgroundColor = "white";
-                    answer5.style.backgroundColor = "white";
-                    info.innerText='';
-                    info.style.display='none';
+                //     answer1.style.backgroundColor = "white";
+                //     answer2.style.backgroundColor = "white";
+                //     answer3.style.backgroundColor = "white";
+                //     answer4.style.backgroundColor = "white";
+                //     answer5.style.backgroundColor = "white";
+                //     info.innerText='';
+                //     info.style.display='none';
                     
-                });
+                // });
 
-                //console.log(answer1.style.backgroundColor);
-
-
-                //************************** ANSWER COLORS ****************************
-
-                answer1.addEventListener('click', function(){
-
-                    if(ratunkowa[i].correct===0){
-                        if(answer1.style.backgroundColor === "white" &&
-                        answer2.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white" &&
-                        answer4.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white"){
-                            x++;
-                        }
-                        answer1.style.backgroundColor = "green";
-                    }
-
-                    else{
-                        answer1.style.backgroundColor = "red";
-                    }
-
-                    punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
-
-                });
-
-                answer2.addEventListener('click', function(){
-
-                    if(ratunkowa[i].correct===1){
-                        if(answer1.style.backgroundColor === "white" &&
-                        answer2.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white" &&
-                        answer4.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white"){
-                            x++;
-                        }
-                        answer2.style.backgroundColor = "green";
-                    }
-
-                    else{
-                        answer2.style.backgroundColor = "red";
-                    }
-                    console.log(x);
-                    punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
-
-                });
-
-                answer3.addEventListener('click', function(){
-
-                    if(ratunkowa[i].correct===2){
-                        if(answer1.style.backgroundColor === "white" &&
-                        answer2.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white" &&
-                        answer4.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white"){
-                            x++;
-                        }
-                        answer3.style.backgroundColor = "green";
-                    }
-
-                    else{
-                        answer3.style.backgroundColor = "red";
-                    }
-
-                    punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
-
-                });
-
-                answer4.addEventListener('click', function(){
-
-                    if(ratunkowa[i].correct===3){
-                        if(answer1.style.backgroundColor === "white" &&
-                        answer2.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white" &&
-                        answer4.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white"){
-                            x++;
-                        }
-                        answer4.style.backgroundColor = "green";
-                    }
-
-                    else{
-                        answer4.style.backgroundColor = "red";
-                    }
-
-                    punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
-
-                });
-
-                answer5.addEventListener('click', function(){
-
-                    if(ratunkowa[i].correct===4){
-                        if(answer1.style.backgroundColor === "white" &&
-                        answer2.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white" &&
-                        answer4.style.backgroundColor === "white" &&
-                        answer3.style.backgroundColor === "white"){
-                            x++;
-                        }
-                        answer5.style.backgroundColor = "green";
-                    }
-
-                    else{
-                        answer5.style.backgroundColor = "red";
-                    }
-
-                    punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
-
-                });
+                // //console.log(answer1.style.backgroundColor);
 
 
-                //******************* LOADING INFO *******************************8
+                // //************************** ANSWER COLORS ****************************
 
-                loadInfo.addEventListener('click', function(){
+                // answer1.addEventListener('click', function(){
 
-                    if(i===0){
-                        if(info.innerText!==ratunkowa[0].info){
-                            info.style.display = 'block';
-                        }
-                        else if(info.style.display === 'none'){
-                            info.style.display = 'block';
-                        }
-                        else{
-                            info.style.display = 'none';
-                        }}
+                //     if(ratunkowa[i].correct===0){
+                //         if(answer1.style.backgroundColor === "white" &&
+                //         answer2.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white" &&
+                //         answer4.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white"){
+                //             x++;
+                //         }
+                //         answer1.style.backgroundColor = "green";
+                //     }
 
-                    else if(info.style.display === 'none'){
-                        info.style.display = 'block';
-                    }
+                //     else{
+                //         answer1.style.backgroundColor = "red";
+                //     }
 
-                    else{
-                        info.style.display = 'none';
-                    }
+                //     punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
 
-                    info.innerText=ratunkowa[i].info;
-                });
+                // });
+
+                // answer2.addEventListener('click', function(){
+
+                //     if(ratunkowa[i].correct===1){
+                //         if(answer1.style.backgroundColor === "white" &&
+                //         answer2.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white" &&
+                //         answer4.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white"){
+                //             x++;
+                //         }
+                //         answer2.style.backgroundColor = "green";
+                //     }
+
+                //     else{
+                //         answer2.style.backgroundColor = "red";
+                //     }
+                //     console.log(x);
+                //     punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
+
+                // });
+
+                // answer3.addEventListener('click', function(){
+
+                //     if(ratunkowa[i].correct===2){
+                //         if(answer1.style.backgroundColor === "white" &&
+                //         answer2.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white" &&
+                //         answer4.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white"){
+                //             x++;
+                //         }
+                //         answer3.style.backgroundColor = "green";
+                //     }
+
+                //     else{
+                //         answer3.style.backgroundColor = "red";
+                //     }
+
+                //     punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
+
+                // });
+
+                // answer4.addEventListener('click', function(){
+
+                //     if(ratunkowa[i].correct===3){
+                //         if(answer1.style.backgroundColor === "white" &&
+                //         answer2.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white" &&
+                //         answer4.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white"){
+                //             x++;
+                //         }
+                //         answer4.style.backgroundColor = "green";
+                //     }
+
+                //     else{
+                //         answer4.style.backgroundColor = "red";
+                //     }
+
+                //     punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
+
+                // });
+
+                // answer5.addEventListener('click', function(){
+
+                //     if(ratunkowa[i].correct===4){
+                //         if(answer1.style.backgroundColor === "white" &&
+                //         answer2.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white" &&
+                //         answer4.style.backgroundColor === "white" &&
+                //         answer3.style.backgroundColor === "white"){
+                //             x++;
+                //         }
+                //         answer5.style.backgroundColor = "green";
+                //     }
+
+                //     else{
+                //         answer5.style.backgroundColor = "red";
+                //     }
+
+                //     punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
+
+                // });
+
+
+                // //******************* LOADING INFO *******************************8
+
+                // loadInfo.addEventListener('click', function(){
+
+                //     if(i===0){
+                //         if(info.innerText!==ratunkowa[0].info){
+                //             info.style.display = 'block';
+                //         }
+                //         else if(info.style.display === 'none'){
+                //             info.style.display = 'block';
+                //         }
+                //         else{
+                //             info.style.display = 'none';
+                //         }}
+
+                //     else if(info.style.display === 'none'){
+                //         info.style.display = 'block';
+                //     }
+
+                //     else{
+                //         info.style.display = 'none';
+                //     }
+
+                //     info.innerText=ratunkowa[i].info;
+                // });
 
         })
     //     }
