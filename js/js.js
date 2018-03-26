@@ -243,7 +243,7 @@
 // document.querySelector('#ajax').addEventListener('click', loadCustomers);
 document.querySelector('.modal').style.display="none";
 document.querySelector('#ratunkowa').addEventListener('click', function loadRatunkowa(){
-    document.querySelector('.modal').style.display="block";
+document.querySelector('.modal').style.display="block";
     // const xhr = new XMLHttpRequest();
     // xhr.open('GET', '../data/medtasks.json', true);
     // xhr.send();
@@ -257,7 +257,7 @@ document.querySelector('#ratunkowa').addEventListener('click', function loadRatu
             // ratunkowa = alltasks.filter(z => z.id ==="rat");
             
 
-            fetch("medtasks.json")
+            fetch('data/medtasks.json')
                 .then(function(res){
                     return res.json();
                 })
