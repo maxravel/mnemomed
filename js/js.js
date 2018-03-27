@@ -1,4 +1,3 @@
-
 document.querySelector('.modal').style.display="none";
 document.querySelector('#ratunkowa').addEventListener('click', function loadRatunkowa(){
 document.querySelector('.modal').style.display="block";
