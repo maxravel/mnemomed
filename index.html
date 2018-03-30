@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             
     <title>mnemomed</title>
@@ -21,14 +21,21 @@
     <div class="container">
         <nav>
             <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo"><hr> MNEMOMED</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="index.html" class="brand-logo">MNEMOMED</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                 <li><a href="pytania.html">Pytania</a></li>
                 <li><a href="informacje.html">Informacje</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </nav>
+                
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="pytania.html">Pytania</a></li>
+            <li><a href="informacje.html">Informacje</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
 
         <div class="row">
             <div class="col s12 m6">
@@ -57,7 +64,8 @@
     </div>  
     <footer class="page-footer"><div class="white-text"> &copy; P.K. i A.M. 2018 </div></footer>
     
-    <!-- <script src="js/js.js">
-    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- <script src="js/js.js"></script> -->
+    <script src="js/add.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 }
 
 .container{
-    /* margin:auto; */
+    margin:auto;
     max-width:1000px;
     min-height:100vh;
     background-color: rgb(164, 164, 255);
@@ -48,7 +48,13 @@ nav{
     background-color:white;
 } */
 
-.abc{
+/* .collection{
+    padding-left:15px;
+    width: 60%;
+    margin:auto; 
+} */
+
+.abc, .choose{
     margin:15px;
     padding:30px;
     padding-top:15px;

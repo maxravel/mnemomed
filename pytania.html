@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>mnemomed</title>
 </head>
@@ -20,14 +20,21 @@
     <div class="container">
         <nav>
             <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo"><hr> MNEMOMED</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="index.html" class="brand-logo">MNEMOMED</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                 <li><a href="pytania.html">Pytania</a></li>
                 <li><a href="informacje.html">Informacje</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </nav>
+                
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="pytania.html">Pytania</a></li>
+            <li><a href="informacje.html">Informacje</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
         <!-- <div class="chose">
             <ul>
                 <li id="ratunkowa">Medycyna Ratunkowa</li>
@@ -35,13 +42,13 @@
                 <li id="chirurgia">Chirurgia</li>
             </ul>
         </div> -->
-
-        <div class="collection">
-            <a href="#!" class="collection-item" id="ratunkowa">Medycyna Ratunkowa</a>
-            <a href="#!" class="collection-item" id="kardiologia">Kardiologia</a>
-            <a href="#!" class="collection-item" id="chirurgia">Chirurgia</a>
+        <div class="choose">
+            <div class="collection">
+                <a href="#!" class="collection-item" id="ratunkowa">Medycyna Ratunkowa</a>
+                <a href="#!" class="collection-item" id="kardiologia">Kardiologia</a>
+                <a href="#!" class="collection-item" id="chirurgia">Chirurgia</a>
+            </div>
         </div>
-
         <!-- <div class="output"></div> -->
         <div class="abc">
             <p id="punkty">Twoje punkty: 0/0</p>
@@ -63,16 +70,17 @@
                     <!-- <i class="material-icons right">send</i> -->
             </button>
 
-
             <!-- <input type="submit" id="prev" value="Poprzednie">
             <input type="submit" id="next" value="Następne"><br>
             <input type="submit" id="loadInfo" value="Info"> -->
+
             <p id="info">Klikając info zobaczysz tutaj opracowanie pytania.</p>
         </div>
     </div>  
     <footer class="page-footer"><div class="white-text"> &copy; P.K. i A.M. 2018 </div></footer>
     
-    <script src="js/js.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/add.js"></script>
 </body>
 </html>
