@@ -7,46 +7,70 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora|Slabo+27px" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>mnemomed</title>
 </head>
 <body>
 
     <div class="container">
-        <h1>MNEMOMED 2.0</h1>
         <nav>
-            <ul>
-                <li class="menu"><a href="pytania.html">Pytania</a></li>
-                <li class="menu"><a href="informacje.html">Informacje</a></li>
-                <li class="menu"><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><hr> MNEMOMED</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="pytania.html">Pytania</a></li>
+                <li><a href="informacje.html">Informacje</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="chose">
+        <!-- <div class="chose">
             <ul>
                 <li id="ratunkowa">Medycyna Ratunkowa</li>
                 <li id="interna">Kardiologia</li>
                 <li id="chirurgia">Chirurgia</li>
             </ul>
+        </div> -->
+
+        <div class="collection">
+            <a href="#!" class="collection-item" id="ratunkowa">Medycyna Ratunkowa</a>
+            <a href="#!" class="collection-item" id="kardiologia">Kardiologia</a>
+            <a href="#!" class="collection-item" id="chirurgia">Chirurgia</a>
         </div>
-        <!-- <button id="ajax">Ajax</button> -->
-        <div class="output"></div>
-        <div class="modal">
+
+        <!-- <div class="output"></div> -->
+        <div class="abc">
             <p id="punkty">Twoje punkty: 0/0</p>
             <p id="problem">
             </p>
             <ul>
-                <li id="answer1"></li>
-                <li id="answer2"></li>
-                <li id="answer3"></li>
-                <li id="answer4"></li>
-                <li id="answer5"></li>
+                <li id="answer1"></li><hr>
+                <li id="answer2"></li><hr>
+                <li id="answer3"></li><hr>
+                <li id="answer4"></li><hr>
+                <li id="answer5"></li><hr>
             </ul>
-            <input type="submit" id="prev" value="Poprzednie">
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="prev">
+                    <i class="material-icons arrow_back">arrow_back</i>
+            </button><button class="btn waves-effect waves-light" type="submit" name="action" id="next">
+                    <i class="material-icons arrow_forward">arrow_forward</i>
+            </button><br><br>
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="loadInfo">Info
+                    <!-- <i class="material-icons right">send</i> -->
+            </button>
+
+
+            <!-- <input type="submit" id="prev" value="Poprzednie">
             <input type="submit" id="next" value="Następne"><br>
-            <input type="submit" id="loadInfo" value="Info">
+            <input type="submit" id="loadInfo" value="Info"> -->
             <p id="info">Klikając info zobaczysz tutaj opracowanie pytania.</p>
         </div>
     </div>  
-    <footer><div class="copyr"> &copy; P.K. i A.M. 2018 </div></footer>
+    <footer class="page-footer"><div class="white-text"> &copy; P.K. i A.M. 2018 </div></footer>
     
     <script src="js/js.js">
     </script>

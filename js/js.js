@@ -1,6 +1,6 @@
-document.querySelector('.modal').style.display="none";
+document.querySelector('.abc').style.display="none";
 document.querySelector('#ratunkowa').addEventListener('click', function loadRatunkowa(){
-document.querySelector('.modal').style.display="block";
+document.querySelector('.abc').style.display="block";
 
     fetch('data/medtasks.json')
         .then(function(res){
@@ -242,4 +242,5 @@ document.querySelector('.modal').style.display="block";
  
 });
 
-
+// var elem = document.querySelector('.sidenav');
+// var instance = M.Sidenav.init(elem, options);

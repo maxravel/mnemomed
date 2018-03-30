@@ -9,3 +9,4 @@ to do: work on style;
 to do: refactorize code;  
 to do: add UI - chose each chapter;  
 to do: think about database;  
+to do: navbar;  
