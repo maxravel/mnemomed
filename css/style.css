@@ -9,7 +9,7 @@
     color:rgba(7, 0, 32, 0.884)
 }
 
-.container{
+.containerA{
     margin:auto;
     max-width:1000px;
     min-height:100vh;
@@ -53,6 +53,21 @@ nav{
     width: 60%;
     margin:auto; 
 } */
+
+@media only screen and (max-width: 600px) {
+    /* .abc, .choose{
+        width:100%;
+        margin:0px;
+        padding:0px;
+    } */
+
+    #problem, li, #info{
+        font-size:13px;
+    }
+    #problem{
+        padding-bottom:0px;
+    }
+}
 
 .abc, .choose{
     margin:15px;
@@ -121,8 +136,8 @@ p{
 
 .page-footer{
     display:flex;
-    margin:auto;
-    max-width:945px;
+    /* margin:auto; */
+    /* max-width:945px; */
     justify-content: center;
     align-items: center;
     color:white;
