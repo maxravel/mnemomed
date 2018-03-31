@@ -218,7 +218,7 @@ document.querySelector('.choose').style.display="none";
         loadInfo.addEventListener('click', function(){
 
             if(i===0){
-                if(info.innerText!==ratunkowa[0].info){
+                if(info.innerHTML!==ratunkowa[0].info){
                     info.style.display = 'block';
                 }
                 else if(info.style.display === 'none'){
@@ -236,7 +236,7 @@ document.querySelector('.choose').style.display="none";
                 info.style.display = 'none';
             }
 
-            info.innerText=ratunkowa[i].info;
+            info.innerHTML=ratunkowa[i].info;
         });
 
     })

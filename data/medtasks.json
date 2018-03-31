@@ -9,7 +9,7 @@
         "answer4":"czerwonym",
         "answer5":"pomarańczowym",
         "correct": 0,
-        "info":"info do pytania pierwszego"
+        "info":"<p>START TRIAGE</p><img src=\"../img/pyt1.jpg\">"
     },
     {
         "id":"rat",
