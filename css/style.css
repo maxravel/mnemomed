@@ -120,6 +120,10 @@ p{
     background-color:white;
 }
 
+#info{
+    overflow: scroll;
+}
+
 #punkty{
     border: none;
     background-color: rgb(164, 164, 255);
