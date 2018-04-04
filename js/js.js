@@ -114,14 +114,24 @@ document.querySelector('.choose').style.display="none";
                 answer2.style.backgroundColor === "white" &&
                 answer3.style.backgroundColor === "white" &&
                 answer4.style.backgroundColor === "white" &&
-                answer3.style.backgroundColor === "white"){
+                answer5.style.backgroundColor === "white"){
                     x++;
                 }
                 answer1.style.backgroundColor = "green";
+
+                // sessionStorage.setItem(i,'1green');
             }
 
             else{
                 answer1.style.backgroundColor = "red";
+
+                if(ratunkowa[i].correct===1){answer2.style.background = "green";}
+                else if(ratunkowa[i].correct===2){answer3.style.background = "green";}
+                else if(ratunkowa[i].correct===3){answer4.style.background = "green";}
+                else if(ratunkowa[i].correct===4){answer5.style.background = "green";}
+
+                // sessionStorage.setItem(i,'1red');
+
             }
 
             punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
@@ -135,7 +145,7 @@ document.querySelector('.choose').style.display="none";
                 answer2.style.backgroundColor === "white" &&
                 answer3.style.backgroundColor === "white" &&
                 answer4.style.backgroundColor === "white" &&
-                answer3.style.backgroundColor === "white"){
+                answer5.style.backgroundColor === "white"){
                     x++;
                 }
                 answer2.style.backgroundColor = "green";
@@ -143,8 +153,13 @@ document.querySelector('.choose').style.display="none";
 
             else{
                 answer2.style.backgroundColor = "red";
+
+                if(ratunkowa[i].correct===0){answer1.style.background = "green";}
+                else if(ratunkowa[i].correct===2){answer3.style.background = "green";}
+                else if(ratunkowa[i].correct===3){answer4.style.background = "green";}
+                else if(ratunkowa[i].correct===4){answer5.style.background = "green";}
             }
-            console.log(x);
+            
             punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
 
         });
@@ -156,7 +171,7 @@ document.querySelector('.choose').style.display="none";
                 answer2.style.backgroundColor === "white" &&
                 answer3.style.backgroundColor === "white" &&
                 answer4.style.backgroundColor === "white" &&
-                answer3.style.backgroundColor === "white"){
+                answer5.style.backgroundColor === "white"){
                     x++;
                 }
                 answer3.style.backgroundColor = "green";
@@ -164,6 +179,11 @@ document.querySelector('.choose').style.display="none";
 
             else{
                 answer3.style.backgroundColor = "red";
+
+                if(ratunkowa[i].correct===0){answer1.style.background = "green";}
+                else if(ratunkowa[i].correct===1){answer2.style.background = "green";}
+                else if(ratunkowa[i].correct===3){answer4.style.background = "green";}
+                else if(ratunkowa[i].correct===4){answer5.style.background = "green";}
             }
 
             punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
@@ -177,7 +197,7 @@ document.querySelector('.choose').style.display="none";
                 answer2.style.backgroundColor === "white" &&
                 answer3.style.backgroundColor === "white" &&
                 answer4.style.backgroundColor === "white" &&
-                answer3.style.backgroundColor === "white"){
+                answer5.style.backgroundColor === "white"){
                     x++;
                 }
                 answer4.style.backgroundColor = "green";
@@ -185,6 +205,11 @@ document.querySelector('.choose').style.display="none";
 
             else{
                 answer4.style.backgroundColor = "red";
+
+                if(ratunkowa[i].correct===0){answer1.style.background = "green";}
+                else if(ratunkowa[i].correct===1){answer2.style.background = "green";}
+                else if(ratunkowa[i].correct===2){answer3.style.background = "green";}
+                else if(ratunkowa[i].correct===4){answer5.style.background = "green";}
             }
 
             punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
@@ -198,7 +223,7 @@ document.querySelector('.choose').style.display="none";
                 answer2.style.backgroundColor === "white" &&
                 answer3.style.backgroundColor === "white" &&
                 answer4.style.backgroundColor === "white" &&
-                answer3.style.backgroundColor === "white"){
+                answer5.style.backgroundColor === "white"){
                     x++;
                 }
                 answer5.style.backgroundColor = "green";
@@ -206,6 +231,11 @@ document.querySelector('.choose').style.display="none";
 
             else{
                 answer5.style.backgroundColor = "red";
+
+                if(ratunkowa[i].correct===0){answer1.style.background = "green";}
+                else if(ratunkowa[i].correct===1){answer2.style.background = "green";}
+                else if(ratunkowa[i].correct===2){answer3.style.background = "green";}
+                else if(ratunkowa[i].correct===3){answer4.style.background = "green";}
             }
 
             punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
