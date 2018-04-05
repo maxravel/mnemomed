@@ -1,6 +1,6 @@
 [
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":1,
         "task":"1. Według systemu segregacji poszkodowanych podczas katastrofy (START) człowieka chodzącego oznacza się kolorem:",
         "answer1":"zielonym",
@@ -12,7 +12,7 @@
         "info":"<p>START TRIAGE</p><img src=\"img/pyt1.jpg\">"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":2,
         "task":"2. Według systemu segregacji poszkodowanych podczas katastrofy (START) człowieka, który nie oddycha po udrożnieniu dróg oddechowych oznacza się kolorem:",
         "answer1":"czerwonym",
@@ -24,7 +24,7 @@
         "info":"info do pytania drugiego"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":3,
         "task":"3. Według systemu START osoby oznaczone kolorem czerwonym charakteryzują się:",
         "answer1":"częstością oddechu >30 lub <10/min",
@@ -36,7 +36,7 @@
         "info":"info do pytania 3"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":4,
         "task":"4. Według systemu segregacji poszkodowanych w czasie katastrofy (START), osoba która oddycha pomiędzy 10-30/min, ma tętno na t. promieniowej, ale nie spełnia poleceń oznaczona jest kolorem:",
         "answer1":"czarnym",
@@ -48,7 +48,7 @@
         "info":"kolejne info, tym razem 4"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":5,
         "task":"5. Obecna skuteczność resuscytacji i reanimacji wynosi około:",
         "answer1":"2%",
@@ -60,7 +60,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":6,
         "task":"6. Priorytetowym celem resuscytacji jest:",
         "answer1":"przywrócenie i utrzymanie transportu tlenu do komórek i tkanek",
@@ -72,7 +72,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":7,
         "task":"7. W skład resuscytacji wchodzi:",
         "answer1":"oddychanie wspomagane",
@@ -84,7 +84,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":8,
         "task":"8. W reanimacji w przeciwieństwie do resuscytacji dąży się do przywrócenia:",
         "answer1":"czynności układu oddechowego",
@@ -96,7 +96,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":9,
         "task":"9. Najniższą tolerancją na niedotlenienie w naszym organizmie cechuje się :",
         "answer1":"pień mózgu",
@@ -108,7 +108,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":10,
         "task":"10. Czynnkiem decydującym o skuteczności resuscytacji jest czas tak zwanej śmierci klinicznej, czyli czas jaki upływa od:",
         "answer1":"zatrzymania krążenia do przybycia ratowników medycznych",
@@ -120,7 +120,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":11,
         "task":"11. Początek śmierci klinicznej objawia się:",
         "answer1":"utrarą przytomności, brakiem oddechu, brakiem krążenia krwi",
@@ -132,7 +132,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":12,
         "task":"12. Według definicji klasycznej śmierć jest to:",
         "answer1":"nieodrwracalne ustanie krążenia krwi",
@@ -144,7 +144,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":13,
         "task":"13. Według definicji nowej śmierć jest to:",
         "answer1":"nieodwracalne zaburzenia oddychania",
@@ -156,7 +156,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":14,
         "task":"14. Według definicji nowej zmodyfikowanej śmierć jest to:",
         "answer1":"nieodwracalne ustanie czynności pnia mózgu jako całości",
@@ -168,7 +168,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":15,
         "task":"15. Ostateczne orzeczenie o śmierci pnia mózgu (na podstawie dokumentacji leczniczej i testów potwierdzających śmierć pnia mózgu) podejmuje:",
         "answer1":"niezależna komisja lekarska złożona z co najmniej 2 lekarzy, których specjalizacje są określone odpowiednim rozporządzeniem ministerialnym",
@@ -180,7 +180,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":16,
         "task":"16. Najczęstszą przyczyną wystąpienia OZW jest::",
         "answer1":"arytmia",
@@ -192,7 +192,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":17,
         "task":"17. Niedokrwieniem niemym nazywane jest:",
         "answer1":"obniżenie odcinka ST wraz z bólem",
@@ -204,7 +204,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":18,
         "task":"18. 90% zatrzymań krążenia występuje w przebiegu:",
         "answer1":"migotania komór",
@@ -216,7 +216,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":19,
         "task":"19. Azotany działają poprzez wytwrazanie NO, który stymuluje:",
         "answer1":"wzrost cGMP poprzez cyklazę guanylową",
@@ -228,7 +228,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":20,
         "task":"20. Charakterystyczną cechą bólu wieńcowego jest jego promieniowanie do wszystkich z wyjątkiem",
         "answer1":"żuchwy",
@@ -240,7 +240,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":21,
         "task":"21. Najcięższym mechanizmem zatrzymania serca jest:",
         "answer1":"migotanie komór",
@@ -252,7 +252,7 @@
         "info":"Asystolia najczęsciej powstaje jako pogorszenie stanu migotania komór."
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":22,
         "task":"22. W migotaniu komór i częstoskurczu z szerokimi zespołami QRS jedynym skutecznym leczeniem jest:",
         "answer1":"podanie adrenaliny",
@@ -264,7 +264,7 @@
         "info":"info do pytania 5"
     },
     {
-        "id":"rat",
+        "id":"ratunkowa",
         "no":23,
         "task":"23. Rozpoznanie rozkojarzenia elektrycznego bez tętna możemy postawić gdy:",
         "answer1":"pomimo obecności krzywej EKG nie stwiedza się tętna obwodowego ani ciśnienia tętniczego",
@@ -298,7 +298,8 @@
         "answer5":"5",
         "correct": 3,
         "info":"info do drugiego pytania z interny"
-    },{
+    },
+    {
         "id":"interna",
         "no":3,
         "task":"i ostatnie pytanie z interny, tym razem A poprawna",
@@ -309,5 +310,29 @@
         "answer5":"5",
         "correct": 0,
         "info":"info do pytania 3 z interny"
+    },
+    {
+        "id":"chirurgia",
+        "no":1,
+        "task":"pytanie z chirurgii, odpowiedź A poprawna",
+        "answer1":"1",
+        "answer2":"2",
+        "answer3":"3",
+        "answer4":"4",
+        "answer5":"5",
+        "correct": 0,
+        "info":"info do pytania z chirurgii"
+    },
+    {
+        "id":"chirurgia",
+        "no":2,
+        "task":"pytanie z chirurgii, odpowiedź B poprawna",
+        "answer1":"1",
+        "answer2":"2",
+        "answer3":"3",
+        "answer4":"4",
+        "answer5":"5",
+        "correct": 1,
+        "info":"info do pytania z chirurgii"
     }
 ]

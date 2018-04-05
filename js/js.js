@@ -1,7 +1,13 @@
 document.querySelector('.abc').style.display="none";
-document.querySelector('#ratunkowa').addEventListener('click', function loadRatunkowa(){
-document.querySelector('.abc').style.display="block";
-document.querySelector('.choose').style.display="none";
+document.querySelector('#ratunkowa').addEventListener('click', loadTasks);
+document.querySelector('#interna').addEventListener('click', loadTasks);
+document.querySelector('#chirurgia').addEventListener('click', loadTasks);
+
+function loadTasks(){
+    const category = event.target.id;
+    console.log(category);
+    document.querySelector('.abc').style.display="block";
+    document.querySelector('.choose').style.display="none";
 
     fetch('data/medtasks.json')
         .then(function(res){
@@ -9,7 +15,7 @@ document.querySelector('.choose').style.display="none";
         })
         .then(function(data){
           
-        const ratunkowa = data.filter(z => z.id ==="rat");
+        const ratunkowa = data.filter(z => z.id === category);
 
         let problem = document.querySelector('#problem');
         let answer1 = document.querySelector('#answer1');
@@ -271,5 +277,5 @@ document.querySelector('.choose').style.display="none";
 
     })
  
-});
+};
 
