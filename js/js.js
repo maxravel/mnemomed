@@ -1,4 +1,34 @@
 document.querySelector('.abc').style.display="none";
+
+const categoryButtons = document.querySelectorAll('.collection-item');
+console.log(categoryButtons);
+
+fetch('data/medtasks.json')
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+        // let count = 0;
+        // for(let i=0;i<data.length;i++){
+        //     count++;
+        // }
+        // console.log(count);
+        // console.log(data.length);
+        categoryButtons.forEach(x => {
+            const qNumber = data.filter(z =>z.id === x.id).length;
+            console.log(qNumber);
+            const parag = document.createElement('p');
+            parag.appendChild(document.createTextNode(`${qNumber} pyt.`));
+            parag.style.border="none";
+            parag.style.fontSize="12px";
+            parag.style.width="50px";
+            parag.style.marginTop="5px";
+            console.log(parag);
+            x.appendChild(parag);
+        });
+    })
+
+//Loading category questions
 document.querySelector('#ratunkowa').addEventListener('click', loadTasks);
 document.querySelector('#interna').addEventListener('click', loadTasks);
 document.querySelector('#chirurgia').addEventListener('click', loadTasks);
@@ -13,9 +43,9 @@ function loadTasks(){
         .then(function(res){
             return res.json();
         })
-        .then(function(data){
+        .then(function(abcd){
           
-        const ratunkowa = data.filter(z => z.id === category);
+        const ratunkowa = abcd.filter(z => z.id === category);
 
         let problem = document.querySelector('#problem');
         let answer1 = document.querySelector('#answer1');
