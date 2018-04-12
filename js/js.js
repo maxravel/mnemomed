@@ -1,29 +1,21 @@
 document.querySelector('.abc').style.display="none";
 
 const categoryButtons = document.querySelectorAll('.collection-item');
-console.log(categoryButtons);
 
 fetch('data/medtasks.json')
     .then(function(res){
         return res.json();
     })
     .then(function(data){
-        // let count = 0;
-        // for(let i=0;i<data.length;i++){
-        //     count++;
-        // }
-        // console.log(count);
-        // console.log(data.length);
         categoryButtons.forEach(x => {
+            //Loading number of each category tasks
             const qNumber = data.filter(z =>z.id === x.id).length;
-            console.log(qNumber);
             const parag = document.createElement('p');
             parag.appendChild(document.createTextNode(`${qNumber} pyt.`));
             parag.style.border="none";
             parag.style.fontSize="12px";
             parag.style.width="50px";
             parag.style.marginTop="5px";
-            console.log(parag);
             x.appendChild(parag);
         });
     })
@@ -110,7 +102,6 @@ function loadTasks(){
 
 
 
-
         //*************************** PREV SECTION *******************************
 
         prev.addEventListener('click', function(){
@@ -140,7 +131,6 @@ function loadTasks(){
 
 
 
-
         //************************** ANSWER COLORS ****************************
 
         answer1.addEventListener('click', function(){
@@ -155,6 +145,7 @@ function loadTasks(){
                 }
                 answer1.style.backgroundColor = "green";
 
+                // Works on session storage answers choosen
                 // sessionStorage.setItem(i,'1green');
             }
 
@@ -167,7 +158,6 @@ function loadTasks(){
                 else if(ratunkowa[i].correct===4){answer5.style.background = "green";}
 
                 // sessionStorage.setItem(i,'1red');
-
             }
 
             punkty.innerHTML = `Twoje punkty:  ${x}/${i+1}`;
@@ -278,6 +268,7 @@ function loadTasks(){
 
         });
 
+        
 
         //******************* LOADING INFO *******************************8
 
