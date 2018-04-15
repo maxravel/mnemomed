@@ -15,7 +15,8 @@ fetch('data/medtasks.json')
             parag.style.border="none";
             parag.style.fontSize="12px";
             parag.style.width="50px";
-            parag.style.marginTop="5px";
+            //parag.style.marginTop="5px";
+            parag.style.float="right";
             x.appendChild(parag);
         });
     })
@@ -97,6 +98,11 @@ function loadTasks(){
             answer5.style.backgroundColor = "white";
             info.innerText='';
             info.style.display='none';
+
+            if(ratunkowa[i].info===""){
+                loadInfo.style.display="none";
+            }
+            else {loadInfo.style.display="block";}
 
         });
 
@@ -273,7 +279,8 @@ function loadTasks(){
         //******************* LOADING INFO *******************************8
 
         loadInfo.addEventListener('click', function(){
-
+            // if(ratunkowa[i].info===""){loadInfo.style.display='none';}
+            // else if(ratunkowa[i].i)
             if(i===0){
                 if(info.innerHTML!==ratunkowa[0].info){
                     info.style.display = 'block';
