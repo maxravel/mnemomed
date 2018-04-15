@@ -22,9 +22,13 @@ fetch('data/medtasks.json')
     })
 
 //Loading category questions
-document.querySelector('#ratunkowa').addEventListener('click', loadTasks);
-document.querySelector('#interna').addEventListener('click', loadTasks);
-document.querySelector('#chirurgia').addEventListener('click', loadTasks);
+document.querySelectorAll('.collection-item').forEach(function(z){
+    z.addEventListener('click', loadTasks);
+})
+// document.querySelector('#ratunkowa').addEventListener('click', loadTasks);
+// document.querySelector('#interna').addEventListener('click', loadTasks);
+// document.querySelector('#chirurgia').addEventListener('click', loadTasks);
+// document.querySelector('#ginekologia').addEventListener('click', loadTasks);
 
 function loadTasks(){
     const category = event.target.id;
@@ -132,6 +136,11 @@ function loadTasks(){
             answer5.style.backgroundColor = "white";
             info.innerText='';
             info.style.display='none';
+
+            if(ratunkowa[i].info===""){
+                loadInfo.style.display="none";
+            }
+            else {loadInfo.style.display="block";}
             
         });
 

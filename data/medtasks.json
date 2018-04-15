@@ -45,7 +45,7 @@
         "answer4":"1/4 jej głębokości (4 dla niemowląt, 5 dla dzieci)",
         "answer5":"1/5 jej głębokości (2 dla niemowląt, 3 dla dzieci)",
         "correct": 1,
-        "info":"kolejne info, tym razem 4"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -57,7 +57,7 @@
         "answer4":"3 sekundy",
         "answer5":"5 sekund",
         "correct": 1,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -69,7 +69,7 @@
         "answer4":"osłuchiwanie pacjneta",
         "answer5":"USG",
         "correct": 1,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -81,7 +81,7 @@
         "answer4":"hypovolemia",
         "answer5":"haemorhagee",
         "correct": 4,
-        "info":"4H: hipoksja, hipo, hiperkaliemia, hipo, hipertermia, hipowolemia"
+        "info":"4H: hipoksja, hipo/hiperkaliemia, hipo/hipertermia, hipowolemia"
     },
     {
         "id":"ratunkowa",
@@ -93,7 +93,7 @@
         "answer4":"zatrucia",
         "answer5":"zakrzepica",
         "correct": 2,
-        "info":"4T: pneumthorax, tamponade, thrombosis, toxic"
+        "info":"4T: pneumthorax - odma prężna, tamponade- tamponada serca - żylna choroba zatorowo-zakrzepowa, thrombosis, toxic - zatrucia"
     },
     {
         "id":"ratunkowa",
@@ -105,7 +105,7 @@
         "answer4":"0.9% NaCl",
         "answer5":"węgiel aktywny",
         "correct": 0,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -117,7 +117,7 @@
         "answer4":"podaniu dożylnym 1 mg adrenaliny",
         "answer5":"podaniu dożylnym 300 mg amiodaronu",
         "correct": 2,
-        "info":"Po każdej defibrylacji sprawdź czy wystąpiła zmiana rytmu i ROSC - przywrócenie spontanicznego krążenia krwi."
+        "info":"Po każdej defibrylacji sprawdź czy wystąpiła zmiana rytmu lub ROSC - przywrócenie spontanicznego krążenia krwi."
     },
     {
         "id":"ratunkowa",
@@ -129,7 +129,7 @@
         "answer4":"3 sekundy",
         "answer5":"4 sekundy",
         "correct": 1,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -141,7 +141,7 @@
         "answer4":"po prawej stronie mostka",
         "answer5":"po lewej stronie mostka",
         "correct": 2,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -153,7 +153,7 @@
         "answer4":"4 J/kg",
         "answer5":"5 J/kg",
         "correct": 0,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -165,7 +165,7 @@
         "answer4":"2 minuty",
         "answer5":"3",
         "correct": 1,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -201,7 +201,7 @@
         "answer4":"wczesnej defibrylacji",
         "answer5":"opieki poresuscytacyjnej",
         "correct": 0,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -213,7 +213,7 @@
         "answer4":"15 sekund",
         "answer5":"20 sekund",
         "correct": 2,
-        "info":"Osoby wykonujące RKO powinny dążyć do wykonywania wdechu przez 1 sekundę objętością wystarczającą by uzyskać uniesienie klatki piersiowej."
+        "info":"Osoby wykonujące RKO powinny dążyć do wykonywania wdechu przez 1 sekundę objętością wystarczającą, by uzyskać uniesienie klatki piersiowej."
     },
     {
         "id":"ratunkowa",
@@ -225,7 +225,7 @@
         "answer4":"ucisnąć chorego między pępkiem a mostkiem od tyłu mając zaciśniętą pięść w drugą rękę",
         "answer5":"wykonać 5 oddechów ratowniczych",
         "correct": 1,
-        "info":"Gdy pomimmo 5 uderzeń w okolicę międzyłopatkową nie doszło do usunięcia niedrożności należy wykonać 5 uciśnięć nadbrzusza. Jeżeli nadal nie można usunąć niedrożnosci wykonuj naprzemiennie 5 uciśnięć nadbrzusza z 5 uderzeniami w "
+        "info":"Gdy pomimmo 5 uderzeń w okolicę międzyłopatkową nie doszło do usunięcia niedrożności, należy wykonać 5 uciśnięć nadbrzusza. Jeżeli nadal nie można usunąć niedrożnosci wykonuj naprzemiennie 5 uciśnięć nadbrzusza z 5 uderzeniami w "
     },
     {
         "id":"ratunkowa",
@@ -237,7 +237,7 @@
         "answer4":"naprzemiennie wykonywać uciśnięcia nadbrzusza z uderzeniami w okolicę międzyłopatkową",
         "answer5":"prawej łopatki",
         "correct": 1,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -261,7 +261,7 @@
         "answer4":"10",
         "answer5":"15",
         "correct": 3,
-        "info":"info do pytania 5"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -285,7 +285,7 @@
         "answer4":"asystolia i aktywność elektryczna bez tętna",
         "answer5":"aktywność elektryczna bez tętna i częstoskurcz komorowy bez tętna",
         "correct": 3,
-        "info":"info do 1 pytania z interny"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -321,7 +321,7 @@
         "answer4":"15 oddechów na minutę",
         "answer5":"16-20 oddechów na minutę",
         "correct": 2,
-        "info":"info do pytania z chirurgii"
+        "info":""
     },
     {
         "id":"ratunkowa",
@@ -381,7 +381,7 @@
         "answer4":"a+b",
         "answer5":"a+b+c",
         "correct": 4,
-        "info":"kolejne info, tym razem 4"
+        "info":""
     },
     {
         "id":"ginekologia",
@@ -430,5 +430,221 @@
         "answer5":"Brak prawidłowej odpowiedzi",
         "correct": 2,
         "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":7,
+        "task":"7. Kapacytacja to:",
+        "answer1":"droga jaką plemniki pokonują w drogach rodnych kobiety",
+        "answer2":"uwolnienie enzymów w bezpośrednim sądziedztwie komórki jajowej, co umożliwia penetrację jej osłonki",
+        "answer3":"przeniknięcie przez osłonkę komórki jajowej",
+        "answer4":"zmiany w strukturze błony śluzowej plemnika przygotowujące go do reakcji akrosomalnej",
+        "answer5":"brak prawidłowej odpowiedzi",
+        "correct": 3,
+        "info":"Proces kapacytacji trwa około 7 godzin."
+    },
+    {
+        "id":"ginekologia",
+        "no":8,
+        "task":"8. Reakcja akrosomalna polega na:",
+        "answer1":"uwolnieniu enzymów w bezpośrednim sądziedztwie komórki jajowej, co umożliwia penetrację jej osłonki",
+        "answer2":"zmianach w strukturze błony śluzowej plemnika",
+        "answer3":"podziałach mejotycznych w wyniku których tworzą się plemniki",
+        "answer4":"poruszaniu się plemników w kierunku komórki jajowej",
+        "answer5":"brak prawidłowej odpowedzi",
+        "correct": 0,
+        "info":"Enzymy to: hialurodnidaza, akrozyna, kwaśna proteaza, kolagenaza, beta-glukuronidaza, neuraminidaza, fosfolipaza C."
+    },
+    {
+        "id":"ginekologia",
+        "no":9,
+        "task":"9. Akrosom to:",
+        "answer1":"osłonka otaczająca komórkę jajową",
+        "answer2":"rybosom",
+        "answer3":"wyspecjalizowany lizosom",
+        "answer4":"białko",
+        "answer5":"jądro plemnika",
+        "correct": 2,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":10,
+        "task":"10. Reakcja polegająca na zmianie potencjału błonowego komórki jajowej oraz uwolnieniu proteaz zapobiegających polispermii to reakcja:",
+        "answer1":"rdzeniowa",
+        "answer2":"korowa",
+        "answer3":"akrosomalna",
+        "answer4":"kapacytacji",
+        "answer5":"plemnikowa",
+        "correct": 1,
+        "info":"Reakcja korowa to mechanizmy obronne zapobiegające komórkę jajową przed połączeniem się z więcej niż jednym plemnikiem."
+    },
+    {
+        "id":"ginekologia",
+        "no":11,
+        "task":"11. Wskaż prawidłowe czasy trwania kolejno okresów: przedzarodkowego, zarodkowego i płodowego",
+        "answer1":"od zapłodnienia do 1 tygodnia, 2-8 tygodnia, od 9 tygodnia do końca ciąży",
+        "answer2":"od zapłodnienia do 2 tygodnia, 3-8 tygodnia, od 9 tygodnia do końca ciąży",
+        "answer3":"od zapłodnienia do 3 tygodnia, 4-9 tygodnia, od 10 tygodnia do końca ciąży",
+        "answer4":"od zapłodnienia do 4 tygodnia, 5-9 tygodnia, od 10 tygodnia do końca ciąży",
+        "answer5":"od zapłodnienia do 1 tygodnia, 2-10 tygodnia,od 11 tygodnia do końca ciąży",
+        "correct": 0,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":12,
+        "task":"12. Wskaż zdanie prawdziwe:",
+        "answer1":"Do implantacji dochodzi między 6 a 7 dniem od zapłodnienia",
+        "answer2":"Pod wpływem progesteronu endometrium przekształca się w doczesną.",
+        "answer3":"Trofoblast daje początek łożysku",
+        "answer4":"Embrioblast to inaczej węzeł zarodkowy dający początek tkankom płodu.",
+        "answer5":"Wszystkie odpowiedzi są prawidłowe",
+        "correct": 4,
+        "info":"Do implantacji dochodzi najczęściej na przedniej górnej lub tylnej ścianie macicy. Implantacja w okolicy ujścia wewnętrznego szyjki macicy prowadzi do powstania łożyska przodującego."  
+    },
+    {
+        "id":"ginekologia",
+        "no":13,
+        "task":"13. Okres organogenezy to:",
+        "answer1":"okres przedzarodkowy trwający od zapłodnienia do 1 tygodnia ciąży",
+        "answer2":"okres przedzarodkowy trwający od 2 tygodnia do 8 tygodnia ciąży",
+        "answer3":"okres zarodkowy trwający od zapłodnienia do 1 tygodnia ciąży",
+        "answer4":"okres zarodkowy trwający od 2 tygodnia do 8 tygodnia ciąży",
+        "answer5":"okres płodowy trwający od 9 tygodnia do końca ciąży",
+        "correct": 3,
+        "info":"Zadziałanie czynnika teratogennego w tym momencie może doprowadzić do poronienia lub powstania poważnych wad rozwojowych - embriopatii."
+    },
+    {
+        "id":"ginekologia",
+        "no":14,
+        "task":"14. Za produkcję gonadotropiny kosmórkowej odpowiedzialne są komórki:",
+        "answer1":"embrioblastu",
+        "answer2":"cytotrofoblastu",
+        "answer3":"syncytiotrofoblastu",
+        "answer4":"epiblastu",
+        "answer5":"hipoblastu",
+        "correct": 2,
+        "info":"W 8 dniu od zapłodnienia embrioblast dzieli się na epiblast,z którego powstanie ektoderma i hipoblast, z którego powstanie endoderma. Trofoblast dzieli się na cytotrofoblast, z którego powstaną kosmki łożyska i warstwa mezodermy pozazarodkowej i syncytiotrofoblast, z którego powstanie krążenie matyczno-płodowe."
+    },
+    {
+        "id":"ginekologia",
+        "no":15,
+        "task":"3. Szczyt wydzielania hormonu luteinizującego występuje:",
+        "answer1":"36 h przed owulacją",
+        "answer2":"24 h po owulacji",
+        "answer3":"w momencie owulacji",
+        "answer4":"2 h po owulacji",
+        "answer5":"24 h po owulacji",
+        "correct": 0,
+        "info":"Do momentu owulacji komórka jajowa zostaje w spoczynku - chromosomy znajdują się w późnej profazie 1 podziału mejotycznego."
+    },
+    {
+        "id":"ginekologia",
+        "no":16,
+        "task":"16. Pierwszym narządem podejmującym pracę u płodu jest",
+        "answer1":"nerka",
+        "answer2":"mózg",
+        "answer3":"serce",
+        "answer4":"płuca",
+        "answer5":"wątroba",
+        "correct": 2,
+        "info":"Serce zaczyna się kurczyć w 22 dniu życia wewnątrzmacicznego."
+    },
+    {
+        "id":"ginekologia",
+        "no":17,
+        "task":"Częstość uderzeń serca u płodu osiąga maksymalną wartość:",
+        "answer1":"na początku ciąży",
+        "answer2":"w 3 tygodniu ciąży",
+        "answer3":"w 9 tygodniu ciąży",
+        "answer4":"w 25 tygodniu ciąży",
+        "answer5":"przed porodem",
+        "correct": 2,
+        "info":"W 9 tygodniu częstość uderzeń serca waha się między 155-195 na minutę. Po 9 tygodniu ciąży częstość uderzeń maleje i do końca ciąży utrzymuje się miedzy 120-160 na minutę."
+    },
+    {
+        "id":"ginekologia",
+        "no":18,
+        "task":"18. Przewód żylny uchodzi do:",
+        "answer1":"żyły głównej górnej",
+        "answer2":"żyły pępkowej",
+        "answer3":"żyły głównej dolnej",
+        "answer4":"pnia płucnego",
+        "answer5":"aorty",
+        "correct": 2,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":19,
+        "task":"19. Uporządkuj stadia rozwoju płuc płodu w odpowiedniej kolejności:",
+        "answer1":"kanalikowe, woreczkowe, rzekomogruczołowe, pęcherzykowe",
+        "answer2":"woreczkowe, kanalikowe, rzekomogruczołowe, pęcherzykowe",
+        "answer3":"woreczkowe, rzekomogruczołowe, kanalikowe, pęcherzykowe",
+        "answer4":"rzekomogruczołowe, woreczkowe, kanalikowe, pęcherzykowe",
+        "answer5":"rzekomogruczołowe, kanalikowe, woreczkowe, pęcherzykowe",
+        "correct": 4,
+        "info":"Stadium rzekomogruczołowe do 17 tyg, kanalikowe 18-25 tydzień, woreczkoe 26-38?, pęcherzykowe - okres okołoporodowy do 8-10 rok życia. ."
+    },
+    {
+        "id":"ginekologia",
+        "no":20,
+        "task":"Produkcja surfaktantu rozpoczyna się w:",
+        "answer1":"10 tygodniu ciąży przez pneumocyty I rzędu",
+        "answer2":"17 tygodniu ciąży przez pneumocyty II rzędu ",
+        "answer3":"25 tygodniu ciąży przez pneumocyty II rzędu",
+        "answer4":"27 tygodniu ciąży przez pneumocyty II rzędu",
+        "answer5":"brak prawidłowej odpowedzi",
+        "correct": 3,
+        "info":"Surfaktant umożliwia noworodkowi podjęcie efektywnego oddychania, zapobiegając zapadaniu się pęcherzyków podczas wydychania powietrza."
+    },
+    {
+        "id":"ginekologia",
+        "no":21,
+        "task":"Pierwszy mocz zostaje oddany :",
+        "answer1":"10 tygodniu ciąży",
+        "answer2":"14 tygodniu ciąży",
+        "answer3":"18 tygodniu ciąży",
+        "answer4":"20 tygodniu ciąży",
+        "answer5":"22 tygodniu ciąży",
+        "correct": 2,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":10,
+        "task":"Reakcja polegająca na zmianie potencjału błonowego komórki jajowej oraz uwolnieniu proteaz zapobiegających polispermii to reakcja:",
+        "answer1":"rdzeniowa",
+        "answer2":"korowa",
+        "answer3":"akrosomalna",
+        "answer4":"kapacytacji",
+        "answer5":"plemnikowa",
+        "correct": 1,
+        "info":"Reakcja korowa to mechanizmy obronne zapobiegające komórkę jajową przed połączeniem się z więcej niż jednym plemnikiem."
+    },
+    {
+        "id":"ginekologia",
+        "no":11,
+        "task":"Wskaż prawidłowe czasy trwania kolejno okresów: przedzarodkowego, zarodkowego i płodowego",
+        "answer1":"od zapłodnienia do 1 tygodnia, 2-8 tygodnia, od 9 tygodnia do końca ciąży",
+        "answer2":"od zapłodnienia do 2 tygodnia, 3-8 tygodnia, od 9 tygodnia do końca ciąży",
+        "answer3":"od zapłodnienia do 3 tygodnia, 4-9 tygodnia, od 10 tygodnia do końca ciąży",
+        "answer4":"od zapłodnienia do 4 tygodnia, 5-9 tygodnia, od 10 tygodnia do końca ciąży",
+        "answer5":"od zapłodnienia do 1 tygodnia, 2-10 tygodnia,od 11 tygodnia do końca ciąży",
+        "correct": 0,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":12,
+        "task":"Wskaż zdanie prawdziwe:",
+        "answer1":"Do implantacji dochodzi między 6 a 7 dniem od zapłodnienia",
+        "answer2":"Pod wpływem progesteronu endometrium przekształca się w doczesną.",
+        "answer3":"Trofoblast daje początek łożysku",
+        "answer4":"Embrioblast to inaczej węzeł zarodkowy dający początek tkankom płodu.",
+        "answer5":"Wszystkie odpowiedzi są prawidłowe",
+        "correct": 4,
+        "info":"Do implanta"
     } 
 ]
