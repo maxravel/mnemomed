@@ -1,6 +1,6 @@
 document.querySelector('.abc').style.display="none";
 
-const categoryButtons = document.querySelectorAll('.collection-item');
+const categoryButtons = document.querySelectorAll('a.collection-item');
 
 fetch('data/medtasks.json')
     .then(function(res){
@@ -10,14 +10,16 @@ fetch('data/medtasks.json')
         categoryButtons.forEach(x => {
             //Loading number of each category tasks
             const qNumber = data.filter(z =>z.id === x.id).length;
-            const parag = document.createElement('p');
-            parag.appendChild(document.createTextNode(`${qNumber} pyt.`));
-            parag.style.border="none";
-            parag.style.fontSize="12px";
-            parag.style.width="50px";
-            //parag.style.marginTop="5px";
-            parag.style.float="right";
-            x.appendChild(parag);
+            // categoryButtons.innerHTML = `${qNumber} pyt.`;
+            // const parag = document.createElement('p');
+            x.appendChild(document.createTextNode(` (${qNumber} pyt.)`))
+            // parag.appendChild(document.createTextNode(` (${qNumber} pyt.)`));
+            // // // parag.classList.add("tasksNumber"); - don't work, why?
+            // parag.style.border="none";
+            // parag.style.fontSize="12px";
+            // parag.style.width="50px";
+            // // parag.style.float="right";
+            // x.appendChild(parag);
         });
     })
 
@@ -32,7 +34,7 @@ document.querySelectorAll('.collection-item').forEach(function(z){
 
 function loadTasks(){
     const category = event.target.id;
-    console.log(category);
+    // console.log(category);
     document.querySelector('.abc').style.display="block";
     document.querySelector('.choose').style.display="none";
 
