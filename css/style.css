@@ -88,16 +88,16 @@ h1{
 }
 
 #problem{
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     margin-bottom:10px;
 }
 
 #answer1,#answer2,#answer3,#answer4{
-    margin-bottom:10px;
+    margin-bottom:7px;
 }
 
-#next,#prev{
-    margin-top:10px;
+.manipulating{
+    margin-top: 14px;
 }
 
 /* ul{
