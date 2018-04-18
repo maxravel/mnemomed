@@ -89,6 +89,15 @@ h1{
 
 #problem{
     padding-bottom: 25px;
+    margin-bottom:10px;
+}
+
+#answer1,#answer2,#answer3,#answer4{
+    margin-bottom:10px;
+}
+
+#next,#prev{
+    margin-top:10px;
 }
 
 /* ul{
