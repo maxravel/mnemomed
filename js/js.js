@@ -105,6 +105,7 @@ function loadTasks(){
             info.innerText='';
             info.style.display='none';
 
+            //Disable info button when there is no info
             if(ratunkowa[i].info===""){
                 loadInfo.style.display="none";
             }
@@ -139,6 +140,7 @@ function loadTasks(){
             info.innerText='';
             info.style.display='none';
 
+            //Disable info button when there is no info
             if(ratunkowa[i].info===""){
                 loadInfo.style.display="none";
             }
@@ -290,8 +292,7 @@ function loadTasks(){
         //******************* LOADING INFO *******************************8
 
         loadInfo.addEventListener('click', function(){
-            // if(ratunkowa[i].info===""){loadInfo.style.display='none';}
-            // else if(ratunkowa[i].i)
+            
             if(i===0){
                 if(info.innerHTML!==ratunkowa[0].info){
                     info.style.display = 'block';
