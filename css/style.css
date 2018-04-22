@@ -44,6 +44,7 @@ h1{
 }
 
 #problem{
+    padding:5px;
     padding-bottom: 15px;
     margin-bottom:10px;
 }
@@ -52,12 +53,15 @@ h1{
     margin-bottom:7px;
 }
 
+
+
 .manipulating{
     margin-top: 14px;
 }
 
 ul li{
     cursor:pointer;
+    padding:5px;
 }
 
 p{

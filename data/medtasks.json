@@ -437,7 +437,7 @@
         "task":"1. Komórka jajowa otoczona jest przez:",
         "answer1":"wieniec komórek promienistych",
         "answer2":"osłonkę przejrzystą  ",
-        "answer3":"osłonkę przejrzystą wewnątrznie i wieniec komórek promienistych wewnętrznie",
+        "answer3":"osłonkę przejrzystą wewnętrznie i wieniec komórek promienistych zewnętrznie",
         "answer4":"osłonkę przejrzystą zewnętrznie i wieniec komórek promienistych wewnętrznie",
         "answer5":"brak prawidłowej odpowiedzi",
         "correct": 2,
@@ -488,7 +488,7 @@
         "answer3":"w cieśni jajowodu",
         "answer4":"w częsci macicznej jajowodu",
         "answer5":"lejku",
-        "correct": 4,
+        "correct": 1,
         "info":""
     },
     {
@@ -496,7 +496,7 @@
         "no":6,
         "task":"6. Wskaż zdanie prawdziwe dotyczące komórki jajowej i plemnika",
         "answer1":"Niezapłodniona komórka jajkowa umiera zaraz po tym gdy nie zostanie zapłodniona, podczas gdy plemniki zachowują żywotność przez 12-14 h",
-        "answer2":"Niezapłodniona komórka jajkowa jak i plemniki umierają po 12-24h",
+        "answer2":"Niezapłodniona komórka jajkowa jak i plemniki umierają po 12-24h przy braku połączenia.",
         "answer3":"Niezapłodniona komórka jajkowa umiera po 12-24 h, podczas gdy plemniki zachowują żywotność przez ponad 24 h (nawet przez ponad 70 godzin)",
         "answer4":"Niezapłodniona komórka jajkowa jak i plemniki umierają po ponad 24 h (nawet po 70 godzinach)",
         "answer5":"Brak prawidłowej odpowiedzi",
@@ -597,19 +597,7 @@
         "answer4":"epiblastu",
         "answer5":"hipoblastu",
         "correct": 2,
-        "info":"W 8 dniu od zapłodnienia embrioblast dzieli się na epiblast,z którego powstanie ektoderma i hipoblast, z którego powstanie endoderma. Trofoblast dzieli się na cytotrofoblast, z którego powstaną kosmki łożyska i warstwa mezodermy pozazarodkowej i syncytiotrofoblast, z którego powstanie krążenie matyczno-płodowe."
-    },
-    {
-        "id":"ginekologia",
-        "no":15,
-        "task":"3. Szczyt wydzielania hormonu luteinizującego występuje:",
-        "answer1":"36 h przed owulacją",
-        "answer2":"24 h po owulacji",
-        "answer3":"w momencie owulacji",
-        "answer4":"2 h po owulacji",
-        "answer5":"24 h po owulacji",
-        "correct": 0,
-        "info":"Do momentu owulacji komórka jajowa zostaje w spoczynku - chromosomy znajdują się w późnej profazie 1 podziału mejotycznego."
+        "info":"W 8 dniu od zapłodnienia embrioblast dzieli się na epiblast, z którego powstanie ektoderma i hipoblast, z którego powstanie endoderma. Trofoblast dzieli się na cytotrofoblast, z którego powstaną kosmki łożyska i warstwa mezodermy pozazarodkowej i syncytiotrofoblast, z którego powstanie krążenie matyczno-płodowe."
     },
     {
         "id":"ginekologia",
@@ -711,11 +699,11 @@
         "id":"ginekologia",
         "no":24,
         "task":"24. Wskaż zdanie prawdziwe:",
-        "answer1":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 18 tygodniu ciąży, a przez wieloródki w 16.",
-        "answer2":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 20 tygodniu ciąży, a przez wieloródki w 18.",
-        "answer3":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 22 tygodniu ciąży, a przez wieloródki w 18.",
-        "answer4":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 20 tygodniu ciąży, a przez wieloródki w 22.",
-        "answer5":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 25 tygodniu ciąży, a przez wieloródki w 27.",
+        "answer1":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 18-16 tygodniu ciąży, a przez wieloródki w 12.",
+        "answer2":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 18-20  tygodniu ciąży, a przez wieloródki w 15-18.",
+        "answer3":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 22-24 tygodniu ciąży, a przez wieloródki w 19-20.",
+        "answer4":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 25-27 tygodniu ciąży, a przez wieloródki w 22-24.",
+        "answer5":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 30-32 tygodniu ciąży, a przez wieloródki w 27-29.",
         "correct": 1,
         "info":""
     },
@@ -794,7 +782,7 @@
     {
         "id":"ginekologia",
         "no":31,
-        "task":"31. Rola progesteronu w czasie ciąży polega na mniejszeniu aktywności skurczowej macicy co umożliwia donoszenie ciąży, zaś estrogeny stymulują wzrost macicy, zwiększają syntezę białek i elementów kurczliwych oraz substancji bogatych energetycznie:",
+        "task":"31. Rola progesteronu w czasie ciąży polega na zmniejszeniu aktywności skurczowej macicy co umożliwia donoszenie ciąży, zaś estrogeny stymulują wzrost macicy, zwiększają syntezę białek i elementów kurczliwych oraz substancji bogatych energetycznie:",
         "answer1":"oba zdania są prawdziwe",
         "answer2":"oba zdania są fałszywe",
         "answer3":"pierwsze zdanie jest prawdziwe, drugie fałszywe",
@@ -830,7 +818,7 @@
     {
         "id":"ginekologia",
         "no":34,
-        "task":"34. Reorpcja płynu owodniowego w III trymestrze ciąży odbywa się przez:",
+        "task":"34. Resorpcja płynu owodniowego w III trymestrze ciąży odbywa się przez:",
         "answer1":"połykanie przez płód",
         "answer2":"transport śródbłonowy",
         "answer3":"transport przezbłonowy",
@@ -842,7 +830,7 @@
     {
         "id":"ginekologia",
         "no":35,
-        "task":"35. Do czynników odporności nieswoistej należą wszystkie z wyjątkiem:",
+        "task":"35. Do czynników odporności nieswoistej obecnych w płynie owodniowym należą wszystkie z wyjątkiem:",
         "answer1":"alfa-defensyny",
         "answer2":"lizozymu",
         "answer3":"kalprotekryny",
@@ -938,7 +926,139 @@
     {
         "id":"ginekologia",
         "no":43,
-        "task":"43. ",
+        "task":"43. Do zmian zachodzących w układzie sercowo-naczyniowym w czasie ciąży nie należy: ",
+        "answer1":"wzrost rzutu serca",
+        "answer2":"zwiększenie retencji sodu i wody",
+        "answer3":"podwyższczenie obwodowego oporu naczyniowego",
+        "answer4":"wzrost objętości krwi krążącej",
+        "answer5":"obniżenie ciśnienia krwi",
+        "correct": 2,
+        "info":"W czasie ciąży dochodzi do zmniejszenia oporu obwodowego naczyń krwionośnych i obniżenia ciśnienia krwi."
+    },
+    {
+        "id":"ginekologia",
+        "no":44,
+        "task":"44. Fzjologiczna niedokrwistość ciężarnych występuje:",
+        "answer1":"w początkowych etapach ciąży, kiedy występuje zwiększone zapotrzebowanie na erytrocyty",
+        "answer2":"między 24. a 26. tygodniem ciąży",
+        "answer3":"między 28. a 34. tygodniem ciąży",
+        "answer4":"między 30. a 34. tygodniem ciąży",
+        "answer5":"między 34. a 40. tygodniem ciąży",
+        "correct": 1,
+        "info":"Fizjologiczna niedokrwistość ciężarnych występuje między 24 a 26 tygodniem ciąży i wynika ze zwiększonej objętości osocza, której towarzyszy mniejszy wzrost liczby erytrocytów. Stężenie hemoglobiny wynosi 12.5 g/dl."
+    },
+    {
+        "id":"ginekologia",
+        "no":45,
+        "task":"45. Objetość wyrzutowa serca w czasie ciąży osiąga maksymalną wartość:",
+        "answer1":"na początku ciąży",
+        "answer2":"w 10tygodniu ciąży",
+        "answer3":"w 20 tygodniu ciąży",
+        "answer4":"w 30 tygodniu ciąży",
+        "answer5":"bezpośrednio przed porodem",
+        "correct": 2,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":46,
+        "task":"46. Ciśnienie tętnicze krwi podczas ciąży:",
+        "answer1":"maleje o około 5 mm Hg",
+        "answer2":"maleje o około 10 mm Hg",
+        "answer3":"rośnie o około 10 mm Hg",
+        "answer4":"rośnie o około 20 mm Hg",
+        "answer5":"rośnie o około 30 mm Hg",
+        "correct": 1,
+        "info":"Najniższe wartości obserwuje się około 24 tygodnia ciąży."
+    },
+    {
+        "id":"ginekologia",
+        "no":47,
+        "task":"47. W czasie ciąży zwiększone ryzyko prozakrzepowe spowodowane jest:",
+        "answer1":"zwiększeniem oporności na działanie aktywowanego białka C",
+        "answer2":"obniżeniem stężenia białka S",
+        "answer3":"wzrostem stężenia czynników krzepnięcia",
+        "answer4":"wzrostem aktywności inhibitorów fibyrnolizy PAI-1 i PAI-2.",
+        "answer5":"wszystkie prawidłowe",
+        "correct": 4,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":48,
+        "task":"48. Wskaż zdanie fałszywe dotyczące zmian przysadki mózgowej podczas ciąży:",
+        "answer1":"podczas ciąży dochodzi nawet do 3 krotnego powiększenia przedniego płata przysadki",
+        "answer2":"w I trymestrze hormon wzrostu produkownay jest głównie przez przysadkę, później jego rolę przejmuje łożysko",
+        "answer3":"stężenie oksytocyny podczas ciąży rośnie osiągając maksimum podczas podoru",
+        "answer4":"wzrost części pośredniej przysadki mózgowej w czasie ciąży powoduje zwiększone stężenie hormonu melanotoropowego i powoduje powstanie kresy czarnej u koiet cieżarnych",
+        "answer5":"wszystkie odpowiedzi są prawidłowe",
+        "correct": 4,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":49,
+        "task":"Wzrost oporności na działanie insuliny rozpoczyna się w II trymestrze osiągając maksimum w III trymestrze, co spowodowane jest diabetogennym działaniem laktogenu łożyskowego, progesteronu, kortykoliberyny.",
+        "answer1":"oba zdania sią prawdziwe",
+        "answer2":"pierwsze zdanie jest prawdziwe, drugie fałszywe",
+        "answer3":"pierwsze zdanie jest fałszywe, drugie prawdziwe",
+        "answer4":"oba zdania się fałszywe",
+        "answer5":"oba zdania są prawdziwe i pozostają w związku przyczynowo-skutkowym",
+        "correct": 4,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":50,
+        "task":"50. Objaw Chadwicka to:",
+        "answer1":"bruntna linia od pępka do spojenia łonowego",
+        "answer2":"zasinienie w obrębie pochwy i szyjki macicy",
+        "answer3":"rozpulchnienie w okolicy cieśni macicy",
+        "answer4":"rozstępy skórne",
+        "answer5":"wzmożona wydzielina z pochwy",
+        "correct": 1,
+        "info":"Pod wpływem działania progesteronu dochodzi do przekrwienia i rozpuchnienia ściany pochwy i szyjki macicy."
+    },
+    {
+        "id":"ginekologia",
+        "no":51,
+        "task":"51. Objaw Hegara to:",
+        "answer1":"rozpulchnienie cieśni macicy",
+        "answer2":"pajączki naczyniowe i rumień dłoniowy",
+        "answer3":"zasinenie pochwy i szyjki macicy",
+        "answer4":"brunatna linia od pępka do spojenia łonowego",
+        "answer5":"wzmożona wydzielina z pochwy",
+        "correct": 1,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":52,
+        "task":"52. Objaw polegający na rozpuchnieniu macicy to:",
+        "answer1":"objaw Hegara",
+        "answer2":"objaw Chadwicka",
+        "answer3":"objaw Piskacka",
+        "answer4":"ostuda cieżarnych",
+        "answer5":"guzki Mongomerego",
+        "correct": 2,
+        "info":"Objaw ten związany jest z zagnieżdżeniem i zarodka i inwazja trofoblastu."
+    },
+    {
+        "id":"ginekologia",
+        "no":53,
+        "task":"Do zmian w czasie siąćy z obrębie narządów płciowych należą wszystkie z wyjątkiem",
+        "answer1":"objawu Chadwicka",
+        "answer2":"objawu Hegara",
+        "answer3":"objawu Piskacka",
+        "answer4":"ostuda ciężranych",
+        "answer5":"leukorrhey",
+        "correct": 3,
+        "info":"Objaw Chadwicka - zasinienie okolicy pochwy i szyjki macicy. Objaw Hegara - rozpulchnienie okolicy cieśni macicy. Objaw Piskacka - nieregularne rozpulchnienie macicy, Leukorrhea - wzmożona wydzielina z pochwy. Ostuda ciężarnych to przebarwienia na twarzy."
+    },
+    {
+        "id":"ginekologia",
+        "no":54,
+        "task":"8. Reakcja akrosomalna polega na:",
         "answer1":"uwolnieniu enzymów w bezpośrednim sądziedztwie komórki jajowej, co umożliwia penetrację jej osłonki",
         "answer2":"zmianach w strukturze błony śluzowej plemnika",
         "answer3":"podziałach mejotycznych w wyniku których tworzą się plemniki",
@@ -946,5 +1066,31 @@
         "answer5":"brak prawidłowej odpowedzi",
         "correct": 0,
         "info":"Enzymy to: hialurodnidaza, akrozyna, kwaśna proteaza, kolagenaza, beta-glukuronidaza, neuraminidaza, fosfolipaza C."
+    },
+    {
+        "id":"ginekologia",
+        "no":55,
+        "task":"Do pewnych objawów przedmiotowych ciąży nie należy",
+        "answer1":"wybadanie czynności serca płodu",
+        "answer2":"wyczucie zarysów płodu",
+        "answer3":"badanie USG",
+        "answer4":"testy ciążowe",
+        "answer5":"powiększenie obwodu brzucha",
+        "correct": 4,
+        "info":"Czynność serca płodu może być wybadana w 5-6 tygodniu ciąży. Ruchy płodu można wybadać około 22 tygodnia ciąży. "
+    },
+    {
+        "id":"ginekologia",
+        "no":56,
+        "task":"Reguła Naegelego polega na",
+        "answer1":"odjęciu od daty ostatniej miesiączki 2 miesięcy i dodaniu 3 dni",
+        "answer2":"odjęciu od daty ostatniej miesiączki 3 miesięcy i dodaniu 7 dni",
+        "answer3":"odjęciu od daty ostatniej miesiączki 4 miesięcy i dodaniu 3 dni",
+        "answer4":"dodaniu do daty ostatniej miesiączki 3 miesięcy i odjęciu 3 dni",
+        "answer5":"dodaniu do daty ostatniej miesiączki 3 miesięcy i odjęciu 7 dni",
+        "correct": 2,
+        "info":"W przypadku gdy znany jest dokładny czas owulacji do tej daty należy dodać 266 dni."
+
+
     }
 ]
