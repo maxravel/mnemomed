@@ -35,7 +35,7 @@ Array.prototype.slice.call(document.querySelectorAll('.collection-item')).forEac
 // document.querySelector('#chirurgia').addEventListener('click', loadTasks);
 // document.querySelector('#ginekologia').addEventListener('click', loadTasks);
 
-function loadTasks() {
+function loadTasks(event) {
     var category = event.target.id;
     // console.log(category);
     document.querySelector('.abc').style.display = "block";
