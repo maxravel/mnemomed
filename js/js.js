@@ -2,7 +2,7 @@
 
 document.querySelector('.abc').style.display = "none";
 
-var categoryButtons = Array.from(document.querySelectorAll('a.collection-item')); // -don't work in opera, ie
+var categoryButtons = Array.prototype.slice.call(document.querySelectorAll('a.collection-item')); // -don't work in opera, ie
 // console.log(typeof categoryButtons);
 
 fetch('data/medtasks.json').then(function (res) {
@@ -27,7 +27,7 @@ fetch('data/medtasks.json').then(function (res) {
 });
 
 //Loading category questions
-document.querySelectorAll('.collection-item').forEach(function (z) {
+Array.prototype.slice.call(document.querySelectorAll('.collection-item')).forEach(function (z) {
     z.addEventListener('click', loadTasks);
 });
 // document.querySelector('#ratunkowa').addEventListener('click', loadTasks);
