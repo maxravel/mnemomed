@@ -34,6 +34,10 @@ nav{
     #problem{
         padding-bottom:0px;
     }
+
+    .containerA{
+        padding:0px;
+    }
 }
 
 .abc, .choose{
