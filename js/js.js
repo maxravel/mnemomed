@@ -2,27 +2,22 @@
 
 document.querySelector('.abc').style.display = "none";
 
-var categoryButtons = Array.prototype.slice.call(document.querySelectorAll('a.collection-item')); // -don't work in opera, ie
-// console.log(typeof categoryButtons);
+//Array.prototype.slice.call() converts node list to array (neceserry for .forEach)
+var categoryButtons = Array.prototype.slice.call(document.querySelectorAll('a.collection-item')); 
 
 fetch('data/medtasks.json').then(function (res) {
     return res.json();
 }).then(function (data) {
     categoryButtons.forEach(function (x) {
+        
         //Loading number of each category tasks
         var qNumber = data.filter(function (z) {
             return z.id === x.id;
         }).length;
-        // categoryButtons.innerHTML = `${qNumber} pyt.`;
-        // const parag = document.createElement('p');
+        
+        //Adding number of tasks for categories
         x.appendChild(document.createTextNode(" (" + qNumber + " pyt.)"));
-        // parag.appendChild(document.createTextNode(` (${qNumber} pyt.)`));
-        // // // parag.classList.add("tasksNumber"); - don't work, why?
-        // parag.style.border="none";
-        // parag.style.fontSize="12px";
-        // parag.style.width="50px";
-        // // parag.style.float="right";
-        // x.appendChild(parag);
+      
     });
 });
 
@@ -30,17 +25,17 @@ fetch('data/medtasks.json').then(function (res) {
 Array.prototype.slice.call(document.querySelectorAll('.collection-item')).forEach(function (z) {
     z.addEventListener('click', loadTasks);
 });
-// document.querySelector('#ratunkowa').addEventListener('click', loadTasks);
-// document.querySelector('#interna').addEventListener('click', loadTasks);
-// document.querySelector('#chirurgia').addEventListener('click', loadTasks);
-// document.querySelector('#ginekologia').addEventListener('click', loadTasks);
 
+//event is neceserry as a function parameter for mozilla
 function loadTasks(event) {
+
+    //button id is the same as task.id from JSON
     var category = event.target.id;
-    // console.log(category);
+    
     document.querySelector('.abc').style.display = "block";
     document.querySelector('.choose').style.display = "none";
 
+    //fetch() is not support in Internet Explorer
     fetch('data/medtasks.json').then(function (res) {
         return res.json();
     }).then(function (abcd) {
@@ -86,6 +81,8 @@ function loadTasks(event) {
 
             if (i === ratunkowa.length) {
                 i = 0;
+
+                //template literar is not supported in some browsers
                 alert("Zdoby\u0142e\u015B " + x + " punkt\xF3w!");
                 x = 0;
                 punkty.innerHTML = "Twoje punkty:  " + 0 + "/" + 0;
@@ -159,6 +156,7 @@ function loadTasks(event) {
 
                 // Works on session storage answers choosen
                 // sessionStorage.setItem(i,'1green');
+                
             } else {
                 answer1.style.backgroundColor = "red";
 

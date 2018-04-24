@@ -14,10 +14,15 @@
     max-width:1000px;
     min-height:100vh;
     background-color: rgb(164, 164, 255);
+    padding: 10px;
 }
 
 nav{
     margin-bottom:30px;
+}
+
+.brand-logo{
+    margin-left:20px;
 }
 
 @media only screen and (max-width: 600px) {
