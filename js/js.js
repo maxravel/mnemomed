@@ -2,6 +2,8 @@
 
 document.querySelector('.abc').style.display = "none";
 
+
+//************************LOADING NUMBER OF QUESTIONS
 //Array.prototype.slice.call() converts node list to array (neceserry for .forEach)
 var categoryButtons = Array.prototype.slice.call(document.querySelectorAll('a.collection-item')); 
 
@@ -21,7 +23,8 @@ fetch('data/medtasks.json').then(function (res) {
     });
 });
 
-//Loading category questions
+
+//*********************LOADING QUESTIONS
 Array.prototype.slice.call(document.querySelectorAll('.collection-item')).forEach(function (z) {
     z.addEventListener('click', loadTasks);
 });
@@ -71,6 +74,7 @@ function loadTasks(event) {
 
         var x = 0;
 
+
         //*************************** NEXT SECTION *******************************
 
         var i = 0;
@@ -111,6 +115,7 @@ function loadTasks(event) {
             }
         });
 
+
         //*************************** PREV SECTION *******************************
 
         prev.addEventListener('click', function () {
@@ -144,6 +149,7 @@ function loadTasks(event) {
             }
         });
 
+
         //************************** ANSWER COLORS ****************************
 
         answer1.addEventListener('click', function () {
@@ -156,7 +162,7 @@ function loadTasks(event) {
 
                 // Works on session storage answers choosen
                 // sessionStorage.setItem(i,'1green');
-                
+
             } else {
                 answer1.style.backgroundColor = "red";
 
@@ -272,7 +278,8 @@ function loadTasks(event) {
             punkty.innerHTML = "Twoje punkty:  " + x + "/" + (i + 1);
         });
 
-        //******************* LOADING INFO *******************************8
+        
+        //******************* LOADING INFO *******************************
 
         loadInfo.addEventListener('click', function () {
 
