@@ -165,7 +165,7 @@ function loadTasks(event) {
 
             } else {
                 answer1.style.backgroundColor = "red";
-
+                //color green for correct answer
                 if (ratunkowa[i].correct === 1) {
                     answer2.style.background = "green";
                 } else if (ratunkowa[i].correct === 2) {
@@ -175,11 +175,14 @@ function loadTasks(event) {
                 } else if (ratunkowa[i].correct === 4) {
                     answer5.style.background = "green";
                 }
-
-                // sessionStorage.setItem(i,'1red');
             }
 
+            sessionStorage.setItem(i,'0');
+
             punkty.innerHTML = "Twoje punkty:  " + x + "/" + (i + 1);
+
+            // loadInfo.disabled = true;
+
         });
 
         answer2.addEventListener('click', function () {
@@ -202,6 +205,8 @@ function loadTasks(event) {
                     answer5.style.background = "green";
                 }
             }
+
+            sessionStorage.setItem(i,'1');
 
             punkty.innerHTML = "Twoje punkty:  " + x + "/" + (i + 1);
         });
@@ -227,6 +232,8 @@ function loadTasks(event) {
                 }
             }
 
+            sessionStorage.setItem(i,'2');
+
             punkty.innerHTML = "Twoje punkty:  " + x + "/" + (i + 1);
         });
 
@@ -251,6 +258,8 @@ function loadTasks(event) {
                 }
             }
 
+            sessionStorage.setItem(i,'3');
+
             punkty.innerHTML = "Twoje punkty:  " + x + "/" + (i + 1);
         });
 
@@ -274,6 +283,8 @@ function loadTasks(event) {
                     answer4.style.background = "green";
                 }
             }
+
+            sessionStorage.setItem(i,'4');
 
             punkty.innerHTML = "Twoje punkty:  " + x + "/" + (i + 1);
         });

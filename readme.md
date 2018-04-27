@@ -6,10 +6,12 @@
 - add JSON; done  
 - add some disciplines; done  
 - works on style; done - materialize  
+- navbar; done  
     
     
 to do: loading icon when json is loading;  
 to do: refactorize code;  
 to do: add UI - chose each chapter;  
 to do: think about database;  
-to do: navbar;  
+to do: disable other options after first click;  
+to do: sessionStorage answers;  
