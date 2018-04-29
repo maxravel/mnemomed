@@ -1198,8 +1198,17 @@
         "answer5":"podwyższenia stężenia aminokwasów",
         "correct": 4,
         "info":""
-    }
-
-
-    
+    },
+    {
+        "id":"ginekologia",
+        "no":66,
+        "task":"Najczęstszą przyczyną niedokrwistości u ciężarnych jest:",
+        "answer1":"niedobór kwasu foliowego",
+        "answer2":"niedobór żelaza  ",
+        "answer3":"neidobór witaminy B12",
+        "answer4":"niedobór degydrogenazy glukozo-6-fosforanowej",
+        "answer5":"zaburzenie syntezy hemu",
+        "correct": 1,
+        "info":""
+    } 
 ]
