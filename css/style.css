@@ -38,6 +38,12 @@ nav{
     .containerA{
         padding:0px;
     }
+
+    #next, #prev, #reset, #loadInfo{
+        font-size:10px;
+        padding-bottom:10px;
+        margin-bottom:5px;
+    }
 }
 
 .abc, .choose{

@@ -433,6 +433,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":1,
         "task":"1. Komórka jajowa otoczona jest przez:",
         "answer1":"wieniec komórek promienistych",
@@ -445,6 +446,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":2,
         "task":"2. Osłonka przejrzysta:",
         "answer1":"zawiera receptory dla plemników",
@@ -457,6 +459,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":3,
         "task":"3. Szczyt wydzielania hormonu luteinizującego występuje:",
         "answer1":"36 h przed owulacją",
@@ -469,6 +472,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":4,
         "task":"4. W wyniku pierwszego podziału mejotycznego powstaje:",
         "answer1":"oocyt z diploidalną liczbą chromosomów (n=46)",
@@ -481,6 +485,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":5,
         "task":"5. Do zapłodnienia dochodzi w:",
         "answer1":"strzępkach jajowodu",
@@ -493,6 +498,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":6,
         "task":"6. Wskaż zdanie prawdziwe dotyczące komórki jajowej i plemnika",
         "answer1":"Niezapłodniona komórka jajowa umiera zaraz po tym gdy nie zostanie zapłodniona, podczas gdy plemniki zachowują żywotność przez 12-14 h",
@@ -505,6 +511,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":7,
         "task":"7. Kapacytacja to:",
         "answer1":"droga jaką plemniki pokonują w drogach rodnych kobiety",
@@ -517,6 +524,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":8,
         "task":"8. Reakcja akrosomalna polega na:",
         "answer1":"uwolnieniu enzymów w bezpośrednim sądziedztwie komórki jajowej, co umożliwia penetrację jej osłonki",
@@ -529,6 +537,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":9,
         "task":"9. Akrosom to:",
         "answer1":"osłonka otaczająca komórkę jajową",
@@ -541,6 +550,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":10,
         "task":"10. Reakcja polegająca na zmianie potencjału błonowego komórki jajowej oraz uwolnieniu proteaz zapobiegających polispermii to reakcja:",
         "answer1":"rdzeniowa",
@@ -553,6 +563,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":11,
         "task":"11. Wskaż prawidłowe czasy trwania kolejno okresów: przedzarodkowego, zarodkowego i płodowego",
         "answer1":"od zapłodnienia do 1 tygodnia, 2-8 tygodnia, od 9 tygodnia do końca ciąży",
@@ -565,6 +576,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":12,
         "task":"12. Wskaż zdanie prawdziwe:",
         "answer1":"Do implantacji dochodzi między 6 a 7 dniem od zapłodnienia",
@@ -577,6 +589,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":13,
         "task":"13. Okres organogenezy to:",
         "answer1":"okres przedzarodkowy trwający od zapłodnienia do 1 tygodnia ciąży",
@@ -589,6 +602,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":14,
         "task":"14. Za produkcję gonadotropiny kosmórkowej odpowiedzialne są komórki:",
         "answer1":"embrioblastu",
@@ -601,6 +615,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":16,
         "task":"16. Pierwszym narządem podejmującym pracę u płodu jest",
         "answer1":"nerka",
@@ -613,6 +628,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":17,
         "task":"Częstość uderzeń serca u płodu osiąga maksymalną wartość:",
         "answer1":"na początku ciąży",
@@ -625,6 +641,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":18,
         "task":"18. Przewód żylny uchodzi do:",
         "answer1":"żyły głównej górnej",
@@ -637,6 +654,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":19,
         "task":"19. Uporządkuj stadia rozwoju płuc płodu w odpowiedniej kolejności:",
         "answer1":"kanalikowe, woreczkowe, rzekomogruczołowe, pęcherzykowe",
@@ -649,6 +667,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":20,
         "task":"20. Produkcja surfaktantu rozpoczyna się w:",
         "answer1":"10 tygodniu ciąży przez pneumocyty I rzędu",
@@ -661,6 +680,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":21,
         "task":"21. Pierwszy mocz zostaje oddany :",
         "answer1":"10 tygodniu ciąży",
@@ -673,6 +693,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":22,
         "task":"22. Prawidłowo jądra zstępują do moszny:",
         "answer1":"do 15 tygodnia ciąży",
@@ -685,6 +706,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":23,
         "task":"23. Fetopatie to wady rozwojowe powstałe w czasie okresu:",
         "answer1":"przedzarodkowego wpierwszym tygodniu ciąży",
@@ -697,6 +719,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":24,
         "task":"24. Wskaż zdanie prawdziwe:",
         "answer1":"Pierwsze ruchy płodu odczuwane są przez pierwiastki w 18-16 tygodniu ciąży, a przez wieloródki w 12.",
@@ -709,6 +732,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":25,
         "task":"25. Urodzeniowa masa eutroficznego noworodka wynosi:",
         "answer1":"2800-3500 g, a CRL - 34 cm",
@@ -721,6 +745,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":26,
         "task":"26. Do popłodu nie należy:",
         "answer1":"łożysko",
@@ -733,6 +758,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":27,
         "task":"W skład pępowiny wchodzą:",
         "answer1":"1 tętnica pępkowa i 1 żyła pępkowa",
@@ -745,6 +771,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":28,
         "task":"Z tętnic pępkowych po porodzie powstaje",
         "answer1":"więzadło obłe wątroby",
@@ -757,6 +784,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":29,
         "task":"Podział jaja płodowego do 4 dnia ciąży doprowadzi do powstania:",
         "answer1":"2 kosmówki, 2 owodnie",
@@ -769,6 +797,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":30,
         "task":"30. Wskaż zdanie fałszywe dotyczące gonadotropiny kosmówkowej:",
         "answer1":"jest glikoproteiną",
@@ -781,6 +810,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":31,
         "task":"31. Rola progesteronu w czasie ciąży polega na zmniejszeniu aktywności skurczowej macicy co umożliwia donoszenie ciąży, zaś estrogeny stymulują wzrost macicy, zwiększają syntezę białek i elementów kurczliwych oraz substancji bogatych energetycznie:",
         "answer1":"oba zdania są prawdziwe",
@@ -793,6 +823,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":32,
         "task":"32. Źródłem płynu owodniowego w trzecim trymestrze ciąży nie jest:",
         "answer1":"powierzchnia płodowa kosmówki",
@@ -805,6 +836,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":33,
         "task":"33. W II trymestrze ciąży za produkcję płynu owodniowego odpowiadają:",
         "answer1":"powierzchnia płodowa kosmówki, powierzchnia ciała zarodka, błony płodowe",
@@ -817,6 +849,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":34,
         "task":"34. Resorpcja płynu owodniowego w III trymestrze ciąży odbywa się przez:",
         "answer1":"połykanie przez płód",
@@ -829,6 +862,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":35,
         "task":"35. Do czynników odporności nieswoistej obecnych w płynie owodniowym należą wszystkie z wyjątkiem:",
         "answer1":"alfa-defensyny",
@@ -841,6 +875,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":36,
         "task":"36. Ilość płynu owodniowego:",
         "answer1":"nie zmienia się w ciągu ciąży",
@@ -853,6 +888,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":37,
         "task":"37. Zmniejszona ilość płynu owodniowego może świadczyć o:",
         "answer1":"przedwczesnym pęknięciu błon płodowych",
@@ -865,6 +901,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":38,
         "task":"38. Do określania ilości płynu owodniowego najczęściej stosuje się:",
         "answer1":"SPD i AFI",
@@ -877,6 +914,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":39,
         "task":"39. PRawidłowa ilość płynu owodniowego wedłu SDP (największej pojedycznej kieszonki płunu owodniowego) wynosi:",
         "answer1":">> 1 i < 6 cm",
@@ -889,6 +927,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":40,
         "task":"40. Amniopunkcja wykonywana jest między:",
         "answer1":"5-10 tygdniem ciąży",
@@ -901,6 +940,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":41,
         "task":"6. Wskaż zdanie prawdziwe dotyczące komórki jajowej i plemnika",
         "answer1":"Niezapłodniona komórka jajkowa umiera zaraz po tym gdy nie zostanie zapłodniona, podczas gdy plemniki zachowują żywotność przez 12-14 h",
@@ -913,6 +953,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":42,
         "task":"42. Do oceny dojrzałości płuc stosuje się:",
         "answer1":"QR-PCR",
@@ -925,6 +966,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":43,
         "task":"43. Do zmian zachodzących w układzie sercowo-naczyniowym w czasie ciąży nie należy: ",
         "answer1":"wzrost rzutu serca",
@@ -937,6 +979,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":44,
         "task":"44. Fzjologiczna niedokrwistość ciężarnych występuje:",
         "answer1":"w początkowych etapach ciąży, kiedy występuje zwiększone zapotrzebowanie na erytrocyty",
@@ -949,6 +992,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":45,
         "task":"45. Objetość wyrzutowa serca w czasie ciąży osiąga maksymalną wartość:",
         "answer1":"na początku ciąży",
@@ -961,6 +1005,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":46,
         "task":"46. Ciśnienie tętnicze krwi podczas ciąży:",
         "answer1":"maleje o około 5 mm Hg",
@@ -973,6 +1018,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":47,
         "task":"47. W czasie ciąży zwiększone ryzyko prozakrzepowe spowodowane jest:",
         "answer1":"zwiększeniem oporności na działanie aktywowanego białka C",
@@ -985,6 +1031,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":48,
         "task":"48. Wskaż zdanie fałszywe dotyczące zmian przysadki mózgowej podczas ciąży:",
         "answer1":"podczas ciąży dochodzi nawet do 3 krotnego powiększenia przedniego płata przysadki",
@@ -997,6 +1044,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":49,
         "task":"Wzrost oporności na działanie insuliny rozpoczyna się w II trymestrze osiągając maksimum w III trymestrze, co spowodowane jest diabetogennym działaniem laktogenu łożyskowego, progesteronu, kortykoliberyny.",
         "answer1":"oba zdania sią prawdziwe",
@@ -1009,6 +1057,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":50,
         "task":"50. Objaw Chadwicka to:",
         "answer1":"bruntna linia od pępka do spojenia łonowego",
@@ -1021,6 +1070,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":51,
         "task":"51. Objaw Hegara to:",
         "answer1":"rozpulchnienie cieśni macicy",
@@ -1033,6 +1083,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":52,
         "task":"52. Objaw polegający na rozpuchnieniu macicy to:",
         "answer1":"objaw Hegara",
@@ -1045,6 +1096,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":53,
         "task":"Do zmian w czasie siąćy z obrębie narządów płciowych należą wszystkie z wyjątkiem",
         "answer1":"objawu Chadwicka",
@@ -1057,6 +1109,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":54,
         "task":"8. Reakcja akrosomalna polega na:",
         "answer1":"uwolnieniu enzymów w bezpośrednim sądziedztwie komórki jajowej, co umożliwia penetrację jej osłonki",
@@ -1069,6 +1122,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":55,
         "task":"Do pewnych objawów przedmiotowych ciąży nie należy",
         "answer1":"wybadanie czynności serca płodu",
@@ -1081,6 +1135,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":56,
         "task":"Reguła Naegelego polega na",
         "answer1":"odjęciu od daty ostatniej miesiączki 2 miesięcy i dodaniu 3 dni",
@@ -1092,7 +1147,8 @@
         "info":"W przypadku gdy znany jest dokładny czas owulacji do tej daty należy dodać 266 dni."
     },
     {
-            "id":"ginekologia",
+        "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":57,
         "task":"57. Najdokładniejszym badaniem umożliwiającym określenie wieku płodu jest:",
         "answer1":"pomiar wymiaru dwuciemieniowego głowy",
@@ -1105,6 +1161,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":58,
         "task":"Dno macicy badalne na wysokości spojenia łonowego odpowiada",
         "answer1":"4 tygodniowi ciąży",
@@ -1117,6 +1174,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":59,
         "task":"59. Połowa odległości miedzy spojeniem łonowym a pępkiem odpowiada",
         "answer1":"4 tygodniowi ciąży",
@@ -1129,6 +1187,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":60,
         "task":"60. W czasie wizyty prekoncepcyjnej chora powinna uzyskać informacje dotyczące:",
         "answer1":"przyjmowania kwasu foliowego co najmniej 2 miesiące przed planowaną ciążą",
@@ -1141,6 +1200,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":61,
         "task":"61. Badanie po doustnym obciążeniu 75g glukozy wykonywane jest:",
         "answer1":"podczas pierwszej wizyty ginekologicznej",
@@ -1153,6 +1213,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":62,
         "task":"62. Podanie immunoglobuliny anty-D kobiecie Rh ujemnej bez przeciwciał anty D nalży zapoponować:",
         "answer1":"Między 8-10 tygodniem życia.",
@@ -1165,6 +1226,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":63,
         "task":"Do szczepionek żywych przeciwskazanych w czasie ciąży nie należy:",
         "answer1":"szczepionka BCG",
@@ -1177,6 +1239,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":64,
         "task":"Większa dawka kwasu foliowego powinna być zastosowana u kobiet:",
         "answer1":"z ciążą wielopłodową",
@@ -1189,6 +1252,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":65,
         "task":"65. Do zmian metabolicznych w czasie ciąży należą wszystkie z wyjątkiem:",
         "answer1":"hiperinsulinemii",
@@ -1201,6 +1265,7 @@
     },
     {
         "id":"ginekologia",
+        "id2":"Ciąża o przebiegu prawidłowym",
         "no":66,
         "task":"Najczęstszą przyczyną niedokrwistości u ciężarnych jest:",
         "answer1":"niedobór kwasu foliowego",
