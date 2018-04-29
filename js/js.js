@@ -109,9 +109,9 @@ function loadTasks(event) {
                 i = 0;
 
                 //template literar is not supported in some browsers
-                // alert("Zdoby\u0142e\u015B " + x + " punkt\xF3w!");
-                // x = 0;
-                // punkty.innerHTML = "Twoje punkty:  " + 0 + "/" + 0;
+                alert("Zdoby\u0142e\u015B " + x + "("+x/z+"%)"+" punkt\xF3w!");
+                x = 0;
+                punkty.innerHTML = "Twoje punkty:  " + 0 + "/" + 0;
             };
 
             problem.innerText = ratunkowa[i].task;
