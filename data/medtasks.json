@@ -495,10 +495,10 @@
         "id":"ginekologia",
         "no":6,
         "task":"6. Wskaż zdanie prawdziwe dotyczące komórki jajowej i plemnika",
-        "answer1":"Niezapłodniona komórka jajkowa umiera zaraz po tym gdy nie zostanie zapłodniona, podczas gdy plemniki zachowują żywotność przez 12-14 h",
-        "answer2":"Niezapłodniona komórka jajkowa jak i plemniki umierają po 12-24h przy braku połączenia.",
-        "answer3":"Niezapłodniona komórka jajkowa umiera po 12-24 h, podczas gdy plemniki zachowują żywotność przez ponad 24 h (nawet przez ponad 70 godzin)",
-        "answer4":"Niezapłodniona komórka jajkowa jak i plemniki umierają po ponad 24 h (nawet po 70 godzinach)",
+        "answer1":"Niezapłodniona komórka jajowa umiera zaraz po tym gdy nie zostanie zapłodniona, podczas gdy plemniki zachowują żywotność przez 12-14 h",
+        "answer2":"Niezapłodniona komórka jajowa jak i plemniki umierają po 12-24h przy braku połączenia.",
+        "answer3":"Niezapłodniona komórka jajowa umiera po 12-24 h, podczas gdy plemniki zachowują żywotność przez ponad 24 h (nawet przez ponad 70 godzin)",
+        "answer4":"Niezapłodniona komórka jajowa jak i plemniki umierają po ponad 24 h (nawet po 70 godzinach)",
         "answer5":"Brak prawidłowej odpowiedzi",
         "correct": 2,
         "info":""
@@ -1088,9 +1088,118 @@
         "answer3":"odjęciu od daty ostatniej miesiączki 4 miesięcy i dodaniu 3 dni",
         "answer4":"dodaniu do daty ostatniej miesiączki 3 miesięcy i odjęciu 3 dni",
         "answer5":"dodaniu do daty ostatniej miesiączki 3 miesięcy i odjęciu 7 dni",
-        "correct": 2,
+        "correct": 1,
         "info":"W przypadku gdy znany jest dokładny czas owulacji do tej daty należy dodać 266 dni."
-
-
+    },
+    {
+            "id":"ginekologia",
+        "no":57,
+        "task":"57. Najdokładniejszym badaniem umożliwiającym określenie wieku płodu jest:",
+        "answer1":"pomiar wymiaru dwuciemieniowego głowy",
+        "answer2":"pomiar długości kości udowej płodu  ",
+        "answer3":"określenie długości ciemieniowo-siedzeniowej płodu",
+        "answer4":"pomiar obwodu brzucha płodu",
+        "answer5":"wszystkie wymienione powyżej metody pomiar wieku płodu mają porównywalną dokładność",
+        "correct": 2,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":58,
+        "task":"Dno macicy badalne na wysokości spojenia łonowego odpowiada",
+        "answer1":"4 tygodniowi ciąży",
+        "answer2":"8 tygodniowi ciąży",
+        "answer3":"10 tygodniowi ciąży",
+        "answer4":"12 tygodniowi ciąży",
+        "answer5":"14 tygodniowi ciąży",
+        "correct": 1,
+        "info":"8 tydzień - wysokość spojenia łonowego, 16 tydzień - połowa odległości między spojeniem łonowym a pępkiem, 20-22 tydzień ciąży - wysokość pępka."
+    },
+    {
+        "id":"ginekologia",
+        "no":59,
+        "task":"59. Połowa odległości miedzy spojeniem łonowym a pępkiem odpowiada",
+        "answer1":"4 tygodniowi ciąży",
+        "answer2":"8 tygodniowi ciąży",
+        "answer3":"10 tygodniowi ciąży",
+        "answer4":"16 tygodniowi ciąży",
+        "answer5":"24 tygodniowi ciąży",
+        "correct": 3,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":60,
+        "task":"60. W czasie wizyty prekoncepcyjnej chora powinna uzyskać informacje dotyczące:",
+        "answer1":"przyjmowania kwasu foliowego co najmniej 2 miesiące przed planowaną ciążą",
+        "answer2":"wykonania badań podstawowych i w kierunku toksoplazmozy, różyczki",
+        "answer3":"ewentualnych szczepień przeciw różyczce i toksoplazmozie",
+        "answer4":"a+b",
+        "answer5":"a+b+c",
+        "correct": 4,
+        "info":"Badanie ginekologiczne powinno obejmować ocenę cytologiczną (jeśli nie była ona wykonywana w ciągu ostatnich 6 miesięcy), leczenie zmian na szyjne i stanów zapalnych. Dzienna dawka kwasu fiolowego wynosi 400 ug."
+    },
+    {
+        "id":"ginekologia",
+        "no":61,
+        "task":"61. Badanie po doustnym obciążeniu 75g glukozy wykonywane jest:",
+        "answer1":"podczas pierwszej wizyty ginekologicznej",
+        "answer2":"między 12-14 tygodniem ciąży",
+        "answer3":"między 20-22 tygodniem ciąży",
+        "answer4":"między 24-28 tygodniem ciąży",
+        "answer5":"przed porodem",
+        "correct": 3,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":62,
+        "task":"62. Podanie immunoglobuliny anty-D kobiecie Rh ujemnej bez przeciwciał anty D nalży zapoponować:",
+        "answer1":"Między 8-10 tygodniem życia.",
+        "answer2":"Między 12-20 tygodniem życia.",
+        "answer3":"Między 22-25 tygodniem życia.",
+        "answer4":"Między 28-30 tygodniem życia.",
+        "answer5":"Bezpośrednio przed porodem.",
+        "correct": 3,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":63,
+        "task":"Do szczepionek żywych przeciwskazanych w czasie ciąży nie należy:",
+        "answer1":"szczepionka BCG",
+        "answer2":"szczepionka przeciw odrze, śwince, różyczce",
+        "answer3":"szczepionka przeciw ospie wietrznej",
+        "answer4":"1+2",
+        "answer5":"1+2+3",
+        "correct": 4,
+        "info":"Po zaszczepieniu przeciw odrze, różyczce i śwince należy unikać zajścia w ciążę przez co najmniej 3 miesiące."
+    },
+    {
+        "id":"ginekologia",
+        "no":64,
+        "task":"Większa dawka kwasu foliowego powinna być zastosowana u kobiet:",
+        "answer1":"z ciążą wielopłodową",
+        "answer2":"przyjmujących leki przeciwdrgawkowe",
+        "answer3":"które urodziły dziecko w wadą cewy nerwowej",
+        "answer4":"a+b",
+        "answer5":"a+b+c",
+        "correct": 4,
+        "info":""
+    },
+    {
+        "id":"ginekologia",
+        "no":65,
+        "task":"65. Do zmian metabolicznych w czasie ciąży należą wszystkie z wyjątkiem:",
+        "answer1":"hiperinsulinemii",
+        "answer2":"zwiększonej oporności na insulinę",
+        "answer3":"hipoglikemii na czczo",
+        "answer4":"podwyższenia stężenia lipidów",
+        "answer5":"podwyższenia stężenia aminokwasów",
+        "correct": 4,
+        "info":""
     }
+
+
+    
 ]
