@@ -15,4 +15,7 @@ to do: loading icon when json is loading;
 to do: refactorize code;  
 to do: add UI - chose each chapter;  
 to do: think about database;  
-to do: point counter;   
+to do: point counter;  
+to do: Ebbinghaus curve app;  
+to do: to do app;  
+to do: pomodoro app;  
