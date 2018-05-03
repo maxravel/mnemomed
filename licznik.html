@@ -34,9 +34,24 @@
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
          
-        <!-- <div>
-            Informacje o projekcie. 
-        </div> -->
+        <div id = "counterA"></div>
+        <!-- <p id="days"></p>
+        <p id="hours"></p>
+        <p id="minutes"></p>
+        <p id="seconds"></p> -->
+        <br><br><br>
+        <div>Zmień datę Dnia Sądu: <br>
+            <form action=""></form>
+                <input type="number" placeholder="Rok" min="2018" max="2050" id="year">
+                <input type="number" placeholder="Miesiąc" min="1" max="12" id="month">
+                <input type="number" placeholder="Dzień" min="1" max="31" id="day">
+                <input type="number" placeholder="Godzina" min="0" max="24" id="hour">
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="changeCount">
+                    Zmień
+                </button>
+            </form>
+
+        </div>
         
     </div>  
     
@@ -44,6 +59,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- <script src="js/js.js"></script> -->
+    <script src="js/counter.js"></script>
     <script src="js/add.js"></script>
 </body>
 </html>
