@@ -19,3 +19,5 @@ to do: point counter;
 to do: Ebbinghaus curve app;  
 to do: to do app;  
 to do: pomodoro app;  
+to do: localStorrage counter;  
+to do: refactorize counter to one function; is it possible?  

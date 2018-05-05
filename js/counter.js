@@ -19,6 +19,7 @@ function counter(){
 
     const counterA = document.querySelector("#counterA");
     counterA.textContent = `Do LEKu pozostało: ${d} dni, ${h} godzin, ${m} minut, ${s} sekund.`;
+    
 }
 
 counter();
