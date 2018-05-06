@@ -1,3 +1,4 @@
+//letter o for output box
 const odays = document.querySelector("#days");
 const ohours = document.querySelector("#hours");
 const ominutes = document.querySelector("#minutes");
@@ -22,7 +23,7 @@ function counter(name, year, month, day, hour){
     var m = minutes%=60;
     var h = hours%=24; 
     var d = days;
-
+    
     otitle.textContent = `Do ${name} pozostało:`;
     odays.textContent = d;
     ohours.textContent = h;
@@ -31,10 +32,15 @@ function counter(name, year, month, day, hour){
     
 }
 
-xyz = setInterval('counter("LEK 2018 jesień",2018,8,22,12)', 1000);
+if(localStorage.getItem('rok')){
+    xyz = setInterval('counter(localStorage.getItem("nazwa"),localStorage.getItem("rok"),localStorage.getItem("miesiąc"),localStorage.getItem("dzień"),localStorage.getItem("godzina"))',1000);
+}
+else{
+    xyz = setInterval('counter("LEK 2018 jesień",2018,8,22,12)', 1000);
+}
 
 
-
+//*****************CHANGING COUNTING DAY
 //global scope for setInterval !!
 var abc;
 
@@ -44,6 +50,7 @@ changer.addEventListener('click', finalTime);
 
 function finalTime(){
     
+    //letter i for input values by user
     const iyear = document.querySelector("#year").value;
     const imonth = document.querySelector("#month").value;
     const iday = document.querySelector("#day").value;
@@ -62,6 +69,13 @@ function finalTime(){
         clearInterval(xyz);
         
         abc = setInterval(() => counter(ititle,iyear,imonth-1,iday,ihour), 1000);
+
+        //localStorage
+        localStorage.setItem('nazwa',ititle);
+        localStorage.setItem('rok',iyear);
+        localStorage.setItem('miesiąc',imonth-1);
+        localStorage.setItem('dzień',iday);
+        localStorage.setItem('godzina',ihour);
         
     }
 }
