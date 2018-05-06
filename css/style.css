@@ -107,3 +107,31 @@ p{
     align-items: center;
     color:white;
 }
+
+
+
+
+
+
+/* *************************LICZNIK********************** */
+
+#days, #hours, #minutes, #seconds{
+    font-size:20px;
+}
+
+#s1, #s2, #s3, #s4{
+    font-size:12px;
+}
+
+tr{
+    text-align: center;
+}
+
+.countdownContainer{
+    text-align: center;
+}
+
+#counterChanger{
+    width:400px;
+    margin-bottom:60px;
+}

@@ -21,3 +21,4 @@ to do: to do app;
 to do: pomodoro app;  
 to do: localStorrage counter;  
 to do: refactorize counter to one function; is it possible?  
+to do: how to work with form - autorefresh/url problem.  
