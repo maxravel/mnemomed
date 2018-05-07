@@ -2,6 +2,10 @@
 
 document.querySelector('.abc').style.display = "none";
 
+//*************Preloader
+setTimeout(function(){
+    document.querySelector("#preloader-window").style.display="none";
+},2000)
 
 //************************LOADING NUMBER OF QUESTIONS
 //Array.prototype.slice.call() converts node list to array (neceserry for .forEach)
@@ -73,22 +77,6 @@ function loadTasks(event) {
         answer4.style.backgroundColor = "white";
         answer5.style.backgroundColor = "white";
 
-        // if(sessionStorage.getItem('0')==='0'){
-        //     answer1.click();
-        // }
-        // if(sessionStorage.getItem('0')==='1'){
-        //     answer2.click();
-        // }
-        // if(sessionStorage.getItem('0')==='2'){
-        //     answer3.click();
-        // }
-        // if(sessionStorage.getItem('0')==='3'){
-        //     answer4.click();
-        // }
-        // if(sessionStorage.getItem('0')==='4'){
-        //     answer5.click();
-        // }
-
         //correct answers clicked
         var x = 0;
 
@@ -139,75 +127,36 @@ function loadTasks(event) {
             //loading sessionStorage past answers
             if(sessionStorage.getItem(i)==='0'){
                 answer1.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                // }
+                //for removing double points for one answer
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='1'){
                 answer2.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='2'){
                 answer3.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='3'){
                 answer4.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='4'){
                 answer5.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
@@ -250,85 +199,35 @@ function loadTasks(event) {
             //loading sessionStorage past answers
             if(sessionStorage.getItem(i)==='0'){
                 answer1.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                //     console.log(z);
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     console.log(z);
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='1'){
                 answer2.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                //     console.log(z);
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     console.log(z);
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='2'){
                 answer3.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                //     console.log(z);
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     console.log(z);
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='3'){
                 answer4.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                //     console.log(z);
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     console.log(z);
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
             }
             if(sessionStorage.getItem(i)==='4'){
                 answer5.click();
-                // z--;
-                // if (answer1.style.backgroundColor !== "white" || answer2.style.backgroundColor !== "white" || answer3.style.backgroundColor !== "white" || answer4.style.backgroundColor !== "white" || answer5.style.backgroundColor !== "white") {
-                //     z--;
-                //     console.log(z);
-                // }
                 if (answer1.style.backgroundColor !== "red" && answer2.style.backgroundColor !== "red" && answer3.style.backgroundColor !== "red" && answer4.style.backgroundColor !== "red" && answer5.style.backgroundColor !== "red") {
-                    // if (answer1.style.backgroundColor === "green" || answer2.style.backgroundColor === "green" || answer3.style.backgroundColor === "green" || answer4.style.backgroundColor === "green" || answer5.style.backgroundColor === "green") {
-                    //     x--;
-                    //     console.log(z);
-                    //     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
-                    // }
                     x--;
                     punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
                 }
@@ -343,7 +242,6 @@ function loadTasks(event) {
             //store clicked answer when all answers are unclicked (white)
             if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
                 sessionStorage.setItem(i,'0');
-                // z++;
 
                 if (ratunkowa[i].correct === 0) {
                     //adding point when first clicked answer is correct
@@ -370,15 +268,12 @@ function loadTasks(event) {
 
             }
 
-            // loadInfo.disabled = true;
-
         });
 
         answer2.addEventListener('click', function () {
 
             if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
-                sessionStorage.setItem(i,'1');
-                // z++;            
+                sessionStorage.setItem(i,'1');         
 
                 if (ratunkowa[i].correct === 1) {
                     if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
@@ -408,7 +303,6 @@ function loadTasks(event) {
 
             if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
                 sessionStorage.setItem(i,'2');
-                // z++;
 
                 if (ratunkowa[i].correct === 2) {
                     if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
@@ -438,7 +332,6 @@ function loadTasks(event) {
 
             if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
                 sessionStorage.setItem(i,'3');
-                // z++;
 
                 if (ratunkowa[i].correct === 3) {
                     if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
@@ -468,7 +361,6 @@ function loadTasks(event) {
 
             if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
                 sessionStorage.setItem(i,'4');
-                // z++;
 
                 if (ratunkowa[i].correct === 4) {
                     if (answer1.style.backgroundColor === "white" && answer2.style.backgroundColor === "white" && answer3.style.backgroundColor === "white" && answer4.style.backgroundColor === "white" && answer5.style.backgroundColor === "white") {
@@ -525,7 +417,7 @@ function loadTasks(event) {
             answer5.style.backgroundColor = "white";
             punkty.innerHTML = "Twoje punkty:  " + 0 + "/" + z;
             x=0;
-            // z=0;
         })
+        
     });
 };

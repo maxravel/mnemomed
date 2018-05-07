@@ -76,6 +76,11 @@ function finalTime(){
         localStorage.setItem('miesiąc',imonth-1);
         localStorage.setItem('dzień',iday);
         localStorage.setItem('godzina',ihour);
-        
+        window.scrollTo(0, 0);
     }
 }
+
+//*************Preloader
+setTimeout(function(){
+    document.querySelector("#preloader-window").style.display="none";
+},2000)

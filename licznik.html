@@ -34,36 +34,43 @@
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
          
-        <table class="countdownContainer">
-			<tr class="counterTitle">
-				<td colspan="4" id="counterDay">Do LEKu pozostało:</td>
-			</tr>
-			<tr class="counterNumbers">
-				<td id="days"></td>
-				<td id="hours"></td>
-				<td id="minutes"></td>
-				<td id="seconds"></td>
-			</tr>
-			<tr class="counterSubtitles">
-				<td id="s1">Dni</td>
-				<td id="s2">Godzin</td>
-				<td id="s3">Minut</td>
-				<td id="s4">Sekund</td>
-			</tr>
-		</table>
-        <br><br><br>
-        <div id="counterChanger">Zmień datę Dnia Sądu: <br>
-            <!-- <form action=""> -->
-                <input type="text" placeholder="Nazwa" id="counterTitle" required>
-                <input type="number" placeholder="Rok" min="2018" max="2100" id="year" required>
-                <input type="number" placeholder="Miesiąc" min="1" max="12" id="month" required>
-                <input type="number" placeholder="Dzień" min="1" max="31" id="day" required>
-                <input type="number" placeholder="Godzina" min="0" max="24" id="hour">
-                <button class="btn waves-effect waves-light" type="submit" name="action" id="changeCount">
-                    Zmień
-                </button>
-                <!-- <input type="submit" class="btn waves-effect waves-light" type="submit" name="action" id="changeCount" value="Zmień"> -->
-            <!-- </form> -->
+        <div class="counterSection">
+            <div id="preloader-window" class="containerA">
+                <div class="progress">
+                        <div class="indeterminate"></div>
+                </div>
+            </div>
+            <table class="countdownContainer">          
+                <tr class="counterTitle">
+                    <td colspan="4" id="counterDay">Do LEKu pozostało:</td>
+                </tr>
+                <tr class="counterNumbers">
+                    <td id="days"></td>
+                    <td id="hours"></td>
+                    <td id="minutes"></td>
+                    <td id="seconds"></td>
+                </tr>
+                <tr class="counterSubtitles">
+                    <td id="s1">Dni</td>
+                    <td id="s2">Godzin</td>
+                    <td id="s3">Minut</td>
+                    <td id="s4">Sekund</td>
+                </tr>
+            </table>
+            <br><br><br>
+            <div id="counterChanger">Zmień datę Dnia Sądu: <br>
+                <!-- <form action=""> -->
+                    <input type="text" placeholder="Nazwa" id="counterTitle" required>
+                    <input type="number" placeholder="Rok" min="2018" max="2100" id="year" required>
+                    <input type="number" placeholder="Miesiąc" min="1" max="12" id="month" required>
+                    <input type="number" placeholder="Dzień" min="1" max="31" id="day" required>
+                    <input type="number" placeholder="Godzina" min="0" max="24" id="hour">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" id="changeCount">
+                        Zmień
+                    </button>
+                    <!-- <input type="submit" class="btn waves-effect waves-light" type="submit" name="action" id="changeCount" value="Zmień"> -->
+                <!-- </form> -->
+            </div>
         </div>
         
     </div>  

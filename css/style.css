@@ -1,4 +1,4 @@
-*{
+body{
     margin: 0px;
     padding: 0px;
     font-size:20px;
@@ -110,6 +110,19 @@ p{
 
 
 
+/* ************************PRELOADER********************* */
+#preloader-window{
+    padding:100px;
+    /* position:fixed;
+    z-index:1000;
+    background-color: rgb(164, 164, 255);
+    width:80vw;
+    
+    height:100%;
+    margin:auto; */
+} 
+
+
 
 
 
@@ -132,6 +145,6 @@ tr{
 }
 
 #counterChanger{
-    width:400px;
+    width:300px;
     margin-bottom:60px;
 }
