@@ -148,3 +148,8 @@ tr{
     width:300px;
     margin-bottom:60px;
 }
+
+#pomodoroCounter{
+    font-family: 'Orbitron', sans-serif;
+    font-size:30px;
+}
