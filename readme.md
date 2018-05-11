@@ -20,3 +20,5 @@ to do: Ebbinghaus curve app;
 to do: to do app;  
 to do: pomodoro app;    
 to do: how to work with form - autorefresh/url problem.  
+to do: unificate pomodoroC and pommodoroCInt;  
+to do: pomodoro Pausa button;  
