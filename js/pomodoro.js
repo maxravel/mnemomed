@@ -54,7 +54,7 @@ function countingWorks(){
 })
 
 
-
+//Adding 5 minutes
 add5min.addEventListener("click", function(){
     
     if(!pomodoroInterval){

@@ -14,7 +14,7 @@ body{
     max-width:1000px;
     min-height:100vh;
     background-color: rgb(164, 164, 255);
-    padding: 10px;
+    padding: 15px;
 }
 
 nav{
@@ -124,8 +124,6 @@ p{
 
 
 
-
-
 /* *************************LICZNIK********************** */
 
 #days, #hours, #minutes, #seconds{
@@ -149,7 +147,39 @@ tr{
     margin-bottom:60px;
 }
 
+#changeCount{
+    margin-top:15px;
+}
+
 #pomodoroCounter{
     font-family: 'Orbitron', sans-serif;
     font-size:30px;
+}
+
+@media only screen and (max-width: 600px){
+    .counterSection{
+        padding:15px;
+    }
+}
+
+
+
+/* ****************************POMODORO************************/
+@media only screen and (max-width: 600px){
+    .pomodoroSection{
+        padding:15px;
+    }
+
+    .pomodoroSection > button{
+        margin:3px;
+    }
+}
+
+
+
+/* ***************************CONTACT**************************/
+@media only screen and (max-width: 600px){
+    .contact{
+        padding:15px;
+    }
 }
