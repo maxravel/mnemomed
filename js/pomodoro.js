@@ -6,6 +6,9 @@ const subtract5min = document.querySelector("#down5");
 //text
 const pomodoroT = document.querySelector("#pomodoroText");
 
+//audio finish session
+var audio = new Audio('../audio/finish.wav');
+
 let pomodoroC = document.querySelector("#pomodoroCounter");
 let pomodoroCInt = parseInt(pomodoroC.textContent);
 if(localStorage.getItem("pomodoroValue")){
@@ -40,6 +43,7 @@ function countingWorks(){
     // pomodoroC.textContent=pomodoroCInt;
     
     if (pomodoroCInt < 0){
+        audio.play();
         clearInterval(pomodoroInterval);
         console.log("stop!!!");
         pomodoroB.disabled = false;

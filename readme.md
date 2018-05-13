@@ -22,3 +22,4 @@ to do: pomodoro app;
 to do: how to work with form - autorefresh/url problem.  
 to do: unificate pomodoroC and pommodoroCInt;  
 to do: pomodoro Pausa button;  
+to do: pomodoro still works when other tools are clicked;  
