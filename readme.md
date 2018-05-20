@@ -11,14 +11,16 @@
 - disable other options after first click; done  
 - refactorized counter; done   
 - localStorage counter; done  
+- simple loader; done  
+- simple pomodoro app; done  
     
-to do: loading icon when json is loading;  
+to do: upradge loader;  
 to do: refactorize code;  
 to do: add UI - chose each chapter;  
 to do: think about database;   
 to do: Ebbinghaus curve app;  
 to do: to do app;  
-to do: pomodoro app;    
+to do: upradge pomodoro app;    
 to do: how to work with form - autorefresh/url problem.  
 to do: unificate pomodoroC and pommodoroCInt;  
 to do: pomodoro Pausa button;  
