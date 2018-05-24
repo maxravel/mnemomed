@@ -28,6 +28,7 @@ nav{
 }
 
 @media only screen and (max-width: 600px) {
+
     .collection-item{
         font-size:15px;
     }
