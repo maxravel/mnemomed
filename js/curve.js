@@ -21,6 +21,7 @@ curveA.addEventListener("click", function(){
     //creating UI of new task
     let x = document.createElement("li");
     x.textContent = task.title;
+    x.style.color = "#b0ffff";
     let del = document.createElement("a");
     del.style.paddingLeft = "20px";
     del.style.color = "red";
@@ -32,5 +33,6 @@ curveA.addEventListener("click", function(){
 
     x.appendChild(del);
     curveL.appendChild(x);
+    curveA.value ="";
     
 });
