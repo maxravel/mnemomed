@@ -89,6 +89,7 @@ p{
     padding: 3px;
     border: solid grey 1px;
     background-color:white;
+    background-color:rgb(207, 207, 207);
 }
 
 #info{
@@ -97,7 +98,7 @@ p{
 
 #punkty{
     border: none;
-    background-color: rgb(164, 164, 255);
+    background-color: rgb(207, 207, 207);
     padding: 1px;
     font-size: 15px;
     margin-bottom: 10px;
