@@ -34,6 +34,7 @@ function getTasks(){
         del.textContent = "x";
         x.classList.add("aaac");
         x.appendChild(del);
+        x.addEventListener("click", counting(x));
         //appending task to list of tasks
         curveL.appendChild(x);
         del.addEventListener("click", removeTask);
@@ -61,6 +62,7 @@ curveA.addEventListener("click", function(){
         del.textContent = "x";
         x.classList.add("aaac");
         x.appendChild(del);
+        x.addEventListener("click", counting(x));
         del.addEventListener("click", removeTask);       
         curveL.appendChild(x);
         curveT.value ="";
@@ -122,12 +124,37 @@ function counting(x){
     }
     tasks.forEach(function(task){
         if(x.textContent.substr(0,x.textContent.length-1)===task.title){
-            console.log(task.timing);
+            //task.timing
+            let taskTime = new Date(task.timing);
+            
+            //let nowTime = new Date();
+            //console.log(nowTime);
+            diff = Date.now() - taskTime.getTime();
+            console.log(msToTime(diff));
+
+            if(diff<24*60*60*100){
+                x.style.background = "grey";
+            }
+            //console.log(Date.now());
         } 
     });
-    console.log("timing");
+    //console.log("timing");
 } 
 
-const dpr = document.querySelectorAll("li");
-console.log(dpr);
-dpr.forEach(function(x){x.addEventListener("click", counting)});
+
+function msToTime(duration) {
+    var milliseconds = parseInt((duration%1000)/100)
+        , seconds = parseInt((duration/1000)%60)
+        , minutes = parseInt((duration/(1000*60))%60)
+        , hours = parseInt((duration/(1000*60*60))%24);
+
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+    return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+}
+
+//const dpr = Array.prototype.slice.call(document.querySelectorAll("li.aaac"));
+//console.log(dpr);
+//dpr.forEach(function(listItem){listItem.addEventListener("click", counting)});
