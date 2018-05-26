@@ -198,7 +198,7 @@ tr{
 
 /* *************************CURVE************************* */
 @media only screen and (max-width: 600px){
-    .pomodoroSection{
+    .curveSection{
         padding:15px;
     }
 }
