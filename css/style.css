@@ -193,3 +193,12 @@ tr{
         padding:15px;
     }
 }
+
+
+
+/* *************************CURVE************************* */
+@media only screen and (max-width: 600px){
+    .pomodoroSection{
+        padding:15px;
+    }
+}

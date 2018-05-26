@@ -50,7 +50,7 @@ curveA.addEventListener("click", function(){
     }
     else{
         //creating new Task
-        const task = new Task(`${curveT.value}`,1,new Date());
+        const task = new Task(`${curveT.value}`,1,Date.now());
         addToLocalStorage(task);
         //creating UI of new task
         let x = document.createElement("li");
@@ -127,26 +127,26 @@ function counting(x){
     tasks.forEach(function(task){
         if(x.textContent.substr(0,task.title.length)===task.title){
             //task.timing
-            let taskTime = new Date(task.timing);
+            let taskTime = task.timing;
             console.log(task.type);
             
             //let nowTime = new Date();
             //console.log(nowTime);
-            diff = Date.now() - taskTime.getTime();
+            diff = Date.now() - taskTime;
             console.log(msToTime(diff));
             //console.log(diff);
             //console.log(24*60*60*1000);
-
-            if(task.type===1 && diff<24*1000){   
+            const h=3600;
+            if(task.type===1 && diff<24*h*1000){   
                 x.style.background = "grey";
                 let info = document.createElement("p");
-                info.textContent = "-> Do powtorki pozostało <1 doba";
+                info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
                 info.style.background = "grey";
                 info.style.fontSize = "15px";
                 info.style.paddingTop = "-5px";
                 x.appendChild(info);
             }
-            else if(task.type===1 && diff<48*1000 && diff>24*1000){
+            else if(task.type===1 && diff<48*h*1000 && diff>24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
                 info.textContent = "-> Musisz dzisiaj to powtorzyc!";
@@ -161,7 +161,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = "-> Do powtorki pozostało <3 doby";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 1 to 2;
                     if(localStorage.getItem('tasks')===null){
@@ -173,21 +173,59 @@ function counting(x){
                     tasks.forEach(function(task, index){
                         if(x.textContent.substr(0,task.title.length)===task.title){
                             task.type = 2;
+                            task.timing = Date.now();
                         }
                         
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
-                    console.log(task.type);
+                    //console.log(task.type);
 
                 });
             }
-            else if(task.type===2 && diff < 5*24*1000){
-                console.log("type 2");
+            else if(task.type===1 && diff>48*h*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                    review.disabled = "true";
+                    //changing type from 1 to 2;
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 1;
+                            task.timing = Date.now();
+                            
+                        }
+                        
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    //console.log(task.type);
+
+                });
+            }
+            
+            else if(task.type===2 && diff < 3*24*h*1000){
                 x.style.background = "grey";
                 let info = document.createElement("p");                
                 info.style.fontSize = "15px";
                 info.style.background = "grey";
-                info.textContent = "-> Do powtorki pozostało <3 doby";
+                info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -196,6 +234,93 @@ function counting(x){
                 review.disabled = "true";
             }
 
+            else if(task.type===2 && diff>3*24*h*1000 && diff<4*24*h*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                    review.disabled = "true";
+                    //changing type from 1 to 2;
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 3;
+                            task.timing = Date.now();
+                        }
+                        
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    //console.log(task.type);
+
+                });
+            }
+            else if(task.type===2 && diff>48*h*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                    review.disabled = "true";
+                    //changing type from 1 to 2;
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 1;
+                            task.timing = Date.now();
+                            
+                        }
+                        
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    //console.log(task.type);
+
+                });
+            }
+
+            else if(task.type===3 && diff < 7*24*h*1000){
+                x.style.background = "grey";
+                let info = document.createElement("p");                
+                info.style.fontSize = "15px";
+                info.style.background = "grey";
+                info.textContent = `-> Do powtorki pozostało ${msToTime(7*24*h*1000-diff)}`;
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.disabled = "true";
+            }
         }
             //console.log(Date.now());
     }); 
@@ -214,9 +339,11 @@ function msToTime(duration) {
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-    return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+    return hours + ":" + minutes; //+ ":" + seconds + "." + milliseconds;
 }
 
 //const dpr = Array.prototype.slice.call(document.querySelectorAll("li.aaac"));
 //console.log(dpr);
 //dpr.forEach(function(listItem){listItem.addEventListener("click", counting)});
+
+console.log(Date.now());
