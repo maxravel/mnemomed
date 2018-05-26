@@ -27,6 +27,7 @@ function getTasks(){
         let x = document.createElement("li");
         x.textContent = task.title;
         x.style.color = "#b0ffff";
+        x.style.marginBottom = "15px";
         //creating UI of delete button
         let del = document.createElement("a");
         del.style.paddingLeft = "20px";
@@ -55,6 +56,7 @@ curveA.addEventListener("click", function(){
         let x = document.createElement("li");
         x.textContent = task.title;
         x.style.color = "#b0ffff";
+        x.style.marginBottom = "15px";
         //creating UI of delete button
         let del = document.createElement("a");
         del.style.paddingLeft = "20px";
@@ -105,8 +107,8 @@ function removeFromLocalStorage(x){
         // if(x.textContent===(task.title+"x")){
         //     tasks.splice(index, 1);
         // }
-
-        if(x.textContent.substr(0,x.textContent.length-1)===task.title){
+        console.log(task.title.length);
+        if(x.textContent.substr(0,task.title.length)===task.title){
             tasks.splice(index, 1);
         }
         //console.log(x.textContent.substr(0,x.textContent.length-1));
@@ -123,21 +125,81 @@ function counting(x){
         tasks=JSON.parse(localStorage.getItem('tasks'));
     }
     tasks.forEach(function(task){
-        if(x.textContent.substr(0,x.textContent.length-1)===task.title){
+        if(x.textContent.substr(0,task.title.length)===task.title){
             //task.timing
             let taskTime = new Date(task.timing);
+            console.log(task.type);
             
             //let nowTime = new Date();
             //console.log(nowTime);
             diff = Date.now() - taskTime.getTime();
             console.log(msToTime(diff));
+            //console.log(diff);
+            //console.log(24*60*60*1000);
 
-            if(diff<24*60*60*100){
+            if(task.type===1 && diff<24*1000){   
                 x.style.background = "grey";
+                let info = document.createElement("p");
+                info.textContent = "-> Do powtorki pozostało <1 doba";
+                info.style.background = "grey";
+                info.style.fontSize = "15px";
+                info.style.paddingTop = "-5px";
+                x.appendChild(info);
             }
+            else if(task.type===1 && diff<48*1000 && diff>24*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = "-> Do powtorki pozostało <3 doby";
+                    review.disabled = "true";
+                    //changing type from 1 to 2;
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 2;
+                        }
+                        
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    console.log(task.type);
+
+                });
+            }
+            else if(task.type===2 && diff < 5*24*1000){
+                console.log("type 2");
+                x.style.background = "grey";
+                let info = document.createElement("p");                
+                info.style.fontSize = "15px";
+                info.style.background = "grey";
+                info.textContent = "-> Do powtorki pozostało <3 doby";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.disabled = "true";
+            }
+
+        }
             //console.log(Date.now());
-        } 
-    });
+    }); 
+    //});
     //console.log("timing");
 } 
 
