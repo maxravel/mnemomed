@@ -407,18 +407,19 @@ function counting(x){
     //console.log("timing");
 } 
 
-//console.log(msToTime(200000));
+console.log(msToTime(3*24*3600*1000));
 function msToTime(duration) {
     var milliseconds = parseInt((duration%1000)/100)
         , seconds = parseInt((duration/1000)%60)
         , minutes = parseInt((duration/(1000*60))%60)
-        , hours = parseInt((duration/(1000*60*60))%24);
+        , hours = parseInt((duration/(1000*60*60))%24)
+        , days = parseInt((duration/(1000*3600*24)));
 
     hours = (hours < 10) ? "0" + hours : hours;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-    return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+    return days +"D"+":"+hours + ":" + minutes; //+ ":" + seconds + "." + milliseconds;
 }
 
 //const dpr = Array.prototype.slice.call(document.querySelectorAll("li.aaac"));
