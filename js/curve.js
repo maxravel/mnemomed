@@ -137,7 +137,7 @@ function counting(x){
             //console.log(diff);
             //console.log(24*60*60*1000);
             const h=3600;
-
+            //console.log(msToTime(3*24*h*1000-diff));
             if(task.type===1 && diff < 24*h*1000){   
                 x.style.background = "grey";
                 let info = document.createElement("p");
@@ -224,6 +224,7 @@ function counting(x){
                 info.style.fontSize = "15px";
                 info.style.background = "grey";
                 info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
+                console.log(msToTime(3*24*h*1000-diff));
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -406,7 +407,7 @@ function counting(x){
     //console.log("timing");
 } 
 
-
+//console.log(msToTime(200000));
 function msToTime(duration) {
     var milliseconds = parseInt((duration%1000)/100)
         , seconds = parseInt((duration/1000)%60)
@@ -424,4 +425,4 @@ function msToTime(duration) {
 //console.log(dpr);
 //dpr.forEach(function(listItem){listItem.addEventListener("click", counting)});
 
-console.log(Date.now());
+//console.log(Date.now());
