@@ -136,7 +136,7 @@ function counting(x){
             console.log(msToTime(diff));
             //console.log(diff);
             //console.log(24*60*60*1000);
-            const h=1;
+            const h=3600;
 
             if(task.type===1 && diff < 24*h*1000){   
                 x.style.background = "grey";
