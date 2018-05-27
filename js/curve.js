@@ -136,8 +136,9 @@ function counting(x){
             console.log(msToTime(diff));
             //console.log(diff);
             //console.log(24*60*60*1000);
-            const h=3600;
-            if(task.type===1 && diff<24*h*1000){   
+            const h=1;
+
+            if(task.type===1 && diff < 24*h*1000){   
                 x.style.background = "grey";
                 let info = document.createElement("p");
                 info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
@@ -146,7 +147,8 @@ function counting(x){
                 info.style.paddingTop = "-5px";
                 x.appendChild(info);
             }
-            else if(task.type===1 && diff<48*h*1000 && diff>24*h*1000){
+
+            else if(task.type===1 && diff < 2*24*h*1000 && diff > 24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
                 info.textContent = "-> Musisz dzisiaj to powtorzyc!";
@@ -161,7 +163,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 1 to 2;
                     if(localStorage.getItem('tasks')===null){
@@ -174,15 +176,14 @@ function counting(x){
                         if(x.textContent.substr(0,task.title.length)===task.title){
                             task.type = 2;
                             task.timing = Date.now();
-                        }
-                        
+                        }                 
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
                     //console.log(task.type);
-
                 });
             }
-            else if(task.type===1 && diff>48*h*1000){
+
+            else if(task.type===1 && diff > 2*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
                 info.textContent = "-> Musisz dzisiaj to powtorzyc!";
@@ -209,14 +210,11 @@ function counting(x){
                     tasks.forEach(function(task, index){
                         if(x.textContent.substr(0,task.title.length)===task.title){
                             task.type = 1;
-                            task.timing = Date.now();
-                            
-                        }
-                        
+                            task.timing = Date.now();                 
+                        }          
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
                     //console.log(task.type);
-
                 });
             }
             
@@ -249,7 +247,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(7*24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 1 to 2;
                     if(localStorage.getItem('tasks')===null){
@@ -262,15 +260,14 @@ function counting(x){
                         if(x.textContent.substr(0,task.title.length)===task.title){
                             task.type = 3;
                             task.timing = Date.now();
-                        }
-                        
+                        }                      
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
                     //console.log(task.type);
-
                 });
             }
-            else if(task.type===2 && diff>48*h*1000){
+
+            else if(task.type===2 && diff > 4*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
                 info.textContent = "-> Musisz dzisiaj to powtorzyc!";
@@ -287,7 +284,7 @@ function counting(x){
                     info.style.background = "grey";
                     info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
                     review.disabled = "true";
-                    //changing type from 1 to 2;
+                    //changing type from 2 to 1;
                     if(localStorage.getItem('tasks')===null){
                         tasks=[];
                     }
@@ -297,14 +294,11 @@ function counting(x){
                     tasks.forEach(function(task, index){
                         if(x.textContent.substr(0,task.title.length)===task.title){
                             task.type = 1;
-                            task.timing = Date.now();
-                            
-                        }
-                        
+                            task.timing = Date.now();          
+                        }             
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
                     //console.log(task.type);
-
                 });
             }
 
@@ -314,6 +308,90 @@ function counting(x){
                 info.style.fontSize = "15px";
                 info.style.background = "grey";
                 info.textContent = `-> Do powtorki pozostało ${msToTime(7*24*h*1000-diff)}`;
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.disabled = "true";
+            }
+
+            else if(task.type===3 && diff > 7*24*h*1000 && diff < 9*24*h*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(30*24*h*1000-diff)}`;
+                    review.disabled = "true";
+                    //changing type from 3 to 4;
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 4;
+                            task.timing = Date.now();
+                        }                      
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    //console.log(task.type);
+                });
+            }
+
+            else if(task.type===3 && diff > 9*24*h*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
+                    review.disabled = "true";
+                    //changing type from 3 to 2;
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 2;
+                            task.timing = Date.now();          
+                        }             
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    //console.log(task.type);
+                });
+            }
+
+            else if(task.type===4 && diff < 30*24*h*1000){
+                x.style.background = "grey";
+                let info = document.createElement("p");                
+                info.style.fontSize = "15px";
+                info.style.background = "grey";
+                info.textContent = `-> Do powtorki pozostało ${msToTime(30*24*h*1000-diff)}`;
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -339,7 +417,7 @@ function msToTime(duration) {
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-    return hours + ":" + minutes; //+ ":" + seconds + "." + milliseconds;
+    return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
 }
 
 //const dpr = Array.prototype.slice.call(document.querySelectorAll("li.aaac"));
