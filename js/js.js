@@ -36,7 +36,10 @@ Array.prototype.slice.call(document.querySelectorAll('.collection-item')).forEac
 //event is neceserry as a function parameter for mozilla
 function loadTasks(event) {
 
-    //button id is the same as task.id from JSON
+    //clearing sessionStorage, before starting new test
+    sessionStorage.clear();
+
+    //button id have to be the same as task.id from JSON
     var category = event.target.id;
     
     document.querySelector('.abc').style.display = "block";
@@ -407,6 +410,8 @@ function loadTasks(event) {
 
             info.innerHTML = ratunkowa[i].info;
         });
+
+        //******************************** RESET *****************************88 */
 
         reset.addEventListener('click', function(){
             sessionStorage.clear();
