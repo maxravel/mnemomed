@@ -16,14 +16,28 @@ if(localStorage.getItem("pomodoroValue")){
     pomodoroCInt = localStorage.getItem("pomodoroValue")/60;
 }
 
-console.log(typeof pomodoroCInt);
-console.log(pomodoroCInt);
 
 //for global scope of Interval
 var pomodoroInterval;
+//pomodoroCInt*=60;
+
+if((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000){
+    pomodoroC.textContent = 1800 - (Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000;
+    pomodoroCInt = 1800 - (Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000;
+    pomodoroInterval = setInterval(countingWorks, 1000);
+    pomodoroB.disabled = "true";
+}
+//console.log((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000);
+//console.log(parseInt(localStorage.getItem("pomodoroValue"))*1000);
+//console.log(1800*1000);
+console.log(typeof pomodoroCInt);
+console.log(pomodoroCInt);
+
+
 
 //button pomodoro listener
 pomodoroB.addEventListener("click", function(){
+    
     pomodoroInterval = setInterval(countingWorks, 1000);
     pomodoroCInt*=60;
     pomodoroB.disabled = true;
@@ -31,6 +45,10 @@ pomodoroB.addEventListener("click", function(){
     subtract5min.disabled = true; 
     localStorage.setItem("pomodoroValue",pomodoroCInt);
     pomodoroT.textContent = "Pracuj dzielnie!";
+    localStorage.setItem("pomodoroSession", Date.now());
+
+})
+
 
 function countingWorks(){
     if(pomodoroCInt%60<10){
@@ -54,9 +72,6 @@ function countingWorks(){
         pomodoroT.textContent = "Chwila przerwy i działaj dalej!";
     }
 };
-
-})
-
 
 //Adding 5 minutes
 add5min.addEventListener("click", function(){
