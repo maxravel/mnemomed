@@ -2,6 +2,7 @@
 const pomodoroB = document.querySelector("#pomodoroStart");
 const add5min = document.querySelector("#up5");
 const subtract5min = document.querySelector("#down5");
+const pomodoroP = document.querySelector("#pomodoroPause");
 
 //text
 const pomodoroT = document.querySelector("#pomodoroText");
@@ -11,6 +12,7 @@ var audio = new Audio('../audio/finish.wav');
 
 let pomodoroC = document.querySelector("#pomodoroCounter");
 let pomodoroCInt = parseInt(pomodoroC.textContent);
+
 if(localStorage.getItem("pomodoroValue")){
     pomodoroC.textContent = localStorage.getItem("pomodoroValue")/60;
     pomodoroCInt = localStorage.getItem("pomodoroValue")/60;
@@ -19,19 +21,27 @@ if(localStorage.getItem("pomodoroValue")){
 
 //for global scope of Interval
 var pomodoroInterval;
-//pomodoroCInt*=60;
 
+
+//for working when you are in different sites
 if((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000){
-    pomodoroC.textContent = 1800 - (Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000;
-    pomodoroCInt = 1800 - (Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000;
+    pomodoroC.textContent = (1800 - ((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))-(Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)/1000);
+    pomodoroCInt = (1800 - ((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))-(Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)/1000);
     pomodoroInterval = setInterval(countingWorks, 1000);
     pomodoroB.disabled = "true";
+    add5min.disabled = true;
+    subtract5min.disabled = true; 
 }
-//console.log((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000);
-//console.log(parseInt(localStorage.getItem("pomodoroValue"))*1000);
-//console.log(1800*1000);
-console.log(typeof pomodoroCInt);
-console.log(pomodoroCInt);
+
+
+// //console.log((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000);
+// //console.log(parseInt(localStorage.getItem("pomodoroValue"))*1000);
+// console.log(Date.now()%1000);
+// console.log(parseInt(localStorage.getItem("pomodoroSession"))%1000);
+// console.log((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)
+// //console.log(1800*1000);
+// //console.log(typeof pomodoroCInt);
+// //console.log(pomodoroCInt);
 
 
 
@@ -49,8 +59,9 @@ pomodoroB.addEventListener("click", function(){
 
 })
 
-
+//function that counting pomodoro time
 function countingWorks(){
+    
     if(pomodoroCInt%60<10){
         pomodoroC.textContent = Math.floor(pomodoroCInt/60) +":"+"0"+pomodoroCInt%60;
     }
@@ -58,7 +69,6 @@ function countingWorks(){
         pomodoroC.textContent = Math.floor(pomodoroCInt/60)+":"+pomodoroCInt%60;
     }
     pomodoroCInt-=1;
-    // pomodoroC.textContent=pomodoroCInt;
     
     if (pomodoroCInt < 0){
         audio.play();
@@ -75,18 +85,36 @@ function countingWorks(){
 
 //Adding 5 minutes
 add5min.addEventListener("click", function(){
-    
     if(!pomodoroInterval){
         pomodoroC.textContent= parseInt(pomodoroC.textContent)+5;
         pomodoroCInt +=5;
     }
 });
 
+//Subtracting 5 minutes
 subtract5min.addEventListener("click", function(){
-    
     if(!pomodoroInterval){
         if(pomodoroCInt>5){
         pomodoroC.textContent= parseInt(pomodoroC.textContent)-5;
         pomodoroCInt -=5;}
     }
+})
+
+
+//Pause Button
+pomodoroP.addEventListener("click", function(){
+    if(pomodoroP.textContent==="Pauza"){
+        clearInterval(pomodoroInterval);
+        pomodoroP.textContent ="Wznów";
+        localStorage.setItem("pomodoroPause", pomodoroCInt);
+        pomodoroT.textContent = "Wracaj szybko do pracy!";
+    }
+    else{    
+        console.log("fsfds");
+        pomodoroCInt = localStorage.getItem("pomodoroPause");
+        pomodoroInterval = setInterval(countingWorks, 1000);
+        pomodoroP.textContent ="Pauza";
+        pomodoroT.textContent = "Pracuj dzielnie";
+    }
+
 })
