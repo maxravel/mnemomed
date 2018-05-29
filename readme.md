@@ -15,6 +15,7 @@
 - simple pomodoro app; done  
 - simple Ebbinghaus curve app, working for 30 days; done  
     
+
 to do: upradge loader;  
 to do: refactorize code;  
 to do: add UI - chose each chapter;  
@@ -22,5 +23,4 @@ to do: think about database;
 to do: upradge pomodoro app;    
 to do: how to work with form - autorefresh/url problem.  
 to do: unificate pomodoroC and pommodoroCInt;  
-to do: pomodoro Pausa button;  
-to do: pomodoro still works when other tools are clicked;  
+to do: refactorize curve app;  

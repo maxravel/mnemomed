@@ -10,20 +10,20 @@ const pomodoroT = document.querySelector("#pomodoroText");
 //audio finish session
 var audio = new Audio('../audio/finish.wav');
 
+//values
 let pomodoroC = document.querySelector("#pomodoroCounter");
 let pomodoroCInt = parseInt(pomodoroC.textContent);
 
+//loading stored value of pomodoro last session duration
 if(localStorage.getItem("pomodoroValue")){
     pomodoroC.textContent = localStorage.getItem("pomodoroValue")/60;
     pomodoroCInt = localStorage.getItem("pomodoroValue")/60;
 }
 
-
 //for global scope of Interval
 var pomodoroInterval;
 
-
-//for working when you are in different sites
+//for working when you are in different sites (if last session started less than 30 minutes ago)
 if((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000){
     pomodoroC.textContent = (1800 - ((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))-(Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)/1000);
     pomodoroCInt = (1800 - ((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))-(Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)/1000);
@@ -32,18 +32,6 @@ if((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(local
     add5min.disabled = true;
     subtract5min.disabled = true; 
 }
-
-
-// //console.log((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000);
-// //console.log(parseInt(localStorage.getItem("pomodoroValue"))*1000);
-// console.log(Date.now()%1000);
-// console.log(parseInt(localStorage.getItem("pomodoroSession"))%1000);
-// console.log((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)
-// //console.log(1800*1000);
-// //console.log(typeof pomodoroCInt);
-// //console.log(pomodoroCInt);
-
-
 
 //button pomodoro listener
 pomodoroB.addEventListener("click", function(){
@@ -100,7 +88,6 @@ subtract5min.addEventListener("click", function(){
     }
 })
 
-
 //Pause Button
 pomodoroP.addEventListener("click", function(){
     if(pomodoroP.textContent==="Pauza"){
@@ -116,5 +103,4 @@ pomodoroP.addEventListener("click", function(){
         pomodoroP.textContent ="Pauza";
         pomodoroT.textContent = "Pracuj dzielnie";
     }
-
 })
