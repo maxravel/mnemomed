@@ -104,14 +104,10 @@ function removeFromLocalStorage(x){
         tasks=JSON.parse(localStorage.getItem('tasks'));
     }
     tasks.forEach(function(task, index){
-        // if(x.textContent===(task.title+"x")){
-        //     tasks.splice(index, 1);
-        // }
-        console.log(task.title.length);
+        //counting task title without info words like: "musisz powtorzyc..."
         if(x.textContent.substr(0,task.title.length)===task.title){
             tasks.splice(index, 1);
         }
-        //console.log(x.textContent.substr(0,x.textContent.length-1));
     });
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
@@ -129,23 +125,22 @@ function counting(x){
             //task.timing
             let taskTime = task.timing;
             console.log(task.type);
-            
-            //let nowTime = new Date();
-            //console.log(nowTime);
             diff = Date.now() - taskTime;
             console.log(msToTime(diff));
-            //console.log(diff);
-            //console.log(24*60*60*1000);
             const h=3600;
-            //console.log(msToTime(3*24*h*1000-diff));
             if(task.type===1 && diff < 24*h*1000){   
                 x.style.background = "grey";
                 let info = document.createElement("p");
-                info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                //reviewOff(x);
                 info.style.background = "grey";
                 info.style.fontSize = "15px";
-                info.style.paddingTop = "-5px";
                 x.appendChild(info);
+                info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;  
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.disabled = "true";              
             }
 
             else if(task.type===1 && diff < 2*24*h*1000 && diff > 24*h*1000){
@@ -154,7 +149,6 @@ function counting(x){
                 info.textContent = "-> Musisz dzisiaj to powtorzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -179,7 +173,6 @@ function counting(x){
                         }                 
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
-                    //console.log(task.type);
                 });
             }
 
@@ -189,7 +182,6 @@ function counting(x){
                 info.textContent = "-> Musisz dzisiaj to powtorzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -214,7 +206,6 @@ function counting(x){
                         }          
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
-                    //console.log(task.type);
                 });
             }
             
@@ -239,7 +230,6 @@ function counting(x){
                 info.textContent = "-> Musisz dzisiaj to powtorzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -264,7 +254,6 @@ function counting(x){
                         }                      
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
-                    //console.log(task.type);
                 });
             }
 
@@ -299,7 +288,6 @@ function counting(x){
                         }             
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
-                    //console.log(task.type);
                 });
             }
 
@@ -348,7 +336,6 @@ function counting(x){
                         }                      
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
-                    //console.log(task.type);
                 });
             }
 
@@ -369,6 +356,7 @@ function counting(x){
                     info.style.background = "grey";
                     info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
                     review.disabled = "true";
+
                     //changing type from 3 to 2;
                     if(localStorage.getItem('tasks')===null){
                         tasks=[];
@@ -383,7 +371,6 @@ function counting(x){
                         }             
                     });
                     localStorage.setItem('tasks', JSON.stringify(tasks));
-                    //console.log(task.type);
                 });
             }
 
@@ -400,12 +387,88 @@ function counting(x){
                 x.appendChild(review);
                 review.disabled = "true";
             }
+
+            else if(task.type===3 && diff > 30*24*h*1000 && diff < 33*24*h*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
+                    review.disabled = "true";
+
+                    //still type 4, and review after month
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 4;
+                            task.timing = Date.now();          
+                        }             
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                });
+            }
+
+            else if(task.type===4 && diff > 33*24*h*1000){
+                x.style.background = "orange";
+                let info = document.createElement("p");
+                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.style.background = "red";
+                info.style.fontSize = "15px";
+                //info.style.paddingTop = "-5px";
+                x.appendChild(info);
+                let review = document.createElement("button");
+                review.innerHTML = "Powtarzam!";
+                review.classList.add("btn");
+                x.appendChild(review);
+                review.addEventListener("click", function(){
+                    x.style.background = "grey";
+                    info.style.background = "grey";
+                    info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
+                    review.disabled = "true";
+
+                    //changing type from 4 to 3;
+                    if(localStorage.getItem('tasks')===null){
+                        tasks=[];
+                    }
+                    else{
+                        tasks=JSON.parse(localStorage.getItem('tasks'));
+                    }
+                    tasks.forEach(function(task, index){
+                        if(x.textContent.substr(0,task.title.length)===task.title){
+                            task.type = 3;
+                            task.timing = Date.now();          
+                        }             
+                    });
+                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                });
+            }
         }
-            //console.log(Date.now());
     }); 
-    //});
-    //console.log("timing");
 } 
+
+// function reviewOff(x){
+//     x.style.background = "grey";
+//     let info = document.createElement("p");
+//     info.style.background = "grey";
+//     info.style.fontSize = "15px";
+//     info.style.paddingTop = "-5px";
+//     x.appendChild(info);
+// }
 
 console.log(msToTime(3*24*3600*1000));
 function msToTime(duration) {
@@ -421,9 +484,3 @@ function msToTime(duration) {
 
     return days +"D"+":"+hours + ":" + minutes; //+ ":" + seconds + "." + milliseconds;
 }
-
-//const dpr = Array.prototype.slice.call(document.querySelectorAll("li.aaac"));
-//console.log(dpr);
-//dpr.forEach(function(listItem){listItem.addEventListener("click", counting)});
-
-//console.log(Date.now());
