@@ -23,7 +23,7 @@ if(localStorage.getItem("pomodoroValue")){
 //for global scope of Interval
 var pomodoroInterval;
 
-//for working when you are in different sites (if last session started less than 30 minutes ago)
+//for working when pause was clicked before going to different site
 if(localStorage.getItem("pomodoroPause")){
     console.log(localStorage.getItem("pomodoroPause"));
     pomodoroCInt = parseInt(localStorage.getItem("pomodoroPause"));
@@ -39,9 +39,12 @@ if(localStorage.getItem("pomodoroPause")){
     add5min.disabled = true;
     subtract5min.disabled = true; 
 }
+//for working when you are in different sites (if last session started less than 30 minutes ago)
 else if((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))<parseInt(localStorage.getItem("pomodoroValue"))*1000){
     pomodoroC.textContent = (1800 - ((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))-(Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)/1000);
     pomodoroCInt = (1800 - ((Date.now()-parseInt(localStorage.getItem("pomodoroSession")))-(Date.now()-parseInt(localStorage.getItem("pomodoroSession")))%1000)/1000);
+    // pomodoroCInt = parseInt(localStorage.getItem("pomodoroTime"));
+    // pomodoroC.textContent = parseInt(localStorage.getItem("pomodoroTime"));
     pomodoroInterval = setInterval(countingWorks, 1000);
     pomodoroB.disabled = true;
     add5min.disabled = true;
@@ -84,6 +87,9 @@ function countingWorks(){
         pomodoroCInt = localStorage.getItem("pomodoroValue")/60;
         pomodoroT.textContent = "Chwila przerwy i działaj dalej!";
     }
+    // console.log(pomodoroCInt);
+    // console.log(typeof pomodoroCInt);
+    //localStorage.setItem("pomodoroTime",Date.now());
 };
 
 //Adding 5 minutes
@@ -108,11 +114,14 @@ pomodoroP.addEventListener("click", function(){
     if(pomodoroP.textContent==="Pauza"){
         clearInterval(pomodoroInterval);
         pomodoroP.textContent ="Wznów";
+        //storing remaining time to use when resume button will be click
         localStorage.setItem("pomodoroPause", pomodoroCInt);
         pomodoroT.textContent = "Wracaj szybko do pracy!";
         pomodoroB.disabled = true;
         add5min.disabled = true;
         subtract5min.disabled = true; 
+        //pomodoroPasueStartTime for counting proper time when pause was clicked and after resume adding pause time to pomodoroSession
+        localStorage.setItem("pomodoroPauseStartTime", Date.now());
     }
     else{    
         pomodoroCInt = localStorage.getItem("pomodoroPause");
@@ -123,5 +132,8 @@ pomodoroP.addEventListener("click", function(){
         pomodoroB.disabled = true;
         add5min.disabled = true;
         subtract5min.disabled = true; 
+        //adding pause time to pomodoroSession
+        let d = parseInt(localStorage.getItem("pomodoroSession"));
+        localStorage.setItem("pomodoroSession", d + (Date.now()-parseInt(localStorage.getItem("pomodoroPauseStartTime"))));
     }
 })
