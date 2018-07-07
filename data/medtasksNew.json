@@ -2382,8 +2382,8 @@
     "info":""
 },
 {
-    "id":"Pediatria",
-        "id16":"Reumatologia",
+        "id":"pediatria",
+        "id2":"Reumatologia",
         "no":1,
         "task":"Najczęstszą chorobą reumatologiczną wieku dziecięcego jest:",
         "answer1":"Młodzieńcze idiopatyczne zapalenie stawów",
@@ -2395,8 +2395,8 @@
         "info":"Wspólnymi cechami wszystkich rodzajów MIZS są: zapalenia stawów, zaniki mięśni, sztywność poranna, guzki podskórne, zapalenie błony naczyniowej oka."
 },
 {
-        "id":"Pediatria",
-        "id16":"Reumatologia",
+        "id":"pediatria",
+        "id2":"Reumatologia",
         "no":2,
         "task":"Do kryteriów rozpoznania MIZS należą:",
         "answer1":"",
@@ -2408,8 +2408,8 @@
         "info":"MIZS wyróżniamy postacie: Systemowe, Nielicznostawowe, Wielostawowe seronegatywne, Wielostawowe seropozytywne, Zapalenie stawów z zapaleniem przyczepów ściegnistych, Łuszczycowe zapalenie stawów, Niezróżnicowane zapalenie stawów."
     },
     {
-        "id":"Pediatria",
-        "id16":"Reumatologia",
+        "id":"pediatria",
+        "id2":"Reumatologia",
         "no":3,
         "task":"3. Do kryteriów systemowego MIZD należą:",
         "answer1":"gorączka przed okres co najmniej 2 tygodni",
@@ -2421,8 +2421,8 @@
         "info":"Wystraczy jeden objaw wymieniony w punkcie 3."
     },
     {
-        "id":"Pediatria",
-        "id16":"Reumatologia",
+        "id":"pediatria",
+        "id2":"Reumatologia",
         "no":4,
         "task":"4. Metoda śluzowa polega na ocenie śluzu wydzielanego w okresie owulacji, który jest:",
         "answer1":"",
@@ -2434,7 +2434,7 @@
         "info":""
     },
     {
-        "id":"Pediatria",
+        "id":"pediatria",
         "id2":"Reumatologia",
         "no":5,
         "task":"5. Najcięższą kliniczne postacią MIZS jest postać:",
@@ -2447,7 +2447,7 @@
         "info":""
     },
     {
-        "id":"Pediatria",
+        "id":"pediatria",
         "id2":"Reumatologia",
         "no":6,
         "task":"6. Najczęstszum rodzajem młodzieńczego idiopatycznego zapalenia stawów jest postać:",
@@ -2460,8 +2460,8 @@
         "info":""
     },
     {
-        "id":"Pediatria",
-        "id16":"Reumatologia",
+        "id":"pediatria",
+        "id2":"Reumatologia",
         "no":7,
         "task":"7. W przebiegu Młodzieńczego idiopatycznego zapalenia stawów najczęściej zajęte są stawy:",
         "answer1":"",
@@ -2473,8 +2473,8 @@
         "info":""
     },
     {
-        "id":"Pediatria",
-        "id16":"Reumatologia",
+        "id":"pediatria",
+        "id2":"Reumatologia",
         "no":8,
         "task":"8. Do czynników złego rokowania nie należy:",
         "answer1":"obniżone OB",
@@ -2486,7 +2486,7 @@
         "info":"Wskaźnik CHAQ > 0,75 jest również czynnikiem złego rokowania."
     },
     {
-        "id":"Pediatria",
+        "id":"pediatria",
         "id2":"Reumatologia",
         "no":9,
         "task":"9. Do leków stosowanych w MIZS należą:",
@@ -2499,7 +2499,7 @@
         "info":""
     },
     {
-        "id":"Pediatria",
+        "id":"pediatria",
         "id2":"Reumatologia",
         "no":10,
         "task":"10. Do chorób, które należy róznicować z MIZS należą:",
