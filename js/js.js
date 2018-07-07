@@ -11,21 +11,36 @@ setTimeout(function(){
 //Array.prototype.slice.call() converts node list to array (neceserry for .forEach)
 var categoryButtons = Array.prototype.slice.call(document.querySelectorAll('a.collection-item')); 
 
-fetch('data/medtasks.json').then(function (res) {
-    return res.json();
-}).then(function (data) {
-    categoryButtons.forEach(function (x) {
-        
-        //Loading number of each category tasks
-        var qNumber = data.filter(function (z) {
-            return z.id === x.id;
-        }).length;
-        
-        //Adding number of tasks for categories
-        x.appendChild(document.createTextNode(" (" + qNumber + " pyt.)"));
-      
+categoryButtons.forEach(function(x){
+
+    //loading number of questions, json file name have to be the same as category button id
+    fetch(`data/${x.id}.json`).then(function (res) {
+        return res.json();
+    }).then(function (data) {
+
+            var qNumber = data.length;
+            x.appendChild(document.createTextNode(" (" + qNumber + " pyt.)"));
+
     });
-});
+})
+
+
+//older number of questions loader
+// fetch('data/medtasks.json').then(function (res) {
+//     return res.json();
+// }).then(function (data) {
+//     categoryButtons.forEach(function (x) {
+        
+//         //Loading number of each category tasks
+//         var qNumber = data.filter(function (z) {
+//             return z.id === x.id;
+//         }).length;
+        
+//         //Adding number of tasks for categories
+//         x.appendChild(document.createTextNode(" (" + qNumber + " pyt.)"));
+      
+//     });
+// });
 
 
 //*********************LOADING QUESTIONS
@@ -39,14 +54,14 @@ function loadTasks(event) {
     //clearing sessionStorage, before starting new test
     sessionStorage.clear();
 
-    //button id have to be the same as task.id from JSON
+    //button id have to be the same as task.id from JSON, and same as json file name
     var category = event.target.id;
     
     document.querySelector('.abc').style.display = "block";
     document.querySelector('.choose').style.display = "none";
 
     //fetch() is not support in Internet Explorer
-    fetch('data/medtasks.json').then(function (res) {
+    fetch(`data/${event.target.id}.json`).then(function (res) {
         return res.json();
     }).then(function (abcd) {
 
