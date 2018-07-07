@@ -18,7 +18,7 @@
 
 to do: upradge loader;  
 to do: refactorize code;  
-to do: add UI - chose each chapter;  
+to do: add UI - chose each chapter; IMPORTANT!!!  
 to do: think about database;   
 to do: upradge pomodoro app;    
 to do: how to work with form - autorefresh/url problem.  
