@@ -385,13 +385,13 @@ function loadTasks(event) {
                 } else {
                     answer1.style.backgroundColor = "red";
                     //color green for correct answer
-                    if (ratunkowa[i].correct === 1) {
+                    if (ratunkowa[i].correct == 1) {
                         answer2.style.background = "green";
-                    } else if (ratunkowa[i].correct === 2) {
+                    } else if (ratunkowa[i].correct == 2) {
                         answer3.style.background = "green";
-                    } else if (ratunkowa[i].correct === 3) {
+                    } else if (ratunkowa[i].correct == 3) {
                         answer4.style.background = "green";
-                    } else if (ratunkowa[i].correct === 4) {
+                    } else if (ratunkowa[i].correct == 4) {
                         answer5.style.background = "green";
                     }
                 }
@@ -548,15 +548,73 @@ function loadTasks(event) {
             punkty.innerHTML = "Twoje punkty:  " + 0 + "/" + z;
             x=0;
         })
+
+        answer1.addEventListener("mouseover",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer1.style.backgroundColor="grey";
+            }
+        })
+        answer1.addEventListener("mouseout",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer1.style.backgroundColor="white";
+            }
+        })
+        answer2.addEventListener("mouseover",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer2.style.backgroundColor="grey";
+            }
+        })
+        answer2.addEventListener("mouseout",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer2.style.backgroundColor="white";
+            }
+        })
+
+        answer3.addEventListener("mouseover",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer3.style.backgroundColor="grey";
+            }
+        })
+        answer3.addEventListener("mouseout",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer3.style.backgroundColor="white";
+            }
+        })
+
+        answer4.addEventListener("mouseover",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer4.style.backgroundColor="grey";
+            }
+        })
+        answer4.addEventListener("mouseout",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer4.style.backgroundColor="white";
+            }
+        })
+
+        answer5.addEventListener("mouseover",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer5.style.backgroundColor="grey";
+            }
+        })
+        answer5.addEventListener("mouseout",function(){
+            if (typeof sessionStorage.getItem(i) !== "string") {
+                answer5.style.backgroundColor="white";
+            }
+        })
         
     });
 };
 
 // answer1.addEventListener("mouseover",function(){
-//     answer1.style.backgroundColor="grey";
+//     if (typeof sessionStorage.getItem(i) !== "string") {
+//         answer1.style.backgroundColor="grey";
+//     }
 // })
 // answer1.addEventListener("mouseout",function(){
-//     answer1.style.backgroundColor="white";
+//     if (typeof sessionStorage.getItem(i) !== "string") {
+//         answer1.style.backgroundColor="white";
+//     }
 // })
 
 // answer2.addEventListener("mouseover",function(){
