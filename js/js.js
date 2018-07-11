@@ -99,7 +99,7 @@ function loadTasks(event) {
         var x = 0;
 
         //all answers clicked
-        var z =ratunkowa.length
+        var z = ratunkowa.length
 
         punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
 
@@ -375,9 +375,13 @@ function loadTasks(event) {
         //************************** ANSWER COLORS ****************************
 
         answer1.addEventListener('click', function () {
+
+            //checking if answer was clicked
             if (typeof sessionStorage.getItem(i) !== "string") {
+                //setting Item of answer clicked
                 sessionStorage.setItem(i,'0');
 
+                //adding point when answer 1 is correct
                 if (ratunkowa[i].correct === 0) {
                     x++;
                     answer1.style.backgroundColor = "green";
@@ -403,7 +407,7 @@ function loadTasks(event) {
         });
 
         answer2.addEventListener('click', function () {
-            //answer2 is grey because of hovering answer2 before click
+
             if (typeof sessionStorage.getItem(i) !== "string") {
                 sessionStorage.setItem(i,'1');         
 
@@ -536,7 +540,8 @@ function loadTasks(event) {
             info.innerHTML = ratunkowa[i].info;
         });
 
-        //******************************** RESET *****************************88 */
+        
+        //******************************** RESET ***************************** */
 
         reset.addEventListener('click', function(){
             sessionStorage.clear();
@@ -549,7 +554,10 @@ function loadTasks(event) {
             x=0;
         })
 
+
+        //grey light when hovering answer
         answer1.addEventListener("mouseover",function(){
+            //checking if answer was clicked
             if (typeof sessionStorage.getItem(i) !== "string") {
                 answer1.style.backgroundColor="grey";
             }
@@ -605,42 +613,3 @@ function loadTasks(event) {
         
     });
 };
-
-// answer1.addEventListener("mouseover",function(){
-//     if (typeof sessionStorage.getItem(i) !== "string") {
-//         answer1.style.backgroundColor="grey";
-//     }
-// })
-// answer1.addEventListener("mouseout",function(){
-//     if (typeof sessionStorage.getItem(i) !== "string") {
-//         answer1.style.backgroundColor="white";
-//     }
-// })
-
-// answer2.addEventListener("mouseover",function(){
-//     answer2.style.backgroundColor="grey";
-// })
-// answer2.addEventListener("mouseout",function(){
-//     answer2.style.backgroundColor="white";
-// })
-
-// answer3.addEventListener("mouseover",function(){
-//     answer3.style.backgroundColor="grey";
-// })
-// answer3.addEventListener("mouseout",function(){
-//     answer3.style.backgroundColor="white";
-// })
-
-// answer4.addEventListener("mouseover",function(){
-//     answer4.style.backgroundColor="grey";
-// })
-// answer4.addEventListener("mouseout",function(){
-//     answer4.style.backgroundColor="white";
-// })
-
-// answer5.addEventListener("mouseover",function(){
-//     answer5.style.backgroundColor="grey";
-// })
-// answer5.addEventListener("mouseout",function(){
-//     answer5.style.backgroundColor="white";
-// })
