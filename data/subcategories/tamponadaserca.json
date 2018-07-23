@@ -1,0 +1,53 @@
+[
+{
+    "id":"pierwszapomocwurazachiinnychstanachnaglych",
+    "id2":"tamponadaserca",
+    "no":1,
+    "task":"1. Dla tamponady serca charakterystyczna jest:",
+    "answer1":"A. triada Cushinga.",
+    "answer2":"B. triada Becka.",
+    "answer3":"C. triada Charcota.",
+    "answer4":"D. Pentada Reynoldsa.",
+    "answer5":"E. brak prawidłowej odpowiedzi.",
+    "correct": 1,
+    "info":"Triada Cushinga - objawy przy zwiększonym ciśnieniu śródczaszkowym mózgu:<br>duża różnica między ciśnieniem skurczowym a rozkurczowym,<br>nieregularny oddech (np. Cheyne’a-Stokesa, Biota),<br>bradykardia.<br>Triada Becka - zespół trzech charakterystycznych objawów klinicznych towarzyszących tamponadzie serca:<br>nadmierne wypełnienie żyły szyjnej zewnętrznej,<br>hipotensja,<br>stłumienie tonów serca.<br>Triada Charcota - objawów charakteryzuje ostre zapalenie dróg żółciowych:<br>ból w nadbrzuszu, zwykle prawostronny, o znacznym nasileniu,<br>gorączka i dreszcze,<br>żółtaczka mechaniczna.<br> Pentada Reynoldsa zawiera dodatkowo:<br>wstrząs septyczny,<br>zaburzenia świadomości."
+},
+{
+    "id":"pierwszapomocwurazachiinnychstanachnaglych",
+    "id2":"tamponadaserca",
+    "no":2,
+    "task":"2. W leczeniu tamponady serca wykonuje się:",
+    "answer1":"A. paracentezę.",
+    "answer2":"B. perikardiocentezę.",
+    "answer3":"C. artrocentezę.",
+    "answer4":"D. torakocentezę.",
+    "answer5":"E. brak prawidłowej odpowiedzi.",
+    "correct": 1,
+    "info":""
+},
+{
+    "id":"pierwszapomocwurazachiinnychstanachnaglych",
+    "id2":"tamponadaserca",
+    "no":3,
+    "task":"3. Badaniem, które należy przeprowadzić u chorego, u którego podejrzewamy tamponadę serca jest:",
+    "answer1":"A. RTG.",
+    "answer2":"B. USG.",
+    "answer3":"C. echokardiografia.",
+    "answer4":"D. TK.",
+    "answer5":"E. MRI.",
+    "correct": 2,
+    "info":""
+},
+{
+    "id":"pierwszapomocwurazachiinnychstanachnaglych",
+    "id2":"tamponadaserca",
+    "no":4,
+    "task":"4. Wskazaniem do przeprowadzenia perikardiocentezy jest obecność płynu w worku osierdziowym, jeśli jego warstwa w badaniu:",
+    "answer1":"A. w fazie skurczowej jest >10mm.",
+    "answer2":"B. w fazie rozkurczowej jest >10mm.",
+    "answer3":"C. w fazie skurczowej jest >20mm.",
+    "answer4":"D. w fazie rozkurczowej jest >20mm.",
+    "answer5":"E. brak prawidłowej odpowiedzi.",
+    "correct": 3,
+    "info":""
+}]

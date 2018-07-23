@@ -1,0 +1,80 @@
+[
+{
+    "id":"reumatologia",
+    "id2":"luszczycowezapaleniestawow",
+    "no":1,
+    "task":"1. 1. Wskaż zdanie fałszywe dotyczące spondyloatropatii: ",
+    "answer1":"A. charakteryzują się zapaleniem stawów obwodowych, kręgosłupa i przyczepów ścięgnistych.",
+    "answer2":"B. obecny jest w nich antygen HLA B27.",
+    "answer3":"C. obecny jest w nich czynnik reumatoidalny.",
+    "answer4":"D. wyróżniamy postać osiową i obwodową.",
+    "answer5":"E. wszystkie wymienione odpowiedzi są prawidłowe.",
+    "correct": 2,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"luszczycowezapaleniestawow",
+    "no":2,
+    "task":"2. 1. Wskaż zdanie fałszywe dotyczące łuszczycowego zapalenia stawów:",
+    "answer1":"A. dotyczy 10-40% osób z łuszczycą.",
+    "answer2":"B. u 2/3 zmiany stawowe wyprzedzają zmiany skórne.",
+    "answer3":"C. rozpoczyna się zwykle między 20 a 50 rokiem życia,ale istnieje postać młodzieńcza (9.-12. rok życia).",
+    "answer4":"D. można rozpoznać łuszczycowe zapalenie stawów bez objawów skórnych łuszczycy.",
+    "answer5":"E. nie stwierdza się korelacji między nasileniem zmian skórnych a ciężkością łuszczycowego zapalenia stawów. ",
+    "correct": 1,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"luszczycowezapaleniestawow",
+    "no":3,
+    "task":"3 2. Do rodzajów łuszczycowego zapalenia stawów nie należy:",
+    "answer1":"A. postać asymetryczna nielicznostawowa.",
+    "answer2":"B. postać symetryczna licznostawowa.",
+    "answer3":"C. postać osiowa z zajęciem stawów kręgosłupa i krzyżowo-biodrowych.",
+    "answer4":"D. postać z zajęciem stawów międzypaliczkowych dalszych.",
+    "answer5":"E. postać z zajęciem stawów międzypaliczkowych bliższych.",
+    "correct": 4,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"luszczycowezapaleniestawow",
+    "no":4,
+    "task":"4. 3. Wskaż zdanie fałszywe doytyczące ŁZS:",
+    "answer1":"A. U 80% chorych z ŁZS występują zmiany pznokci.",
+    "answer2":"B. Palce kiełbaskowate i teleskopowe są charakterystyczne dla ŁZS.",
+    "answer3":"C. ŁSZ najczęściej dotyczy stawów międzypaliczkowych dalszych.",
+    "answer4":"D. Charakterystyczne zmiany wykrywa się w kapilaroskopii.",
+    "answer5":"E. Kryteria CASPAR dotyczą rozpoznania ŁZS.",
+    "correct": 3,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"luszczycowezapaleniestawow",
+    "no":5,
+    "task":"5 Do kryteriów CASPAR nie należy: ",
+    "answer1":"A. Objawy łuszczycy, łuszczyca w wywiadzie osobniczym lub rodzinnym (u krewnego I lub II stopnia) - 1 pkt. Aktualnie obecne zmiany łuszczycowe - 2 pkt.",
+    "answer2":"B. Typowe zmiany łuszczycowe paznokci stwierdzone w badaniu przedmiotowym - 1 pkt.",
+    "answer3":"C. Dodatni wynik oznaczenia czynnika reumatoidalnego jakimkolwiek testem (z wyjątkiem testu lateksowego) - 1 pkt.",
+    "answer4":"D. Zapalenie palców (dactylitis), definiowane jako obrzęk całego palca, obecnie lub w wywiadzie odnotowanym przez reumatologa - 1 pkt.",
+    "answer5":"E. Cechy radiologiczne przystawowej proliferacji kostnej w postaci niewyraźnie odgraniczonego kostnienia blisko krawędzi stawu (ale z wyłączeniem tworzenia osteofitów) na radiogramach ręki lub stopy - 1 pkt.",
+    "correct": 2,
+    "info":"Łuszczycowe zapalenie stawów można rozpoznać u pacjenta z chorobą zapalną stawów (zapaleniem stawów obwodowych, zapaleniem stawów kręgosłupa i stawów krzyżowo-biodrowych lub zapaleniem przyczepów ścięgnistych) i ≥3 pkt z powyższych."
+},
+{
+    "id":"reumatologia",
+    "id2":"luszczycowezapaleniestawow",
+    "no":6,
+    "task":"6. Lekiem pierwszego wyboru w łuszczycowym zapaleniu stawów jest:",
+    "answer1":"A. metotreksat. ",
+    "answer2":"B. NSLPZ.",
+    "answer3":"C. GKS.",
+    "answer4":"D. sulfasalazyna.",
+    "answer5":"E. adalimumab.",
+    "correct": 1,
+    "info":""
+}
+]

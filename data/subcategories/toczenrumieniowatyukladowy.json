@@ -1,0 +1,40 @@
+[
+{
+    "id":"reumatologia",
+    "id2":"toczenrumieniowatyukladowy",
+    "no":1,
+    "task":"1. 1. Wskaż zdanie prawdziwe dotyczące SLE:<br>1. kobiety chorują 6-10 razy cześciej niż mężczyźni.<br>2. Najczęściej chorują osoby w podeszłym wieku.<br>3. Nefropatia toczniowa rozwija się u połowy chorujących.<br>4. Objaw Raynauda występuje u 15–40% chorych.",
+    "answer1":"A. 1,2.",
+    "answer2":"B. 2,3.",
+    "answer3":"C. 3,4.",
+    "answer4":"D. 1,3,4.",
+    "answer5":"E. wszystkie wymienione.",
+    "correct": 3,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"toczenrumieniowatyukladowy",
+    "no":2,
+    "task":"2. W morfologii w SLE możemy się spodziewać:",
+    "answer1":"A. niedokrwistości, limfocytozy, małopłytkowości.",
+    "answer2":"B. niedokrwistości, limfocytozy, nadpłytkowości. ",
+    "answer3":"C. niedokrwistości, limfopenii, leukopenii, małopłytkowości.",
+    "answer4":"D. nadkrwistości, limfopenii, leukopenii, małopłytkowości.",
+    "answer5":"E. nadkrwistości, limfocytozy, leukocytozy, małopłytkowości.",
+    "correct": 2,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"toczenrumieniowatyukladowy",
+    "no":3,
+    "task":"3. Do przeciwciał charakterystycznych dla SLE należą:",
+    "answer1":"A. czynnik reumatoidalny, przeciwciała. antycytrulinowe.",
+    "answer2":"B. przeciwciała przeciw topoizomerazie I, przeciwciała antycentromerowe, przeciwciała przeciwjąderkowe.",
+    "answer3":"C. anty ds-DNA, anty-Sm, przeciwciała antyfosfolipidowe.",
+    "answer4":"D. preciwciała anty-Jo, anty-Mi.",
+    "answer5":"E. przeciwciała anty-Ro, anty-La.",
+    "correct": 2,
+    "info":"RZS-czynnik reumatoidalny, przeciwciała. antycytrulinowe.<br>Twardzina-antycentromerowe (ACA), Scl-70 (przeciw topoizomerazie I), przeciwjąderkowe (przeciw RNA polimerazie I i III).<br>3. Zapalenie skórno-mięśniowe-anty Jo, anty-Mi.<br>Zespół Sjogrena-anty-La, anty-Ro."
+}]

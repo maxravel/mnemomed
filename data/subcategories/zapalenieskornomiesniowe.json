@@ -1,0 +1,67 @@
+[
+{
+    "id":"reumatologia",
+    "id2":"zapalenieskornomiesniowe",
+    "no":1,
+    "task":"1. Wskaż zdanie fałszywe dotyczące zapalenia skórno-mięśniowego:<br>1. Kobiety chorują 2 razy częściej.<br>2. Wystepują dwa okresy najwięszej zachorowalności 10-15 lat i 35-65 lat.<br>3. Do objawów mięśniowych należy asymetryczne zajęcie mieśni obręczy barkowej i miednicznej, karku i grzbietu.<br>4. Objawem patognomonicznym zapalenia skórno-mięśniowego jest rumień heliotropowy.<br>5. Przeciwciałami charakterystycznymi dla zapalenia skórno-mięśniowego są przeciwciała antyfosfolipidowe.",
+    "answer1":"A. 1,2.",
+    "answer2":"B. 2,3,4.",
+    "answer3":"C. 2,5.",
+    "answer4":"D. 3,5.",
+    "answer5":"E. wszystkie prawidłowe.",
+    "correct": 3,
+    "info":"Zapalenie mięśni w PM jest symetryczne. Przeciwciała charakterystyczne dla PM i DM to anty – Jo, anty -Mi."
+},
+{
+    "id":"reumatologia",
+    "id2":"zapalenieskornomiesniowe",
+    "no":2,
+    "task":"2. Objaw Szala to:",
+    "answer1":"A. rumień wokół powiek.",
+    "answer2":"B. rumień karku i barków.",
+    "answer3":"C. rumień bocznej powierzchni ud i bioder.",
+    "answer4":"D. zmiany na paznokciach.",
+    "answer5":"E. sinawe grudki z przerostem naskórka zlokalizowane po wyprostnej stronie stawów.",
+    "correct": 1,
+    "info":"Cechy charakterystyczne dla zapalenia skórno-mięśniowego to:<br>rumień heliotropowy wokół powiek,<br>objaw Szala - rumień karku i barków,<br>objaw Kabury - rumień bocznej powierzchni ud i bioder.<br>grudki Gottrona - sinawe grudki z przerostem naskórka zlokalizowane po wyprostnej stronie stawów. "
+},
+{
+    "id":"reumatologia",
+    "id2":"zapalenieskornomiesniowe",
+    "no":3,
+    "task":"3. Do kryteriów rozpoznania zapalenia skórno - mięśniowego należą wszystkie z wyjątkiem:",
+    "answer1":"A. symetrycznego osłabienia mięśni obręczy barkowej i biodrowej.",
+    "answer2":"B. obrazu histologicznego charakterystycznego dla zapalenia mięśni.",
+    "answer3":"C. podwyższony poziom kinazy i aldolazy",
+    "answer4":"D. elektromiograficznych cech uszkodzenia mięśni.",
+    "answer5":"E. stwardnienie skóry proksymalne do stawów śródręczno-paliczkowych.",
+    "correct": 4,
+    "info":""
+},
+{   
+    "id":"reumatologia",
+    "id2":"zapalenieskornomiesniowe",
+    "no":4,
+    "task":"4. Wskaż zdanie prawdziwe dotyczące zapalenia skórno - mięśniowego.",
+    "answer1":"A. W badaniu elektromiograficznym widoczne może być uszkodzenie mięśni.",
+    "answer2":"B. Charakterystyczny jest podwyższony poziom kinazy i aldolazy.",
+    "answer3":"C. Zapalenie skórno-mięśniowe zwiększa ryzyko nowotworu złośliwego.",
+    "answer4":"D. A + B.",
+    "answer5":"E. A + B + C.",
+    "correct": 4,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"zapalenieskornomiesniowe",
+    "no":4,
+    "task":"4. W leczeniu zapalenia skórno-mięśniowego stosuje się:",
+    "answer1":"A. GKS.",
+    "answer2":"B. metotreksat.",
+    "answer3":"C. azatioprynę.",
+    "answer4":"D. cyklosporynę.",
+    "answer5":"E. wszystkie wymienione.",
+    "correct": 4,
+    "info":""
+}
+]

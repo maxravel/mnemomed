@@ -1,0 +1,67 @@
+[
+{    
+    "id":"reumatologia",
+    "id2":"dnamoczanowa",
+    "no":1,
+    "task":"1. Wskaż zdanie fałszywe dotyczące dny moczanowej:",
+    "answer1":"A. Jest to choroba spodowowana wytrącaniem się kryształów moczanu, ich fagocytozą i powstawaniem złogów w stawach i innych narządach.",
+    "answer2":"B. Do objawów dny moczanowej należą: nagły, sily ból stawu, obrzęk, zaczerwienieniem skóry nad zajętym stawem. ",
+    "answer3":"C. Objawy w dnie moczanowej dotyczą najczęściej stawu kolanowego.",
+    "answer4":"D. Do czynników wywołujących napad dny moczanowej należą: zwiększona podaż puryn, alokhol, wysiłek ficzyczny, leki (cyklosporyna, diuretyki pętlowe i tiazydowe)",
+    "answer5":"E. Płyn stawowy w dnie moczanowej ma charakter zapalny oraz zawiera kryształy moczanu sodu.",
+    "correct": 2,
+    "info":"Objawy najczęściej dotyczą I stawu śródstopno-paliczkowego."
+},
+{
+    "id":"reumatologia",
+    "id2":"dnamoczanowa",
+    "no":2,
+    "task":"2. 5. Bo objawów napadu dny moczanowej w badaniach labolatoryjnych nie należy:",
+    "answer1":"A. wzrost stężenia kwasu moczowego we krwi i w moczu.",
+    "answer2":"B. prawidłowe stężenie kwasu moczowego we krwi i w moczu.",
+    "answer3":"C. hiperlipidemia.",
+    "answer4":"D. hiperglikemia",
+    "answer5":"E. wszystkie należą.",
+    "correct": 4,
+    "info":"Podczas napadu dny moczanowej stężenie kwasu moczowego może być prawidłowe."
+},
+{
+    "id":"reumatologia",
+    "id2":"dnamoczanowa",
+    "no":3,
+    "task":"3. 8. Złotym standardem diagnostycznym w przebiegu dny moczanowej jest:",
+    "answer1":"A. stwierdzenie obecności sfagocytowanych kryształów moczanu sodu w płynie stawowym pobranym ze stawu objętego zapaleniem, w treści kaletki maziowej lub guzka dnawego.",
+    "answer2":"B. zdjęcie RTG stawu.",
+    "answer3":"C. USG zajętego stawu.",
+    "answer4":"D. stwierdzenie podwyższonego poziomu kwasu moczowego we krwi i w moczu.",
+    "answer5":"E. rozpoznanie dny moczanowej na podstawie obrazu klinicznego.",
+    "correct": 0,
+    "info":""
+},
+{
+    "id":"reumatologia",
+    "id2":"dnamoczanowa",
+    "no":4,
+    "task":"4. Do leków stosowanych w napadzie dny moczanowej należą wszystkie z wyjątkiem:",
+    "answer1":"A. kolchicyny.",
+    "answer2":"B. prednizonu.",
+    "answer3":"C. kwasu acetylosalicylowego.",
+    "answer4":"D. allopurynolu.",
+    "answer5":"E. C + D.",
+    "correct": 4,
+    "info":"Kwas acetylosalicylowy jest przeciwskazany w leczeniu dny moczanowej, ponieważ podności stężenie kwasu moczowego. "
+},
+{
+    "id":"reumatologia",
+    "id2":"dnamoczanowa",
+    "no":5,
+    "task":"5. W leczeniu przewlekłym dny moczanowej stosuje się: 1. allopurynol, 2. febuksostat, 3. benzobromaron, 4. probenecyd, 5. peglotykaza. ",
+    "answer1":"A. 1,2.",
+    "answer2":"B. 1,2,3.",
+    "answer3":"C. 2,3,4.",
+    "answer4":"D. 3,4.",
+    "answer5":"E. wszystkie wymienione.",
+    "correct": 4,
+    "info":"Zalecenia ogólne w dnie moczanowej to:<br>-zmniejszenie masy ciała<br>-dieta ubogopurynowa<br>-unikanie picia alkoholu i palenia papierosów<br>-zwiększenie aktywności fizycznej<br>-systematyczne sprawdzanie współistnienia innych choróbniewydolności nerek, choroby niedokrwiennej serca, niewydolności serca."
+}
+]    

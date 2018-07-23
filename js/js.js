@@ -12,16 +12,21 @@ setTimeout(function(){
 var categoryButtons = Array.prototype.slice.call(document.querySelectorAll('a.collection-item')); 
 
 categoryButtons.forEach(function(x){
+    if(x.id==="interna"){
+        x.appendChild(document.createTextNode(" (" + 100 + " pyt.)"));
+    }
 
-    //loading number of questions, json file name have to be the same as category button id
-    fetch(`data/${x.id}.json`).then(function (res) {
-        return res.json();
-    }).then(function (data) {
+    else{
+        //loading number of questions, json file name have to be the same as category button id
+        fetch(`data/${x.id}.json`).then(function (res) {
+            return res.json();
+        }).then(function (data) {
 
-            var qNumber = data.length;
-            x.appendChild(document.createTextNode(" (" + qNumber + " pyt.)"));
+                var qNumber = data.length;
+                x.appendChild(document.createTextNode(" (" + qNumber + " pyt.)"));
 
-    });
+        });
+    }
 })
 
 
@@ -43,7 +48,16 @@ categoryButtons.forEach(function(x){
 // });
 
 
+
+//**********************************working on drop down list interna
+// document.querySelector("#interna").addEventListener("click", function(){
+//     document.querySelector(".internaCategories").style.display = "block";
+//     console.log("interna");
+// });
+
+
 //*********************LOADING QUESTIONS
+
 Array.prototype.slice.call(document.querySelectorAll('.collection-item')).forEach(function (z) {
     z.addEventListener('click', loadTasks);
 });
@@ -51,6 +65,7 @@ Array.prototype.slice.call(document.querySelectorAll('.collection-item')).forEac
 //event is neceserry as a function parameter for mozilla
 function loadTasks(event) {
 
+   
     //clearing sessionStorage, before starting new test
     sessionStorage.clear();
 
@@ -59,7 +74,7 @@ function loadTasks(event) {
     
     document.querySelector('.abc').style.display = "block";
     document.querySelector('.choose').style.display = "none";
-
+    
     //fetch() is not support in Internet Explorer
     fetch(`data/${event.target.id}.json`).then(function (res) {
         return res.json();
@@ -99,7 +114,7 @@ function loadTasks(event) {
         var x = 0;
 
         //all answers clicked
-        var z = ratunkowa.length
+        var z = ratunkowa.length;
 
         punkty.innerHTML = "Twoje punkty:  " + x + "/" + z;
 
@@ -610,6 +625,8 @@ function loadTasks(event) {
                 answer5.style.backgroundColor="white";
             }
         })
+    
         
     });
+
 };

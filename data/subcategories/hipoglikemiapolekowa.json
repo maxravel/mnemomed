@@ -1,0 +1,27 @@
+[
+{
+    "id":"endokrynologia",
+    "id2":"hipoglikemiapolekowa",
+    "no":1,
+    "task":"1. Hipoglikemia to stan, w którym stężenie glukozy w osoczu wynosi:",
+    "answer1":"A. stężenie glukozy w osoczu wynosi <70 mg/dl niezależnie od występowania objawów hipoglikemii.",
+    "answer2":"B. stężenie glukozy w osoczu wynosi <70 mg/dl oraz obecne są objawy hipoglikemii.",
+    "answer3":"C. stężenie glukozy w osoczu wynosi <50 mg/dl niezależnie od występowania objawów hipoglikemii.",
+    "answer4":"D. stężenie glukozy w osoczu wynosi <50 mg/dl oraz obecne są objawy hipoglikemii",
+    "answer5":"E. występują objawy hipoglikemii",
+    "correct": 0,
+    "info":""
+},
+{
+    "id":"endokrynologia",
+    "id2":"hipoglikemiapolekowa",
+    "no":2,
+    "task":"2. Wskaż zdanie fałszywe dotyczące hipoglikemii:",
+    "answer1":"A. Hipoglikemia umiarkowana to taka, której chory potrzebuje drugiej osoby w celu jej opanowania.",
+    "answer2":"B. Przyczyną braku objawów hipoglikemii może być uszkodzenie układu współczulnego.",
+    "answer3":"C. Hipoglikemia występuje częsciej w cukrzycy typu 2 niż typu 1. ",
+    "answer4":"D. Do objawów hipoglikemii należą: kołatanie serca, senność, śpiączka.",
+    "answer5":"E. Hipoglikemię ciężką leczymy dożylnym wlewem roztworu glukozy.",
+    "correct": 2,
+    "info":""
+}]

@@ -1,0 +1,53 @@
+[
+{
+    "id":"kardiologia",
+    "id2":"blokiprzedsionkowokomorowe",
+    "no":1,
+    "task":"1. Blok przedsionkowo komorowy I stopnia charakteryzuje się:",
+    "answer1":"A. przewodzeniem tylko niektórych pobudzeń z przedsionków do komór.",
+    "answer2":"B. brakiem przewodzenia pobudzenia z przedsionków do komór, niezależną pracą przedsionków i komór, wolniejszym rytmem komór w porównaniu do przedsionków.",
+    "answer3":"C. szybką (350–700/min), nieskoordynowaną aktywacja przedsionków, która prowadzi do utraty efektywności hemodynamicznej ich skurczu.",
+    "answer4":"D. przewodzeniem wszystkich pobudzeń z przedsionków do komór, ale czas przewodzenia jest przedłużony >200 ms.",
+    "answer5":"E. brak prawidłowej odpowiedzi",
+    "correct": 3,
+    "info":"Blok p-k I stopnia - przewodzenie wszystkich pobudzeń z przedsionków do komór, ale czas przewodzenia jest przedłużony >200 ms.<br>Blok p-k II stopnia - nie wszystkie pobudzenia docierają do komór.<br>Blok p-k III stopnia - pobudzenia z przedsionków nie docierają do komór, przedsionki i komory pracują niezależnie, przy czym zastępczy rytm komór jest wolniejszy od rytmu przedsionków."
+},
+{
+    "id":"kardiologia",
+    "id2":"blokiprzedsionkowokomorowe",
+    "no":2,
+    "task":"2. Kryterium ropoznania bloku przedsionkowo-komorowego I stopnia jest:",
+    "answer1":"A. odcinek PQ >200ms.",
+    "answer2":"B. odstęp PQ >200 ms.",
+    "answer3":"C. wydłużanie odstępu PQ z ewolucji na ewolucję i skracanie odstępów RR, aż po kolejnym załamku P dochodzi do wypadnięcia zespółu QRS.",
+    "answer4":"D. odstęp PQ nie zmienia się, dochodzi do okresowego wypadania zespołów QRS.",
+    "answer5":"E. brak prawidłowej odpowiedzi.",
+    "correct": 1,
+    "info":"Blok AV I - odstęp PQ >200 ms.<br>Blok II° typu I, tzw. periodyka Wenckebacha - odstęp PQ z ewolucji na ewolucję stopniowo się wydłuża, a odstępy RR skracają, aż po kolejnym załamku P wypadnie zespół QRS.<br>Blok II° typu II - blok następuje bez wcześniejszego wydłużania PQ, a następny odstęp PQ się nie zmienia.<br>Blok AV III° - załamki P i zespoły QRS występują niezależnie, a częstotliwość rytmu komór jest wolniejsza niż przedsionków."
+},
+{
+    "id":"kardiologia",
+    "id2":"blokiprzedsionkowokomorowe",
+    "no":3,
+    "task":"3. W leczeniu bradykardii stosuje się wszystkie z wyjątkiem:",
+    "answer1":"A. atropinę 0,5-1,0 mg.",
+    "answer2":"B. stymulację przeskórną.",
+    "answer3":"C. dopaminę.",
+    "answer4":"D. metoprolol.",
+    "answer5":"E. odstawienie leków wydłużających czas przewodzenia.",
+    "correct": 3,
+    "info":""
+},
+{
+    "id":"kardiologia",
+    "id2":"blokiprzedsionkowokomorowe",
+    "no":4,
+    "task":"4. Wskazaniem do wszczepienia stymulatora serca nie jest:",
+    "answer1":"A. bradykardia przetrwała – blok AV III° lub II° typu II niezależnie od objawów podmiotowych.",
+    "answer2":"B. okresowy lub napadowy blok AV II° lub III° (w tym z AF z wolnym przewodzeniem do komór).",
+    "answer3":"C. bloku II° typu I, który jest przyczyną objawów podmiotowych lub w EPS został zlokalizowany w obrębie lub poniżej pęczka Hisa.",
+    "answer4":"D. blok AV spowodowany odwracalną przyczyną.",
+    "answer5":"E. A + B",
+    "correct": 3,
+    "info":"Jako stymulację pierwszego wyboru zaleca się tryb DDD, a w przypadku migotania przedsionków – VVI."
+}]

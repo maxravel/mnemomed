@@ -1,0 +1,80 @@
+[
+{
+    "id":"pulmunologia",
+    "id2":"pozaszpitalnezapaleniepluc",
+    "no":1,
+    "task":"1. Definicja pozaszpitalnego zapalenia płuc obejmuje wszystkich z wyjątkiem:",
+    "answer1":"A. osób z nowotworami w stanie immunosupresji.",
+    "answer2":"B. pensjonariuszy opieki medycznej.",
+    "answer3":"C. osób hospitalizowanych w ciągu ostatnich 14 dni.",
+    "answer4":"D. osób z objawami ostrego zakażenia dolnych dróg oddechowych oraz zacienieniem na RTG klatki piersiowej, którego wcześniej nie było i nie można wytłumaczyć w inny sposób.",
+    "answer5":"E. wszystkich wymienionych.",
+    "correct": 3,
+    "info":""
+},
+{
+    "id":"pulmunologia",
+    "id2":"pozaszpitalnezapaleniepluc",
+    "no":2,
+    "task":"2. 2. Do najczętszych czynników etiologicznych wywołujących zapalenie płuc należą:",
+    "answer1":"A. wirusy grypy i praragrypy.",
+    "answer2":"B. bakterie S. Pneumoniae, Haemophilus influenzae i Mycoplasma pneumoniae.",
+    "answer3":"C. bakterie Legionella.",
+    "answer4":"D. pierwotniaki,",
+    "answer5":"E. priony.",
+    "correct": 1,
+    "info":""
+},
+{
+    "id":"pulmunologia",
+    "id2":"pozaszpitalnezapaleniepluc",
+    "no":3,
+    "task":"3. 3. Do typowych objawów podmiotowych zapalenia płuc należą wszystkie z wyjątkiem:",
+    "answer1":"A. gorączki.",
+    "answer2":"B. dreszczy i potów.",
+    "answer3":"C. gniotącego i ściskającego bólu w klatce piersiowej.",
+    "answer4":"D. wykrztuszania ropnej plwociny.",
+    "answer5":"E. duszności.",
+    "correct": 2,
+    "info":"W zapaleniu płuc występuje ból typu opłucnowego (kłujacy, ostry, zwykle jednostronny, który może promieniować do okolicy międzyłopatkowej."
+},
+{
+    "id":"pulmunologia",
+    "id2":"pozaszpitalnezapaleniepluc",
+    "no":4,
+    "task":"4. D kryteriów rozpoznania pozaszpitalnego zapalenia płuc należą:<br>1. Objawy ostrego zakażenia dolnych dróg oddechowych – kaszel i ≥1 inny objaw zakażenia dolnych dróg oddechowych, jak duszność, ból opłucnowy, krwioplucie.<br>2. Zlokalizowane objawy w badaniu przedmiotowym klatki piersiowej (wcześniej niewystępujące).<br>3. ≥1 z objawów ogólnoustrojowych – poty, dreszcze, ból mięśni lub temperatura ciała ≥38°C.<br>4. Nie ma innego wyjaśnienia stwierdzanych objawów.",
+    "answer1":"A. 1,2.",
+    "answer2":"B. 1,3.",
+    "answer3":"C. 2,3.",
+    "answer4":"D. 1,2,3.",
+    "answer5":"E. wszystkie wymienione.",
+    "correct": 4,
+    "info":""
+},
+{
+    "id":"pulmunologia",
+    "id2":"pozaszpitalnezapaleniepluc",
+    "no":5,
+    "task":"5. Ocena ciężkości zapalenia płuc w warunkach amularotyjncyh przeprowadzana jest przy pomocy skali:",
+    "answer1":"A. CRB 65.",
+    "answer2":"B. Centora.",
+    "answer3":"C. AVPU",
+    "answer4":"D. CCS",
+    "answer5":"E. Forresta",
+    "correct": 0,
+    "info":""
+},
+{
+    "id":"pulmunologia",
+    "id2":"pozaszpitalnezapaleniepluc",
+    "no":6,
+    "task":"6. Lekiem z wyboru w leczeniu pozaszpitalnego zapalenia płuc jest:",
+    "answer1":"A. amoksycylina z klawulonianem.",
+    "answer2":"B. amoksycylina.",
+    "answer3":"C. erytromycyna.",
+    "answer4":"D. fenoksymetylopenicylina.",
+    "answer5":"E. bencylopenicylina.",
+    "correct": 1,
+    "info":"Ambulatoryjne leczenie pozaszpitalnego zapalenia płuc trwa 5 dni."
+}
+]
