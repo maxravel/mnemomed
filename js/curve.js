@@ -146,7 +146,7 @@ function counting(x){
             else if(task.type===1 && diff < 2*24*h*1000 && diff > 24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = `-> Musisz dzisiaj to powtorzyc! Masz na to: ${msToTime(2*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 x.appendChild(info);
@@ -179,7 +179,7 @@ function counting(x){
             else if(task.type===1 && diff > 2*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtorzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 x.appendChild(info);
@@ -227,7 +227,7 @@ function counting(x){
             else if(task.type===2 && diff>3*24*h*1000 && diff<4*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = `-> Musisz dzisiaj to powtorzyc! Masz na to: ${msToTime(4*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 x.appendChild(info);
@@ -260,7 +260,7 @@ function counting(x){
             else if(task.type===2 && diff > 4*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtorzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -308,7 +308,7 @@ function counting(x){
             else if(task.type===3 && diff > 7*24*h*1000 && diff < 9*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = `-> Musisz dzisiaj to powtorzyc! Masz na to: ${msToTime(9*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -342,7 +342,7 @@ function counting(x){
             else if(task.type===3 && diff > 9*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtorzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -391,7 +391,7 @@ function counting(x){
             else if(task.type===3 && diff > 30*24*h*1000 && diff < 33*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = `-> Musisz dzisiaj to powtorzyc! Masz na to: ${msToTime(33*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -426,7 +426,7 @@ function counting(x){
             else if(task.type===4 && diff > 33*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz dzisiaj to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtorzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
