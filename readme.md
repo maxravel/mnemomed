@@ -22,4 +22,4 @@ to do: add UI - chose each chapter; IMPORTANT!!!
 to do: think about database;     
 to do: how to work with form - autorefresh/url problem.  
 to do: unificate pomodoroC and pommodoroCInt;  
-to do: refactorize curve app;  
+to do: refactorize curve app - unificate to one function for all review durations;  

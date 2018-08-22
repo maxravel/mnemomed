@@ -104,7 +104,7 @@ function removeFromLocalStorage(x){
         tasks=JSON.parse(localStorage.getItem('tasks'));
     }
     tasks.forEach(function(task, index){
-        //counting task title without info words like: "musisz powtorzyc..."
+        //counting task title without info words like: "musisz powtórzyc..."
         if(x.textContent.substr(0,task.title.length)===task.title){
             tasks.splice(index, 1);
         }
@@ -135,7 +135,7 @@ function counting(x){
                 info.style.background = "grey";
                 info.style.fontSize = "15px";
                 x.appendChild(info);
-                info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;  
+                info.textContent = `-> Do powtórki pozostało ${msToTime(24*h*1000-diff)}`;  
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
                 review.classList.add("btn");
@@ -146,7 +146,7 @@ function counting(x){
             else if(task.type===1 && diff < 2*24*h*1000 && diff > 24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = `-> Musisz dzisiaj to powtorzyc! Masz na to: ${msToTime(2*24*h*1000-diff)}`;
+                info.textContent = `-> Musisz dzisiaj to powtórzyc! Masz na to: ${msToTime(2*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 x.appendChild(info);
@@ -157,7 +157,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(3*24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 1 to 2;
                     if(localStorage.getItem('tasks')===null){
@@ -179,7 +179,7 @@ function counting(x){
             else if(task.type===1 && diff > 2*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz natychmiast to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtórzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 x.appendChild(info);
@@ -190,7 +190,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 1 to 2;
                     if(localStorage.getItem('tasks')===null){
@@ -214,7 +214,7 @@ function counting(x){
                 let info = document.createElement("p");                
                 info.style.fontSize = "15px";
                 info.style.background = "grey";
-                info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
+                info.textContent = `-> Do powtórki pozostało ${msToTime(3*24*h*1000-diff)}`;
                 console.log(msToTime(3*24*h*1000-diff));
                 x.appendChild(info);
                 let review = document.createElement("button");
@@ -227,7 +227,7 @@ function counting(x){
             else if(task.type===2 && diff>3*24*h*1000 && diff<4*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = `-> Musisz dzisiaj to powtorzyc! Masz na to: ${msToTime(4*24*h*1000-diff)}`;
+                info.textContent = `-> Musisz dzisiaj to powtórzyc! Masz na to: ${msToTime(4*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 x.appendChild(info);
@@ -238,7 +238,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(7*24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(7*24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 1 to 2;
                     if(localStorage.getItem('tasks')===null){
@@ -260,7 +260,7 @@ function counting(x){
             else if(task.type===2 && diff > 4*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz natychmiast to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtórzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -272,7 +272,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 2 to 1;
                     if(localStorage.getItem('tasks')===null){
@@ -296,7 +296,7 @@ function counting(x){
                 let info = document.createElement("p");                
                 info.style.fontSize = "15px";
                 info.style.background = "grey";
-                info.textContent = `-> Do powtorki pozostało ${msToTime(7*24*h*1000-diff)}`;
+                info.textContent = `-> Do powtórki pozostało ${msToTime(7*24*h*1000-diff)}`;
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -308,7 +308,7 @@ function counting(x){
             else if(task.type===3 && diff > 7*24*h*1000 && diff < 9*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = `-> Musisz niebawem to powtorzyc! Masz na to: ${msToTime(9*24*h*1000-diff)}`;
+                info.textContent = `-> Musisz niebawem to powtórzyc! Masz na to: ${msToTime(9*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -320,7 +320,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(14*24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(14*24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 3 to 4;
                     if(localStorage.getItem('tasks')===null){
@@ -342,7 +342,7 @@ function counting(x){
             else if(task.type===3 && diff > 9*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz natychmiast to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtórzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -354,7 +354,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(3*24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(3*24*h*1000-diff)}`;
                     review.disabled = "true";
 
                     //changing type from 3 to 2;
@@ -379,7 +379,7 @@ function counting(x){
                 let info = document.createElement("p");                
                 info.style.fontSize = "15px";
                 info.style.background = "grey";
-                info.textContent = `-> Do powtorki pozostało ${msToTime(14*24*h*1000-diff)}`;
+                info.textContent = `-> Do powtórki pozostało ${msToTime(14*24*h*1000-diff)}`;
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -391,7 +391,7 @@ function counting(x){
             else if(task.type===4 && diff > 14*24*h*1000 && diff < 17*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = `-> Musisz niebawem to powtorzyc! Masz na to: ${msToTime(17*24*h*1000-diff)}`;
+                info.textContent = `-> Musisz niebawem to powtórzyc! Masz na to: ${msToTime(17*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -403,7 +403,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(14*24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(14*24*h*1000-diff)}`;
                     review.disabled = "true";
 
                     //still type 4, and review after month
@@ -426,7 +426,7 @@ function counting(x){
             else if(task.type===4 && diff > 17*24*h*1000){
                 x.style.background = "orange";
                 let info = document.createElement("p");
-                info.textContent = "-> Musisz natychmiast to powtorzyc!";
+                info.textContent = "-> Musisz natychmiast to powtórzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
                 //info.style.paddingTop = "-5px";
@@ -438,7 +438,7 @@ function counting(x){
                 review.addEventListener("click", function(){
                     x.style.background = "grey";
                     info.style.background = "grey";
-                    info.textContent = `-> Do powtorki pozostało ${msToTime(7*24*h*1000-diff)}`;
+                    info.textContent = `-> Do powtórki pozostało ${msToTime(7*24*h*1000-diff)}`;
                     review.disabled = "true";
 
                     //changing type from 4 to 3;
