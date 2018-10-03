@@ -14,6 +14,7 @@
 - simple loader; done  
 - simple pomodoro app; done  
 - simple Ebbinghaus curve app, working for 30 days; done  
+- works on refactorization; small progress  
     
 
 to do: upradge loader;  
