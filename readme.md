@@ -17,7 +17,7 @@
     
 
 to do: upradge loader;  
-to do: refactorize code;  
+to do: refactorize code; IMPORTANT!!! 
 to do: add UI - chose each chapter; IMPORTANT!!!  
 to do: think about database;     
 to do: how to work with form - autorefresh/url problem.  
