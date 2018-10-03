@@ -36,12 +36,12 @@ if(localStorage.getItem('rok')){
     xyz = setInterval('counter(localStorage.getItem("nazwa"),localStorage.getItem("rok"),localStorage.getItem("miesiąc"),localStorage.getItem("dzień"),localStorage.getItem("godzina"))',1000);
 }
 else{
-    xyz = setInterval('counter("LEK 2018 jesień",2018,8,22,12)', 1000);
+    xyz = setInterval('counter("Nowy Rok 2019",2019,0,0,23)', 1000);
 }
 
 
 //*****************CHANGING COUNTING DAY
-//global scope for setInterval !!
+//global scope for setInterval - abc !!
 var abc;
 
 const changer = document.querySelector("#changeCount");
@@ -66,11 +66,13 @@ function finalTime(){
     }
     else{
 
+        //clearing default counter
         clearInterval(xyz);
         
+        //setting new interval
         abc = setInterval(() => counter(ititle,iyear,imonth-1,iday,ihour), 1000);
 
-        //localStorage
+        //localStorage of new destination time
         localStorage.setItem('nazwa',ititle);
         localStorage.setItem('rok',iyear);
         localStorage.setItem('miesiąc',imonth-1);
