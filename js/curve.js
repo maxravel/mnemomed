@@ -53,6 +53,7 @@ curveA.addEventListener("click", function(){
         const task = new Task(`${curveT.value}`,1,Date.now());
         addToLocalStorage(task);
         //creating UI of new task
+        // creatingTask();
         let x = document.createElement("li");
         x.textContent = task.title;
         x.style.color = "#b0ffff";
@@ -128,19 +129,10 @@ function counting(x){
             diff = Date.now() - taskTime;
             console.log(msToTime(diff));
             const h=3600;
-            if(task.type===1 && diff < 24*h*1000){   
-                x.style.background = "grey";
-                let info = document.createElement("p");
-                //reviewOff(x);
-                info.style.background = "grey";
-                info.style.fontSize = "15px";
-                x.appendChild(info);
-                info.textContent = `-> Do powtórki pozostało ${msToTime(24*h*1000-diff)}`;  
-                let review = document.createElement("button");
-                review.innerHTML = "Powtarzam!";
-                review.classList.add("btn");
-                x.appendChild(review);
-                review.disabled = "true";              
+
+            if(task.type===1 && diff < 24*h*1000){  
+                const xyz = 24*h*1000
+                greyCreator(x, diff,h,xyz);                 
             }
 
             else if(task.type===1 && diff < 2*24*h*1000 && diff > 24*h*1000){
@@ -160,19 +152,7 @@ function counting(x){
                     info.textContent = `-> Do powtórki pozostało ${msToTime(3*24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 1 to 2;
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 2;
-                            task.timing = Date.now();
-                        }                 
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    changingType(x, 1);
                 });
             }
 
@@ -192,36 +172,14 @@ function counting(x){
                     info.style.background = "grey";
                     info.textContent = `-> Do powtórki pozostało ${msToTime(24*h*1000-diff)}`;
                     review.disabled = "true";
-                    //changing type from 1 to 2;
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 1;
-                            task.timing = Date.now();                 
-                        }          
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    //Staying type 1
+                    changingType(x, 0);
                 });
             }
             
             else if(task.type===2 && diff < 3*24*h*1000){
-                x.style.background = "grey";
-                let info = document.createElement("p");                
-                info.style.fontSize = "15px";
-                info.style.background = "grey";
-                info.textContent = `-> Do powtórki pozostało ${msToTime(3*24*h*1000-diff)}`;
-                console.log(msToTime(3*24*h*1000-diff));
-                x.appendChild(info);
-                let review = document.createElement("button");
-                review.innerHTML = "Powtarzam!";
-                review.classList.add("btn");
-                x.appendChild(review);
-                review.disabled = "true";
+                let xyz = 3*24*h*1000;
+                greyCreator(x, diff,h,xyz); 
             }
 
             else if(task.type===2 && diff>3*24*h*1000 && diff<4*24*h*1000){
@@ -240,20 +198,8 @@ function counting(x){
                     info.style.background = "grey";
                     info.textContent = `-> Do powtórki pozostało ${msToTime(7*24*h*1000-diff)}`;
                     review.disabled = "true";
-                    //changing type from 1 to 2;
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 3;
-                            task.timing = Date.now();
-                        }                      
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    //changing type from 2 to 3;
+                    changingType(x, 1);
                 });
             }
 
@@ -275,34 +221,13 @@ function counting(x){
                     info.textContent = `-> Do powtórki pozostało ${msToTime(24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 2 to 1;
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 1;
-                            task.timing = Date.now();          
-                        }             
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    changingType(x, -1);
                 });
             }
 
             else if(task.type===3 && diff < 7*24*h*1000){
-                x.style.background = "grey";
-                let info = document.createElement("p");                
-                info.style.fontSize = "15px";
-                info.style.background = "grey";
-                info.textContent = `-> Do powtórki pozostało ${msToTime(7*24*h*1000-diff)}`;
-                x.appendChild(info);
-                let review = document.createElement("button");
-                review.innerHTML = "Powtarzam!";
-                review.classList.add("btn");
-                x.appendChild(review);
-                review.disabled = "true";
+                let xyz = 7*24*h*1000;
+                greyCreator(x, diff,h,xyz);  
             }
 
             else if(task.type===3 && diff > 7*24*h*1000 && diff < 9*24*h*1000){
@@ -323,19 +248,7 @@ function counting(x){
                     info.textContent = `-> Do powtórki pozostało ${msToTime(14*24*h*1000-diff)}`;
                     review.disabled = "true";
                     //changing type from 3 to 4;
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 4;
-                            task.timing = Date.now();
-                        }                      
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    changingType(x, 1);
                 });
             }
 
@@ -356,36 +269,14 @@ function counting(x){
                     info.style.background = "grey";
                     info.textContent = `-> Do powtórki pozostało ${msToTime(3*24*h*1000-diff)}`;
                     review.disabled = "true";
-
                     //changing type from 3 to 2;
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 2;
-                            task.timing = Date.now();          
-                        }             
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    changingType(x, -1);
                 });
             }
 
             else if(task.type===4 && diff < 14*24*h*1000){
-                x.style.background = "grey";
-                let info = document.createElement("p");                
-                info.style.fontSize = "15px";
-                info.style.background = "grey";
-                info.textContent = `-> Do powtórki pozostało ${msToTime(14*24*h*1000-diff)}`;
-                x.appendChild(info);
-                let review = document.createElement("button");
-                review.innerHTML = "Powtarzam!";
-                review.classList.add("btn");
-                x.appendChild(review);
-                review.disabled = "true";
+                let xyz = 14*24*h*1000;
+                greyCreator(x, diff,h,xyz); 
             }
 
             else if(task.type===4 && diff > 14*24*h*1000 && diff < 17*24*h*1000){
@@ -405,21 +296,8 @@ function counting(x){
                     info.style.background = "grey";
                     info.textContent = `-> Do powtórki pozostało ${msToTime(14*24*h*1000-diff)}`;
                     review.disabled = "true";
-
                     //still type 4, and review after month
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 4;
-                            task.timing = Date.now();          
-                        }             
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    changingType(x, 0);
                 });
             }
 
@@ -440,37 +318,14 @@ function counting(x){
                     info.style.background = "grey";
                     info.textContent = `-> Do powtórki pozostało ${msToTime(7*24*h*1000-diff)}`;
                     review.disabled = "true";
-
                     //changing type from 4 to 3;
-                    if(localStorage.getItem('tasks')===null){
-                        tasks=[];
-                    }
-                    else{
-                        tasks=JSON.parse(localStorage.getItem('tasks'));
-                    }
-                    tasks.forEach(function(task, index){
-                        if(x.textContent.substr(0,task.title.length)===task.title){
-                            task.type = 3;
-                            task.timing = Date.now();          
-                        }             
-                    });
-                    localStorage.setItem('tasks', JSON.stringify(tasks));
+                    changingType(x, -1);
                 });
             }
         }
     }); 
 } 
 
-// function reviewOff(x){
-//     x.style.background = "grey";
-//     let info = document.createElement("p");
-//     info.style.background = "grey";
-//     info.style.fontSize = "15px";
-//     info.style.paddingTop = "-5px";
-//     x.appendChild(info);
-// }
-
-console.log(msToTime(3*24*3600*1000));
 function msToTime(duration) {
     var milliseconds = parseInt((duration%1000)/100)
         , seconds = parseInt((duration/1000)%60)
@@ -484,3 +339,33 @@ function msToTime(duration) {
 
     return days +"D"+":"+hours + ":" + minutes; //+ ":" + seconds + "." + milliseconds;
 }
+
+function greyCreator(x, diff, h, xyz){
+    x.style.background = "grey";
+    let info = document.createElement("p");
+    info.style.background = "grey";
+    info.style.fontSize = "15px";
+    x.appendChild(info);
+    info.textContent = `-> Do powtórki pozostało ${msToTime(xyz-diff)}`;  
+    let review = document.createElement("button");
+    review.innerHTML = "Powtarzam!";
+    review.classList.add("btn");
+    x.appendChild(review);
+    review.disabled = "true";
+}
+
+function changingType(x, change){
+    if(localStorage.getItem('tasks')===null){
+        tasks=[];
+    }
+    else{
+        tasks=JSON.parse(localStorage.getItem('tasks'));
+    }
+    tasks.forEach(function(task, index){
+        if(x.textContent.substr(0,task.title.length)===task.title){
+            task.type = task.type+change;
+            task.timing = Date.now();
+        }                 
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+};
