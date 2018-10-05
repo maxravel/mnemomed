@@ -131,7 +131,7 @@ function counting(x){
             const h=3600;
 
             if(task.type===1 && diff < 24*h*1000){  
-                const xyz = 24*h*1000
+                const xyz = 24*h*1000;
                 greyCreator(x, diff,h,xyz);                 
             }
 
@@ -157,6 +157,7 @@ function counting(x){
             }
 
             else if(task.type===1 && diff > 2*24*h*1000){
+                //orangeDeleyed(x);
                 x.style.background = "orange";
                 let info = document.createElement("p");
                 info.textContent = "-> Musisz natychmiast to powtórzyc!";
@@ -209,7 +210,6 @@ function counting(x){
                 info.textContent = "-> Musisz natychmiast to powtórzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -236,7 +236,6 @@ function counting(x){
                 info.textContent = `-> Musisz niebawem to powtórzyc! Masz na to: ${msToTime(9*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -258,7 +257,6 @@ function counting(x){
                 info.textContent = "-> Musisz natychmiast to powtórzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -285,7 +283,6 @@ function counting(x){
                 info.textContent = `-> Musisz niebawem to powtórzyc! Masz na to: ${msToTime(17*24*h*1000-diff)}`;
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -307,7 +304,6 @@ function counting(x){
                 info.textContent = "-> Musisz natychmiast to powtórzyc!";
                 info.style.background = "red";
                 info.style.fontSize = "15px";
-                //info.style.paddingTop = "-5px";
                 x.appendChild(info);
                 let review = document.createElement("button");
                 review.innerHTML = "Powtarzam!";
@@ -338,7 +334,7 @@ function msToTime(duration) {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
     return days +"D"+":"+hours + ":" + minutes; //+ ":" + seconds + "." + milliseconds;
-}
+};
 
 function greyCreator(x, diff, h, xyz){
     x.style.background = "grey";
@@ -352,7 +348,31 @@ function greyCreator(x, diff, h, xyz){
     review.classList.add("btn");
     x.appendChild(review);
     review.disabled = "true";
-}
+};
+
+
+
+//**********************WORKING ON ORANGE DELEYED
+// function orangeDeleyed(x){
+//     x.style.background = "orange";
+//     let info = document.createElement("p");
+//     info.textContent = "-> Musisz natychmiast to powtórzyc!";
+//     info.style.background = "red";
+//     info.style.fontSize = "15px";
+//     x.appendChild(info);
+//     let review = document.createElement("button");
+//     review.innerHTML = "Powtarzam!";
+//     review.classList.add("btn");
+//     x.appendChild(review);
+//     review.addEventListener("click", function(){
+//         x.style.background = "grey";
+//         info.style.background = "grey";
+//         info.textContent = `-> Do powtórki pozostało ${msToTime(24*h*1000-diff)}`;
+//         review.disabled = "true";
+//         //Staying type 1
+//         changingType(x, 0);
+//     });
+// };
 
 function changingType(x, change){
     if(localStorage.getItem('tasks')===null){
