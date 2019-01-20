@@ -36,7 +36,7 @@ if(localStorage.getItem('rok')){
     xyz = setInterval('counter(localStorage.getItem("nazwa"),localStorage.getItem("rok"),localStorage.getItem("miesiąc"),localStorage.getItem("dzień"),localStorage.getItem("godzina"))',1000);
 }
 else{
-    xyz = setInterval('counter("Nowy Rok 2019",2019,0,0,23)', 1000);
+    xyz = setInterval('counter("Wielkanoc 2019",2019,3,20,23)', 1000);
 }
 
 
